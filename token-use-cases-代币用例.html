@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Token Use Cases 代币用例 | Token Economy: How the Web3 reinvents the Internet</title>
+  <meta name="description" content="Chapter 4 Token Use Cases 代币用例 | Token Economy: How the Web3 reinvents the Internet" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Token Use Cases 代币用例 | Token Economy: How the Web3 reinvents the Internet" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Chapter 4 Token Use Cases 代币用例 | Token Economy: How the Web3 reinvents the Internet" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Token Use Cases 代币用例 | Token Economy: How the Web3 reinvents the Internet" />
+  
+  <meta name="twitter:description" content="Chapter 4 Token Use Cases 代币用例 | Token Economy: How the Web3 reinvents the Internet" />
+  
+
+<meta name="author" content="米霖 译" />
+
+
+<meta name="date" content="2024-10-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="代币经济和去中心化金融.html"/>
+<link rel="next" href="补充内容.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Token Economy: How the Web3 reinvents the Internet</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like https://bookdown.org/yihui/bookdown</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#有状态网络"><i class="fa fa-check"></i><b>1.1</b> 1. 有状态网络</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#区块链-一种有状态的协议"><i class="fa fa-check"></i><b>1.1.1</b> 区块链: 一种有状态的协议</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#其他web3-协议"><i class="fa fa-check"></i><b>1.1.2</b> 其他Web3 协议</a></li>
+<li class="chapter" data-level="1.1.3" data-path="index.html"><a href="index.html#web3-中的去中心化应用"><i class="fa fa-check"></i><b>1.1.3</b> Web3 中的去中心化应用</a></li>
+<li class="chapter" data-level="1.1.4" data-path="index.html"><a href="index.html#章节概括"><i class="fa fa-check"></i><b>1.1.4</b> 章节概括</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#跟踪代币比特币区块链及其他分布式账本"><i class="fa fa-check"></i><b>1.2</b> 2. 跟踪代币：比特币、区块链及其他分布式账本</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#加密经济学共识与工作量证明"><i class="fa fa-check"></i><b>1.2.1</b> 加密经济学、共识与工作量证明</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#网络节点"><i class="fa fa-check"></i><b>1.2.2</b> 网络节点</a></li>
+<li class="chapter" data-level="1.2.3" data-path="index.html"><a href="index.html#网络攻击"><i class="fa fa-check"></i><b>1.2.3</b> 网络攻击</a></li>
+<li class="chapter" data-level="1.2.4" data-path="index.html"><a href="index.html#协议分叉与网络分裂"><i class="fa fa-check"></i><b>1.2.4</b> 协议分叉与网络分裂</a></li>
+<li class="chapter" data-level="1.2.5" data-path="index.html"><a href="index.html#替代分布式账本系统"><i class="fa fa-check"></i><b>1.2.5</b> 替代分布式账本系统</a></li>
+<li class="chapter" data-level="1.2.6" data-path="index.html"><a href="index.html#替代的共识机制"><i class="fa fa-check"></i><b>1.2.6</b> 替代的共识机制</a></li>
+<li class="chapter" data-level="1.2.7" data-path="index.html"><a href="index.html#是否需要代币"><i class="fa fa-check"></i><b>1.2.7</b> 是否需要代币？</a></li>
+<li class="chapter" data-level="1.2.8" data-path="index.html"><a href="index.html#使用案例与应用"><i class="fa fa-check"></i><b>1.2.8</b> 使用案例与应用</a></li>
+<li class="chapter" data-level="1.2.9" data-path="index.html"><a href="index.html#章节总结"><i class="fa fa-check"></i><b>1.2.9</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#代币安全-密码学"><i class="fa fa-check"></i><b>1.3</b> 3. 代币安全 ： 密码学</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#公钥密码学"><i class="fa fa-check"></i><b>1.3.1</b> 公钥密码学</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#安全算法"><i class="fa fa-check"></i><b>1.3.2</b> 安全算法</a></li>
+<li class="chapter" data-level="1.3.3" data-path="index.html"><a href="index.html#哈希"><i class="fa fa-check"></i><b>1.3.3</b> 哈希</a></li>
+<li class="chapter" data-level="1.3.4" data-path="index.html"><a href="index.html#钱包与数字签名"><i class="fa fa-check"></i><b>1.3.4</b> 钱包与数字签名</a></li>
+<li class="chapter" data-level="1.3.5" data-path="index.html"><a href="index.html#钱包类型与密钥管理"><i class="fa fa-check"></i><b>1.3.5</b> 钱包类型与密钥管理</a></li>
+<li class="chapter" data-level="1.3.6" data-path="index.html"><a href="index.html#发送代币"><i class="fa fa-check"></i><b>1.3.6</b> 发送代币</a></li>
+<li class="chapter" data-level="1.3.7" data-path="index.html"><a href="index.html#章节总结-1"><i class="fa fa-check"></i><b>1.3.7</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#谁控制着代币以用户为中心的身份"><i class="fa fa-check"></i><b>1.4</b> 4. 谁控制着代币?以用户为中心的身份</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i><b>1.4.1</b> Disclaimer</a></li>
+<li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#身份管理"><i class="fa fa-check"></i><b>1.4.2</b> 身份管理</a></li>
+<li class="chapter" data-level="1.4.3" data-path="index.html"><a href="index.html#标识符"><i class="fa fa-check"></i><b>1.4.3</b> 标识符</a></li>
+<li class="chapter" data-level="1.4.4" data-path="index.html"><a href="index.html#认证"><i class="fa fa-check"></i><b>1.4.4</b> 认证</a></li>
+<li class="chapter" data-level="1.4.5" data-path="index.html"><a href="index.html#声明与凭证"><i class="fa fa-check"></i><b>1.4.5</b> 声明与凭证</a></li>
+<li class="chapter" data-level="1.4.6" data-path="index.html"><a href="index.html#server-centric-identities"><i class="fa fa-check"></i><b>1.4.6</b> Server-Centric Identities</a></li>
+<li class="chapter" data-level="1.4.7" data-path="index.html"><a href="index.html#history-of-digital-identity-management"><i class="fa fa-check"></i><b>1.4.7</b> History of Digital Identity Management</a></li>
+<li class="chapter" data-level="1.4.8" data-path="index.html"><a href="index.html#user-centric-identities-using-dids"><i class="fa fa-check"></i><b>1.4.8</b> User-Centric Identities using DIDs</a></li>
+<li class="chapter" data-level="1.4.9" data-path="index.html"><a href="index.html#outlook"><i class="fa fa-check"></i><b>1.4.9</b> Outlook</a></li>
+<li class="chapter" data-level="1.4.10" data-path="index.html"><a href="index.html#chapter-summary"><i class="fa fa-check"></i><b>1.4.10</b> Chapter Summary</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="web3-应用.html"><a href="web3-应用.html"><i class="fa fa-check"></i><b>2</b> Web3 应用</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="web3-应用.html"><a href="web3-应用.html#智能合约"><i class="fa fa-check"></i><b>2.1</b> 智能合约</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="web3-应用.html"><a href="web3-应用.html#自我执行的协议"><i class="fa fa-check"></i><b>2.1.1</b> 自我执行的协议</a></li>
+<li class="chapter" data-level="2.1.2" data-path="web3-应用.html"><a href="web3-应用.html#智能合约的调用与外部数据"><i class="fa fa-check"></i><b>2.1.2</b> 智能合约的调用与外部数据</a></li>
+<li class="chapter" data-level="2.1.3" data-path="web3-应用.html"><a href="web3-应用.html#行业应用案例"><i class="fa fa-check"></i><b>2.1.3</b> 行业应用案例</a></li>
+<li class="chapter" data-level="2.1.4" data-path="web3-应用.html"><a href="web3-应用.html#预言机"><i class="fa fa-check"></i><b>2.1.4</b> 预言机</a></li>
+<li class="chapter" data-level="2.1.5" data-path="web3-应用.html"><a href="web3-应用.html#二手车购买案例"><i class="fa fa-check"></i><b>2.1.5</b> 二手车购买案例</a></li>
+<li class="chapter" data-level="2.1.6" data-path="web3-应用.html"><a href="web3-应用.html#智能合约的历史"><i class="fa fa-check"></i><b>2.1.6</b> 智能合约的历史</a></li>
+<li class="chapter" data-level="2.1.7" data-path="web3-应用.html"><a href="web3-应用.html#章节总结-2"><i class="fa fa-check"></i><b>2.1.7</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="web3-应用.html"><a href="web3-应用.html#web3-网络与其他-dao-的制度经济学"><i class="fa fa-check"></i><b>2.2</b> Web3 网络与其他 DAO 的制度经济学</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="web3-应用.html"><a href="web3-应用.html#daos-与传统组织"><i class="fa fa-check"></i><b>2.2.1</b> DAOs 与传统组织</a></li>
+<li class="chapter" data-level="2.2.2" data-path="web3-应用.html"><a href="web3-应用.html#公司演变与企业理论"><i class="fa fa-check"></i><b>2.2.2</b> 公司演变与“企业理论”</a></li>
+<li class="chapter" data-level="2.2.3" data-path="web3-应用.html"><a href="web3-应用.html#国家治理与代议制民主"><i class="fa fa-check"></i><b>2.2.3</b> 国家治理与代议制民主</a></li>
+<li class="chapter" data-level="2.2.4" data-path="web3-应用.html"><a href="web3-应用.html#去中心化自治组织"><i class="fa fa-check"></i><b>2.2.4</b> 去中心化自治组织</a></li>
+<li class="chapter" data-level="2.2.5" data-path="web3-应用.html"><a href="web3-应用.html#web3-网络与基于智能合约的-dao"><i class="fa fa-check"></i><b>2.2.5</b> Web3 网络与基于智能合约的 DAO</a></li>
+<li class="chapter" data-level="2.2.6" data-path="web3-应用.html"><a href="web3-应用.html#dao-的制度经济学"><i class="fa fa-check"></i><b>2.2.6</b> DAO 的制度经济学</a></li>
+<li class="chapter" data-level="2.2.7" data-path="web3-应用.html"><a href="web3-应用.html#dao-的货币与财政政策"><i class="fa fa-check"></i><b>2.2.7</b> DAO 的货币与财政政策</a></li>
+<li class="chapter" data-level="2.2.8" data-path="web3-应用.html"><a href="web3-应用.html#章节总结-3"><i class="fa fa-check"></i><b>2.2.8</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="web3-应用.html"><a href="web3-应用.html#web3-网络与其他-daos-的治理"><i class="fa fa-check"></i><b>2.3</b> Web3 网络与其他 DAOs 的治理</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="web3-应用.html"><a href="web3-应用.html#web3-网络治理的挑战"><i class="fa fa-check"></i><b>2.3.1</b> Web3 网络治理的挑战</a></li>
+<li class="chapter" data-level="2.3.2" data-path="web3-应用.html"><a href="web3-应用.html#网络中的制衡机制"><i class="fa fa-check"></i><b>2.3.2</b> 网络中的制衡机制</a></li>
+<li class="chapter" data-level="2.3.3" data-path="web3-应用.html"><a href="web3-应用.html#链外治理与链上治理"><i class="fa fa-check"></i><b>2.3.3</b> 链外治理与链上治理</a></li>
+<li class="chapter" data-level="2.3.4" data-path="web3-应用.html"><a href="web3-应用.html#去中心化神话与无信任网络"><i class="fa fa-check"></i><b>2.3.4</b> 去中心化神话与无信任网络</a></li>
+<li class="chapter" data-level="2.3.5" data-path="web3-应用.html"><a href="web3-应用.html#章节总结-4"><i class="fa fa-check"></i><b>2.3.5</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="web3-应用.html"><a href="web3-应用.html#代币token"><i class="fa fa-check"></i><b>2.4</b> 代币（Token）</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="web3-应用.html"><a href="web3-应用.html#代币的历史"><i class="fa fa-check"></i><b>2.4.1</b> 代币的历史</a></li>
+<li class="chapter" data-level="2.4.2" data-path="web3-应用.html"><a href="web3-应用.html#加密代币"><i class="fa fa-check"></i><b>2.4.2</b> 加密代币</a></li>
+<li class="chapter" data-level="2.4.3" data-path="web3-应用.html"><a href="web3-应用.html#代币的属性"><i class="fa fa-check"></i><b>2.4.3</b> 代币的属性</a></li>
+<li class="chapter" data-level="2.4.4" data-path="web3-应用.html"><a href="web3-应用.html#非同质化代币-nft"><i class="fa fa-check"></i><b>2.4.4</b> 非同质化代币 (NFT)</a></li>
+<li class="chapter" data-level="2.4.5" data-path="web3-应用.html"><a href="web3-应用.html#章节总结-5"><i class="fa fa-check"></i><b>2.4.5</b> 章节总结</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html"><i class="fa fa-check"></i><b>3</b> 代币经济和去中心化金融</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#货币与去中心化金融defi的未来"><i class="fa fa-check"></i><b>3.1</b> 货币与去中心化金融（DeFi）的未来</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#货币的属性"><i class="fa fa-check"></i><b>3.1.1</b> 货币的属性</a></li>
+<li class="chapter" data-level="3.1.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#货币的类型"><i class="fa fa-check"></i><b>3.1.2</b> 货币的类型</a></li>
+<li class="chapter" data-level="3.1.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#货币还是非货币"><i class="fa fa-check"></i><b>3.1.3</b> 货币还是非货币？</a></li>
+<li class="chapter" data-level="3.1.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#去中心化金融defi迈向数字货币经济"><i class="fa fa-check"></i><b>3.1.4</b> 去中心化金融（DeFi）：迈向数字货币经济</a></li>
+<li class="chapter" data-level="3.1.5" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#章节总结-6"><i class="fa fa-check"></i><b>3.1.5</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#稳定代币-stable-tokens"><i class="fa fa-check"></i><b>3.2</b> 稳定代币 Stable Tokens</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#资产担保的稳定代币"><i class="fa fa-check"></i><b>3.2.1</b> 资产担保的稳定代币</a></li>
+<li class="chapter" data-level="3.2.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#加密担保的稳定代币"><i class="fa fa-check"></i><b>3.2.2</b> 加密担保的稳定代币</a></li>
+<li class="chapter" data-level="3.2.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#中央银行数字货币"><i class="fa fa-check"></i><b>3.2.3</b> 中央银行数字货币</a></li>
+<li class="chapter" data-level="3.2.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#算法稳定代币"><i class="fa fa-check"></i><b>3.2.4</b> 算法稳定代币</a></li>
+<li class="chapter" data-level="3.2.5" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#挑战与展望"><i class="fa fa-check"></i><b>3.2.5</b> 挑战与展望</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#隐私代币"><i class="fa fa-check"></i><b>3.3</b> 隐私代币</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#区块链代币的隐私性"><i class="fa fa-check"></i><b>3.3.1</b> 区块链代币的隐私性</a></li>
+<li class="chapter" data-level="3.3.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#隐私代币的历史"><i class="fa fa-check"></i><b>3.3.2</b> 隐私代币的历史</a></li>
+<li class="chapter" data-level="3.3.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#完全web3隐私"><i class="fa fa-check"></i><b>3.3.3</b> 完全Web3隐私</a></li>
+<li class="chapter" data-level="3.3.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#隐私的法律与政治方面"><i class="fa fa-check"></i><b>3.3.4</b> 隐私的法律与政治方面</a></li>
+<li class="chapter" data-level="3.3.5" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#章节总结-7"><i class="fa fa-check"></i><b>3.3.5</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#交易代币原子交换与去中心化交易所"><i class="fa fa-check"></i><b>3.4</b> 交易代币、原子交换与去中心化交易所</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#集中式交易所的挑战"><i class="fa fa-check"></i><b>3.4.1</b> 集中式交易所的挑战</a></li>
+<li class="chapter" data-level="3.4.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#原子交换-atomic-swaps"><i class="fa fa-check"></i><b>3.4.2</b> 原子交换 Atomic Swaps</a></li>
+<li class="chapter" data-level="3.4.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#去中心化交易所"><i class="fa fa-check"></i><b>3.4.3</b> 去中心化交易所</a></li>
+<li class="chapter" data-level="3.4.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#章节总结-8"><i class="fa fa-check"></i><b>3.4.4</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#借贷代币与去中心化信用系统"><i class="fa fa-check"></i><b>3.5</b> 借贷代币与去中心化信用系统</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#p2p-借贷"><i class="fa fa-check"></i><b>3.5.1</b> P2P 借贷</a></li>
+<li class="chapter" data-level="3.5.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#p2p-借款"><i class="fa fa-check"></i><b>3.5.2</b> P2P 借款</a></li>
+<li class="chapter" data-level="3.5.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#闪电贷款"><i class="fa fa-check"></i><b>3.5.3</b> 闪电贷款</a></li>
+<li class="chapter" data-level="3.5.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#p2p-借贷协议"><i class="fa fa-check"></i><b>3.5.4</b> P2P 借贷协议</a></li>
+<li class="chapter" data-level="3.5.5" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#闪电攻击"><i class="fa fa-check"></i><b>3.5.5</b> 闪电攻击</a></li>
+<li class="chapter" data-level="3.5.6" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#章节总结-9"><i class="fa fa-check"></i><b>3.5.6</b> 章节总结</a></li>
+<li class="chapter" data-level="3.5.7" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#闪电贷款-1"><i class="fa fa-check"></i><b>3.5.7</b> 闪电贷款</a></li>
+<li class="chapter" data-level="3.5.8" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#闪电攻击-1"><i class="fa fa-check"></i><b>3.5.8</b> 闪电攻击</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#token-sales-icos-itos-ieos-stos"><i class="fa fa-check"></i><b>3.6</b> Token Sales: ICOs, ITOs, IEOs, STOs</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#history-of-token-sales"><i class="fa fa-check"></i><b>3.6.1</b> History of Token Sales</a></li>
+<li class="chapter" data-level="3.6.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#types-of-token-sales"><i class="fa fa-check"></i><b>3.6.2</b> Types of Token Sales</a></li>
+<li class="chapter" data-level="3.6.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#challenges-of-token-sales"><i class="fa fa-check"></i><b>3.6.3</b> Challenges of Token Sales</a></li>
+<li class="chapter" data-level="3.6.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#initial-exchange-offerings-ieos-首次公开发行"><i class="fa fa-check"></i><b>3.6.4</b> Initial Exchange Offerings (IEOs) 首次公开发行</a></li>
+<li class="chapter" data-level="3.6.5" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#章节总结-10"><i class="fa fa-check"></i><b>3.6.5</b> 章节总结</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html"><i class="fa fa-check"></i><b>4</b> Token Use Cases 代币用例</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#资产代币与分权所有权"><i class="fa fa-check"></i><b>4.1</b> 资产代币与分权所有权</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#用例-1证券代币"><i class="fa fa-check"></i><b>4.1.1</b> 用例 1：证券代币</a></li>
+<li class="chapter" data-level="4.1.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#用例-2房地产代币化"><i class="fa fa-check"></i><b>4.1.2</b> 用例 2：房地产代币化</a></li>
+<li class="chapter" data-level="4.1.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#用例-3艺术代币化"><i class="fa fa-check"></i><b>4.1.3</b> 用例 3：艺术代币化</a></li>
+<li class="chapter" data-level="4.1.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#用例-4集体部分所有权"><i class="fa fa-check"></i><b>4.1.4</b> 用例 4：集体部分所有权</a></li>
+<li class="chapter" data-level="4.1.5" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#章节总结-11"><i class="fa fa-check"></i><b>4.1.5</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#目的驱动代币"><i class="fa fa-check"></i><b>4.2</b> 目的驱动代币</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#激励网络状态共识"><i class="fa fa-check"></i><b>4.2.1</b> 激励网络状态共识</a></li>
+<li class="chapter" data-level="4.2.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#激励社交媒体贡献"><i class="fa fa-check"></i><b>4.2.2</b> 激励社交媒体贡献</a></li>
+<li class="chapter" data-level="4.2.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#激励清单贡献"><i class="fa fa-check"></i><b>4.2.3</b> 激励清单贡献</a></li>
+<li class="chapter" data-level="4.2.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#激励减少二氧化碳排放"><i class="fa fa-check"></i><b>4.2.4</b> 激励减少二氧化碳排放</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#公共物品与公地悲剧"><i class="fa fa-check"></i><b>4.3</b> 公共物品与公地悲剧</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#正外部性与负外部性"><i class="fa fa-check"></i><b>4.3.1</b> 正外部性与负外部性</a></li>
+<li class="chapter" data-level="4.3.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#行为经济学与引导"><i class="fa fa-check"></i><b>4.3.2</b> 行为经济学与引导</a></li>
+<li class="chapter" data-level="4.3.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#认知心理学与行为分析"><i class="fa fa-check"></i><b>4.3.3</b> 认知心理学与行为分析</a></li>
+<li class="chapter" data-level="4.3.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#行为金融与行为博弈理论"><i class="fa fa-check"></i><b>4.3.4</b> 行为金融与行为博弈理论</a></li>
+<li class="chapter" data-level="4.3.5" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#机制设计与代币工程"><i class="fa fa-check"></i><b>4.3.5</b> 机制设计与代币工程</a></li>
+<li class="chapter" data-level="4.3.6" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#章节总结-12"><i class="fa fa-check"></i><b>4.3.6</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#steemithive-和-reddit代币化社交网络"><i class="fa fa-check"></i><b>4.4</b> Steemit、Hive 和 Reddit：代币化社交网络</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#当今社交媒体的问题"><i class="fa fa-check"></i><b>4.4.1</b> 当今社交媒体的问题</a></li>
+<li class="chapter" data-level="4.4.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#steemit-的代币经济学"><i class="fa fa-check"></i><b>4.4.2</b> Steemit 的代币经济学</a></li>
+<li class="chapter" data-level="4.4.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#steemit-的批评"><i class="fa fa-check"></i><b>4.4.3</b> Steemit 的批评</a></li>
+<li class="chapter" data-level="4.4.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#steemit-硬分叉hive-网络"><i class="fa fa-check"></i><b>4.4.4</b> Steemit 硬分叉：Hive 网络</a></li>
+<li class="chapter" data-level="4.4.5" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#reddit将-web2-平台代币化"><i class="fa fa-check"></i><b>4.4.5</b> Reddit：将 Web2 平台代币化</a></li>
+<li class="chapter" data-level="4.4.6" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#章节总结-13"><i class="fa fa-check"></i><b>4.4.6</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#基本注意力代币广告的重新定义"><i class="fa fa-check"></i><b>4.5</b> 基本注意力代币：广告的重新定义</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#注意力经济数据市场与隐私"><i class="fa fa-check"></i><b>4.5.1</b> 注意力经济、数据市场与隐私</a></li>
+<li class="chapter" data-level="4.5.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#基本注意力代币bat"><i class="fa fa-check"></i><b>4.5.2</b> 基本注意力代币（BAT）</a></li>
+<li class="chapter" data-level="4.5.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#展望与挑战"><i class="fa fa-check"></i><b>4.5.3</b> 展望与挑战</a></li>
+<li class="chapter" data-level="4.5.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#章节总结-14"><i class="fa fa-check"></i><b>4.5.4</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#代币策划注册新的搜索方式"><i class="fa fa-check"></i><b>4.6</b> 代币策划注册：新的搜索方式？</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#代币策划注册tcrs如何运作"><i class="fa fa-check"></i><b>4.6.1</b> 代币策划注册（TCRs）如何运作</a></li>
+<li class="chapter" data-level="4.6.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#攻击向量"><i class="fa fa-check"></i><b>4.6.2</b> 攻击向量</a></li>
+<li class="chapter" data-level="4.6.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#tcrs的批评"><i class="fa fa-check"></i><b>4.6.3</b> TCRs的批评</a></li>
+<li class="chapter" data-level="4.6.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#tcr的其他类型"><i class="fa fa-check"></i><b>4.6.4</b> TCR的其他类型</a></li>
+<li class="chapter" data-level="4.6.5" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#章节总结-15"><i class="fa fa-check"></i><b>4.6.5</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#如何设计代币系统"><i class="fa fa-check"></i><b>4.7</b> 如何设计代币系统</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#技术工程"><i class="fa fa-check"></i><b>4.7.1</b> 技术工程</a></li>
+<li class="chapter" data-level="4.7.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#法律工程"><i class="fa fa-check"></i><b>4.7.2</b> 法律工程</a></li>
+<li class="chapter" data-level="4.7.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#经济工程"><i class="fa fa-check"></i><b>4.7.3</b> 经济工程</a></li>
+<li class="chapter" data-level="4.7.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#伦理工程"><i class="fa fa-check"></i><b>4.7.4</b> 伦理工程</a></li>
+<li class="chapter" data-level="4.7.5" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#多学科团队的重要性"><i class="fa fa-check"></i><b>4.7.5</b> 多学科团队的重要性</a></li>
+<li class="chapter" data-level="4.7.6" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#章节总结-16"><i class="fa fa-check"></i><b>4.7.6</b> 章节总结</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="补充内容.html"><a href="补充内容.html"><i class="fa fa-check"></i><b>5</b> 补充内容</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="补充内容.html"><a href="补充内容.html#比特币与web3的起源"><i class="fa fa-check"></i><b>5.1</b> 比特币与Web3的起源</a></li>
+<li class="chapter" data-level="5.2" data-path="补充内容.html"><a href="补充内容.html#区块链可扩展性解决方案"><i class="fa fa-check"></i><b>5.2</b> 区块链可扩展性解决方案</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="补充内容.html"><a href="补充内容.html#状态通道"><i class="fa fa-check"></i><b>5.2.1</b> 状态通道</a></li>
+<li class="chapter" data-level="5.2.2" data-path="补充内容.html"><a href="补充内容.html#侧链"><i class="fa fa-check"></i><b>5.2.2</b> 侧链</a></li>
+<li class="chapter" data-level="5.2.3" data-path="补充内容.html"><a href="补充内容.html#区块链互操作性"><i class="fa fa-check"></i><b>5.2.3</b> 区块链互操作性</a></li>
+<li class="chapter" data-level="5.2.4" data-path="补充内容.html"><a href="补充内容.html#分片"><i class="fa fa-check"></i><b>5.2.4</b> 分片</a></li>
+<li class="chapter" data-level="5.2.5" data-path="补充内容.html"><a href="补充内容.html#替代加密算法"><i class="fa fa-check"></i><b>5.2.5</b> 替代加密算法</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="补充内容.html"><a href="补充内容.html#libra与celo"><i class="fa fa-check"></i><b>5.3</b> Libra与Celo</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="solidity-example.html"><a href="solidity-example.html"><i class="fa fa-check"></i><b>6</b> Solidity Example</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="solidity-example.html"><a href="solidity-example.html#hellow-world"><i class="fa fa-check"></i><b>6.1</b> 1. Hellow world</a></li>
+<li class="chapter" data-level="6.2" data-path="solidity-example.html"><a href="solidity-example.html#简单合约"><i class="fa fa-check"></i><b>6.2</b> 2. 简单合约</a></li>
+<li class="chapter" data-level="6.3" data-path="solidity-example.html"><a href="solidity-example.html#数据类型"><i class="fa fa-check"></i><b>6.3</b> 3. 数据类型</a></li>
+<li class="chapter" data-level="6.4" data-path="solidity-example.html"><a href="solidity-example.html#变量"><i class="fa fa-check"></i><b>6.4</b> 4. 变量</a></li>
+<li class="chapter" data-level="6.5" data-path="solidity-example.html"><a href="solidity-example.html#常量"><i class="fa fa-check"></i><b>6.5</b> 5. 常量</a></li>
+<li class="chapter" data-level="6.6" data-path="solidity-example.html"><a href="solidity-example.html#不可变-immutable"><i class="fa fa-check"></i><b>6.6</b> 6. 不可变 Immutable</a></li>
+<li class="chapter" data-level="6.7" data-path="solidity-example.html"><a href="solidity-example.html#状态变量的读写"><i class="fa fa-check"></i><b>6.7</b> 7. 状态变量的读写</a></li>
+<li class="chapter" data-level="6.8" data-path="solidity-example.html"><a href="solidity-example.html#以太-ether-和-wei"><i class="fa fa-check"></i><b>6.8</b> 8. 以太 Ether 和 Wei</a></li>
+<li class="chapter" data-level="6.9" data-path="solidity-example.html"><a href="solidity-example.html#gas"><i class="fa fa-check"></i><b>6.9</b> 9. gas</a></li>
+<li class="chapter" data-level="6.10" data-path="solidity-example.html"><a href="solidity-example.html#条件判断"><i class="fa fa-check"></i><b>6.10</b> 10. 条件判断</a></li>
+<li class="chapter" data-level="6.11" data-path="solidity-example.html"><a href="solidity-example.html#循环"><i class="fa fa-check"></i><b>6.11</b> 11. 循环</a></li>
+<li class="chapter" data-level="6.12" data-path="solidity-example.html"><a href="solidity-example.html#mapping"><i class="fa fa-check"></i><b>6.12</b> 12. mapping</a></li>
+<li class="chapter" data-level="6.13" data-path="solidity-example.html"><a href="solidity-example.html#array"><i class="fa fa-check"></i><b>6.13</b> 13. array</a></li>
+<li class="chapter" data-level="6.14" data-path="solidity-example.html"><a href="solidity-example.html#枚举"><i class="fa fa-check"></i><b>6.14</b> 14. 枚举</a></li>
+<li class="chapter" data-level="6.15" data-path="solidity-example.html"><a href="solidity-example.html#用户定义类型"><i class="fa fa-check"></i><b>6.15</b> 15. 用户定义类型</a></li>
+<li class="chapter" data-level="6.16" data-path="solidity-example.html"><a href="solidity-example.html#结构体"><i class="fa fa-check"></i><b>6.16</b> 16. 结构体</a></li>
+<li class="chapter" data-level="6.17" data-path="solidity-example.html"><a href="solidity-example.html#数据位置---storage-memorycalldata"><i class="fa fa-check"></i><b>6.17</b> 17. 数据位置 - storage ， memory，calldata</a></li>
+<li class="chapter" data-level="6.18" data-path="solidity-example.html"><a href="solidity-example.html#暂时存储"><i class="fa fa-check"></i><b>6.18</b> 18. 暂时存储</a></li>
+<li class="chapter" data-level="6.19" data-path="solidity-example.html"><a href="solidity-example.html#函数"><i class="fa fa-check"></i><b>6.19</b> 19. 函数</a></li>
+<li class="chapter" data-level="6.20" data-path="solidity-example.html"><a href="solidity-example.html#view-和-pure-函数"><i class="fa fa-check"></i><b>6.20</b> 20. view 和 pure 函数</a></li>
+<li class="chapter" data-level="6.21" data-path="solidity-example.html"><a href="solidity-example.html#错误"><i class="fa fa-check"></i><b>6.21</b> 21. 错误</a></li>
+<li class="chapter" data-level="6.22" data-path="solidity-example.html"><a href="solidity-example.html#函数修饰符"><i class="fa fa-check"></i><b>6.22</b> 22. 函数修饰符</a></li>
+<li class="chapter" data-level="6.23" data-path="solidity-example.html"><a href="solidity-example.html#event-事件"><i class="fa fa-check"></i><b>6.23</b> 23 event 事件</a></li>
+<li class="chapter" data-level="6.24" data-path="solidity-example.html"><a href="solidity-example.html#事件高级主题"><i class="fa fa-check"></i><b>6.24</b> 24. 事件高级主题</a></li>
+<li class="chapter" data-level="6.25" data-path="solidity-example.html"><a href="solidity-example.html#构造函数"><i class="fa fa-check"></i><b>6.25</b> 25. 构造函数</a></li>
+<li class="chapter" data-level="6.26" data-path="solidity-example.html"><a href="solidity-example.html#继承"><i class="fa fa-check"></i><b>6.26</b> 26 继承</a></li>
+<li class="chapter" data-level="6.27" data-path="solidity-example.html"><a href="solidity-example.html#隐藏继承状态变量"><i class="fa fa-check"></i><b>6.27</b> 27 隐藏继承状态变量</a></li>
+<li class="chapter" data-level="6.28" data-path="solidity-example.html"><a href="solidity-example.html#调用父合约"><i class="fa fa-check"></i><b>6.28</b> 28.调用父合约</a></li>
+<li class="chapter" data-level="6.29" data-path="solidity-example.html"><a href="solidity-example.html#visibility-可见度"><i class="fa fa-check"></i><b>6.29</b> 29. visibility 可见度</a></li>
+<li class="chapter" data-level="6.30" data-path="solidity-example.html"><a href="solidity-example.html#interface-接口"><i class="fa fa-check"></i><b>6.30</b> 30 interface 接口</a></li>
+<li class="chapter" data-level="6.31" data-path="solidity-example.html"><a href="solidity-example.html#payable"><i class="fa fa-check"></i><b>6.31</b> 31 payable</a></li>
+<li class="chapter" data-level="6.32" data-path="solidity-example.html"><a href="solidity-example.html#发送以太币"><i class="fa fa-check"></i><b>6.32</b> 32 发送以太币</a>
+<ul>
+<li class="chapter" data-level="6.32.1" data-path="solidity-example.html"><a href="solidity-example.html#发送以太币transfersendcall"><i class="fa fa-check"></i><b>6.32.1</b> 发送以太币（transfer、send、call）</a></li>
+</ul></li>
+<li class="chapter" data-level="6.33" data-path="solidity-example.html"><a href="solidity-example.html#fallback"><i class="fa fa-check"></i><b>6.33</b> 33 Fallback</a></li>
+<li class="chapter" data-level="6.34" data-path="solidity-example.html"><a href="solidity-example.html#call"><i class="fa fa-check"></i><b>6.34</b> 34 call</a>
+<ul>
+<li class="chapter" data-level="6.34.1" data-path="solidity-example.html"><a href="solidity-example.html#call-函数"><i class="fa fa-check"></i><b>6.34.1</b> call 函数</a></li>
+</ul></li>
+<li class="chapter" data-level="6.35" data-path="solidity-example.html"><a href="solidity-example.html#delegatecall"><i class="fa fa-check"></i><b>6.35</b> 35 Delegatecall</a>
+<ul>
+<li class="chapter" data-level="6.35.1" data-path="solidity-example.html"><a href="solidity-example.html#delegatecall-1"><i class="fa fa-check"></i><b>6.35.1</b> delegatecall</a></li>
+</ul></li>
+<li class="chapter" data-level="6.36" data-path="solidity-example.html"><a href="solidity-example.html#function-selector-函数选择器"><i class="fa fa-check"></i><b>6.36</b> 36 Function selector 函数选择器</a></li>
+<li class="chapter" data-level="6.37" data-path="solidity-example.html"><a href="solidity-example.html#合约间调用"><i class="fa fa-check"></i><b>6.37</b> 37 合约间调用</a></li>
+<li class="chapter" data-level="6.38" data-path="solidity-example.html"><a href="solidity-example.html#通过合约创建其他合约"><i class="fa fa-check"></i><b>6.38</b> 38 通过合约创建其他合约</a></li>
+<li class="chapter" data-level="6.39" data-path="solidity-example.html"><a href="solidity-example.html#trycatch"><i class="fa fa-check"></i><b>6.39</b> 39 try/catch</a></li>
+<li class="chapter" data-level="6.40" data-path="solidity-example.html"><a href="solidity-example.html#import-导入"><i class="fa fa-check"></i><b>6.40</b> 40 import 导入</a>
+<ul>
+<li class="chapter" data-level="6.40.1" data-path="solidity-example.html"><a href="solidity-example.html#本地导入"><i class="fa fa-check"></i><b>6.40.1</b> 本地导入</a></li>
+<li class="chapter" data-level="6.40.2" data-path="solidity-example.html"><a href="solidity-example.html#外部导入"><i class="fa fa-check"></i><b>6.40.2</b> 外部导入</a></li>
+<li class="chapter" data-level="6.40.3" data-path="solidity-example.html"><a href="solidity-example.html#代码说明"><i class="fa fa-check"></i><b>6.40.3</b> 代码说明</a></li>
+</ul></li>
+<li class="chapter" data-level="6.41" data-path="solidity-example.html"><a href="solidity-example.html#library"><i class="fa fa-check"></i><b>6.41</b> 41 library</a>
+<ul>
+<li class="chapter" data-level="6.41.1" data-path="solidity-example.html"><a href="solidity-example.html#solidity-中的库"><i class="fa fa-check"></i><b>6.41.1</b> Solidity 中的库</a></li>
+<li class="chapter" data-level="6.41.2" data-path="solidity-example.html"><a href="solidity-example.html#关键点"><i class="fa fa-check"></i><b>6.41.2</b> 关键点</a></li>
+</ul></li>
+<li class="chapter" data-level="6.42" data-path="solidity-example.html"><a href="solidity-example.html#abi-encode"><i class="fa fa-check"></i><b>6.42</b> 42 ABI Encode</a></li>
+<li class="chapter" data-level="6.43" data-path="solidity-example.html"><a href="solidity-example.html#abi-decode"><i class="fa fa-check"></i><b>6.43</b> 43 ABI Decode</a></li>
+<li class="chapter" data-level="6.44" data-path="solidity-example.html"><a href="solidity-example.html#hashing-with-keccak256"><i class="fa fa-check"></i><b>6.44</b> 44 Hashing with Keccak256</a>
+<ul>
+<li class="chapter" data-level="6.44.1" data-path="solidity-example.html"><a href="solidity-example.html#keccak256-函数"><i class="fa fa-check"></i><b>6.44.1</b> keccak256 函数</a></li>
+</ul></li>
+<li class="chapter" data-level="6.45" data-path="solidity-example.html"><a href="solidity-example.html#验证签名"><i class="fa fa-check"></i><b>6.45</b> 45 验证签名</a></li>
+<li class="chapter" data-level="6.46" data-path="solidity-example.html"><a href="solidity-example.html#节省-gas-的技巧"><i class="fa fa-check"></i><b>6.46</b> 46 节省 gas 的技巧</a></li>
+<li class="chapter" data-level="6.47" data-path="solidity-example.html"><a href="solidity-example.html#按位运算符-bitwise-operators"><i class="fa fa-check"></i><b>6.47</b> 47 按位运算符 Bitwise Operators</a></li>
+<li class="chapter" data-level="6.48" data-path="solidity-example.html"><a href="solidity-example.html#数字溢出"><i class="fa fa-check"></i><b>6.48</b> 48 数字溢出</a></li>
+<li class="chapter" data-level="6.49" data-path="solidity-example.html"><a href="solidity-example.html#assembly"><i class="fa fa-check"></i><b>6.49</b> 49 Assembly</a>
+<ul>
+<li class="chapter" data-level="6.49.1" data-path="solidity-example.html"><a href="solidity-example.html#assembly-的特点"><i class="fa fa-check"></i><b>6.49.1</b> Assembly 的特点</a></li>
+<li class="chapter" data-level="6.49.2" data-path="solidity-example.html"><a href="solidity-example.html#示例"><i class="fa fa-check"></i><b>6.49.2</b> 示例</a></li>
+<li class="chapter" data-level="6.49.3" data-path="solidity-example.html"><a href="solidity-example.html#注意事项"><i class="fa fa-check"></i><b>6.49.3</b> 注意事项</a></li>
+<li class="chapter" data-level="6.49.4" data-path="solidity-example.html"><a href="solidity-example.html#assembly-conditional-statements"><i class="fa fa-check"></i><b>6.49.4</b> Assembly Conditional Statements</a></li>
+<li class="chapter" data-level="6.49.5" data-path="solidity-example.html"><a href="solidity-example.html#assembly-loop"><i class="fa fa-check"></i><b>6.49.5</b> Assembly Loop</a></li>
+<li class="chapter" data-level="6.49.6" data-path="solidity-example.html"><a href="solidity-example.html#assembly-error"><i class="fa fa-check"></i><b>6.49.6</b> Assembly Error</a></li>
+<li class="chapter" data-level="6.49.7" data-path="solidity-example.html"><a href="solidity-example.html#assembly-math"><i class="fa fa-check"></i><b>6.49.7</b> Assembly Math</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>7</b> Applications</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="applications.html"><a href="applications.html#ether-wallet"><i class="fa fa-check"></i><b>7.1</b> 1 Ether Wallet</a></li>
+<li class="chapter" data-level="7.2" data-path="applications.html"><a href="applications.html#多签名钱包"><i class="fa fa-check"></i><b>7.2</b> 2 多签名钱包</a></li>
+<li class="chapter" data-level="7.3" data-path="applications.html"><a href="applications.html#merkle树"><i class="fa fa-check"></i><b>7.3</b> 3 Merkle树</a></li>
+<li class="chapter" data-level="7.4" data-path="applications.html"><a href="applications.html#iterable映射"><i class="fa fa-check"></i><b>7.4</b> 4 Iterable映射</a></li>
+<li class="chapter" data-level="7.5" data-path="applications.html"><a href="applications.html#erc20-标准"><i class="fa fa-check"></i><b>7.5</b> 5 ERC20 标准</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="applications.html"><a href="applications.html#erc20-标准-1"><i class="fa fa-check"></i><b>7.5.1</b> ERC20 标准</a></li>
+<li class="chapter" data-level="7.5.2" data-path="applications.html"><a href="applications.html#erc20-代币合约示例"><i class="fa fa-check"></i><b>7.5.2</b> ERC20 代币合约示例</a></li>
+<li class="chapter" data-level="7.5.3" data-path="applications.html"><a href="applications.html#创建您自己的-erc20-代币"><i class="fa fa-check"></i><b>7.5.3</b> 创建您自己的 ERC20 代币</a></li>
+<li class="chapter" data-level="7.5.4" data-path="applications.html"><a href="applications.html#代币交换合约"><i class="fa fa-check"></i><b>7.5.4</b> 代币交换合约</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="applications.html"><a href="applications.html#erc721"><i class="fa fa-check"></i><b>7.6</b> 6 ERC721</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="applications.html"><a href="applications.html#erc721-标准简介"><i class="fa fa-check"></i><b>7.6.1</b> ERC721 标准简介</a></li>
+<li class="chapter" data-level="7.6.2" data-path="applications.html"><a href="applications.html#主要特点"><i class="fa fa-check"></i><b>7.6.2</b> 主要特点</a></li>
+<li class="chapter" data-level="7.6.3" data-path="applications.html"><a href="applications.html#erc721-接口"><i class="fa fa-check"></i><b>7.6.3</b> ERC721 接口</a></li>
+<li class="chapter" data-level="7.6.4" data-path="applications.html"><a href="applications.html#应用场景"><i class="fa fa-check"></i><b>7.6.4</b> 应用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="applications.html"><a href="applications.html#erc1155"><i class="fa fa-check"></i><b>7.7</b> 7 ERC1155</a>
+<ul>
+<li class="chapter" data-level="7.7.1" data-path="applications.html"><a href="applications.html#主要特点-1"><i class="fa fa-check"></i><b>7.7.1</b> 主要特点</a></li>
+<li class="chapter" data-level="7.7.2" data-path="applications.html"><a href="applications.html#erc1155-接口"><i class="fa fa-check"></i><b>7.7.2</b> ERC1155 接口</a></li>
+<li class="chapter" data-level="7.7.3" data-path="applications.html"><a href="applications.html#应用场景-1"><i class="fa fa-check"></i><b>7.7.3</b> 应用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.8" data-path="applications.html"><a href="applications.html#gasless-token-transfer"><i class="fa fa-check"></i><b>7.8</b> 8 Gasless Token Transfer</a>
+<ul>
+<li class="chapter" data-level="7.8.1" data-path="applications.html"><a href="applications.html#主要特点-2"><i class="fa fa-check"></i><b>7.8.1</b> 主要特点</a></li>
+<li class="chapter" data-level="7.8.2" data-path="applications.html"><a href="applications.html#应用场景-2"><i class="fa fa-check"></i><b>7.8.2</b> 应用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.9" data-path="applications.html"><a href="applications.html#simple-bytecode-contract"><i class="fa fa-check"></i><b>7.9</b> 9 Simple Bytecode Contract</a>
+<ul>
+<li class="chapter" data-level="7.9.1" data-path="applications.html"><a href="applications.html#主要特点-3"><i class="fa fa-check"></i><b>7.9.1</b> 主要特点</a></li>
+<li class="chapter" data-level="7.9.2" data-path="applications.html"><a href="applications.html#应用场景-3"><i class="fa fa-check"></i><b>7.9.2</b> 应用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.10" data-path="applications.html"><a href="applications.html#precompute-contract-address-with-create2"><i class="fa fa-check"></i><b>7.10</b> 10 Precompute Contract Address with Create2</a>
+<ul>
+<li class="chapter" data-level="7.10.1" data-path="applications.html"><a href="applications.html#主要特点-4"><i class="fa fa-check"></i><b>7.10.1</b> 主要特点</a></li>
+<li class="chapter" data-level="7.10.2" data-path="applications.html"><a href="applications.html#应用场景-4"><i class="fa fa-check"></i><b>7.10.2</b> 应用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.11" data-path="applications.html"><a href="applications.html#minimal-proxy-contract"><i class="fa fa-check"></i><b>7.11</b> 10 Minimal Proxy Contract</a>
+<ul>
+<li class="chapter" data-level="7.11.1" data-path="applications.html"><a href="applications.html#主要特点-5"><i class="fa fa-check"></i><b>7.11.1</b> 主要特点</a></li>
+<li class="chapter" data-level="7.11.2" data-path="applications.html"><a href="applications.html#应用场景-5"><i class="fa fa-check"></i><b>7.11.2</b> 应用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.12" data-path="applications.html"><a href="applications.html#upgradeable-proxy"><i class="fa fa-check"></i><b>7.12</b> 11 Upgradeable Proxy</a></li>
+<li class="chapter" data-level="7.13" data-path="applications.html"><a href="applications.html#deploy-any-contract"><i class="fa fa-check"></i><b>7.13</b> 12 Deploy Any Contract</a></li>
+<li class="chapter" data-level="7.14" data-path="applications.html"><a href="applications.html#write-to-any-slot"><i class="fa fa-check"></i><b>7.14</b> 13 Write to Any Slot</a></li>
+<li class="chapter" data-level="7.15" data-path="applications.html"><a href="applications.html#单向支付渠道"><i class="fa fa-check"></i><b>7.15</b> 14 单向支付渠道</a></li>
+<li class="chapter" data-level="7.16" data-path="applications.html"><a href="applications.html#bi-directional-payment-channel"><i class="fa fa-check"></i><b>7.16</b> 15 Bi-Directional Payment Channel</a></li>
+<li class="chapter" data-level="7.17" data-path="applications.html"><a href="applications.html#英式拍卖"><i class="fa fa-check"></i><b>7.17</b> 16 英式拍卖</a></li>
+<li class="chapter" data-level="7.18" data-path="applications.html"><a href="applications.html#荷兰式拍卖"><i class="fa fa-check"></i><b>7.18</b> 17 荷兰式拍卖</a></li>
+<li class="chapter" data-level="7.19" data-path="applications.html"><a href="applications.html#众筹erc20代币"><i class="fa fa-check"></i><b>7.19</b> 18 众筹ERC20代币</a></li>
+<li class="chapter" data-level="7.20" data-path="applications.html"><a href="applications.html#multi-call"><i class="fa fa-check"></i><b>7.20</b> 19 Multi Call</a></li>
+<li class="chapter" data-level="7.21" data-path="applications.html"><a href="applications.html#multi-delegatecall"><i class="fa fa-check"></i><b>7.21</b> 20 Multi Delegatecall</a>
+<ul>
+<li class="chapter" data-level="7.21.1" data-path="applications.html"><a href="applications.html#合约解释"><i class="fa fa-check"></i><b>7.21.1</b> 合约解释</a></li>
+<li class="chapter" data-level="7.21.2" data-path="applications.html"><a href="applications.html#使用场景"><i class="fa fa-check"></i><b>7.21.2</b> 使用场景</a></li>
+<li class="chapter" data-level="7.21.3" data-path="applications.html"><a href="applications.html#注意事项-1"><i class="fa fa-check"></i><b>7.21.3</b> 注意事项</a></li>
+</ul></li>
+<li class="chapter" data-level="7.22" data-path="applications.html"><a href="applications.html#时间锁-time-lock"><i class="fa fa-check"></i><b>7.22</b> 21 时间锁 Time Lock</a>
+<ul>
+<li class="chapter" data-level="7.22.1" data-path="applications.html"><a href="applications.html#合约结构与功能"><i class="fa fa-check"></i><b>7.22.1</b> 合约结构与功能</a></li>
+<li class="chapter" data-level="7.22.2" data-path="applications.html"><a href="applications.html#主要功能"><i class="fa fa-check"></i><b>7.22.2</b> 主要功能</a></li>
+<li class="chapter" data-level="7.22.3" data-path="applications.html"><a href="applications.html#使用场景-1"><i class="fa fa-check"></i><b>7.22.3</b> 使用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.23" data-path="applications.html"><a href="applications.html#assembly-binary-exponentiation"><i class="fa fa-check"></i><b>7.23</b> 22 Assembly Binary Exponentiation</a>
+<ul>
+<li class="chapter" data-level="7.23.1" data-path="applications.html"><a href="applications.html#合约结构"><i class="fa fa-check"></i><b>7.23.1</b> 合约结构</a></li>
+<li class="chapter" data-level="7.23.2" data-path="applications.html"><a href="applications.html#汇编代码解析"><i class="fa fa-check"></i><b>7.23.2</b> 汇编代码解析</a></li>
+<li class="chapter" data-level="7.23.3" data-path="applications.html"><a href="applications.html#总结"><i class="fa fa-check"></i><b>7.23.3</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="7.24" data-path="applications.html"><a href="applications.html#merkle-airdrop-空投"><i class="fa fa-check"></i><b>7.24</b> 23 Merkle Airdrop 空投</a>
+<ul>
+<li class="chapter" data-level="7.24.1" data-path="applications.html"><a href="applications.html#merkle-airdrop"><i class="fa fa-check"></i><b>7.24.1</b> Merkle Airdrop</a></li>
+<li class="chapter" data-level="7.24.2" data-path="applications.html"><a href="applications.html#代币合约"><i class="fa fa-check"></i><b>7.24.2</b> 代币合约</a></li>
+<li class="chapter" data-level="7.24.3" data-path="applications.html"><a href="applications.html#merkle-证明库"><i class="fa fa-check"></i><b>7.24.3</b> Merkle 证明库</a></li>
+<li class="chapter" data-level="7.24.4" data-path="applications.html"><a href="applications.html#测试合约"><i class="fa fa-check"></i><b>7.24.4</b> 测试合约</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html"><i class="fa fa-check"></i><b>8</b> Hacks ，EVM ， test and DeFi</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#重入攻击漏洞"><i class="fa fa-check"></i><b>8.1</b> 重入攻击漏洞</a></li>
+<li class="chapter" data-level="8.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#算术溢出和下溢漏洞"><i class="fa fa-check"></i><b>8.2</b> 算术溢出和下溢漏洞</a></li>
+<li class="chapter" data-level="8.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#自销毁-self-destruct"><i class="fa fa-check"></i><b>8.3</b> 自销毁 (Self Destruct)</a></li>
+<li class="chapter" data-level="8.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#访问私有数据"><i class="fa fa-check"></i><b>8.4</b> 访问私有数据</a></li>
+<li class="chapter" data-level="8.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#代理调用-delegatecall"><i class="fa fa-check"></i><b>8.5</b> 代理调用 (Delegatecall)</a></li>
+<li class="chapter" data-level="8.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#随机性来源-source-of-randomness"><i class="fa fa-check"></i><b>8.6</b> 随机性来源 (Source of Randomness)</a></li>
+<li class="chapter" data-level="8.7" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#拒绝服务-denial-of-service"><i class="fa fa-check"></i><b>8.7</b> 拒绝服务 (Denial of Service)</a></li>
+<li class="chapter" data-level="8.8" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#钓鱼攻击与-tx.origin"><i class="fa fa-check"></i><b>8.8</b> 钓鱼攻击与 tx.origin</a>
+<ul>
+<li class="chapter" data-level="8.8.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#网络钓鱼与-tx.origin"><i class="fa fa-check"></i><b>8.8.1</b> 网络钓鱼与 tx.origin</a></li>
+<li class="chapter" data-level="8.8.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#预防技术"><i class="fa fa-check"></i><b>8.8.2</b> 预防技术</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#隐藏恶意代码的外部合约"><i class="fa fa-check"></i><b>8.9</b> 隐藏恶意代码的外部合约</a>
+<ul>
+<li class="chapter" data-level="8.9.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#隐藏恶意代码的外部合约-1"><i class="fa fa-check"></i><b>8.9.1</b> 隐藏恶意代码的外部合约</a></li>
+<li class="chapter" data-level="8.9.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#预防技术-1"><i class="fa fa-check"></i><b>8.9.2</b> 预防技术</a></li>
+</ul></li>
+<li class="chapter" data-level="8.10" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#蜂窝陷阱-honeypot"><i class="fa fa-check"></i><b>8.10</b> 蜂窝陷阱 (Honeypot)</a>
+<ul>
+<li class="chapter" data-level="8.10.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#发生了什么"><i class="fa fa-check"></i><b>8.10.1</b> 发生了什么？</a></li>
+<li class="chapter" data-level="8.10.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#结论-1"><i class="fa fa-check"></i><b>8.10.2</b> 结论</a></li>
+</ul></li>
+<li class="chapter" data-level="8.11" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#前置交易-front-running"><i class="fa fa-check"></i><b>8.11</b> 前置交易 (Front Running)</a>
+<ul>
+<li class="chapter" data-level="8.11.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#发生了什么-1"><i class="fa fa-check"></i><b>8.11.1</b> 发生了什么？</a></li>
+<li class="chapter" data-level="8.11.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#预防措施"><i class="fa fa-check"></i><b>8.11.2</b> 预防措施</a></li>
+<li class="chapter" data-level="8.11.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#承诺-揭示方案示例"><i class="fa fa-check"></i><b>8.11.3</b> 承诺-揭示方案示例</a></li>
+<li class="chapter" data-level="8.11.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#结论-2"><i class="fa fa-check"></i><b>8.11.4</b> 结论</a></li>
+</ul></li>
+<li class="chapter" data-level="8.12" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#区块时间戳操控-block-timestamp-manipulation"><i class="fa fa-check"></i><b>8.12</b> 区块时间戳操控 (Block Timestamp Manipulation)</a>
+<ul>
+<li class="chapter" data-level="8.12.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#示例场景"><i class="fa fa-check"></i><b>8.12.1</b> 示例场景</a></li>
+<li class="chapter" data-level="8.12.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#发生了什么-2"><i class="fa fa-check"></i><b>8.12.2</b> 发生了什么？</a></li>
+<li class="chapter" data-level="8.12.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#预防措施-1"><i class="fa fa-check"></i><b>8.12.3</b> 预防措施</a></li>
+<li class="chapter" data-level="8.12.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-1"><i class="fa fa-check"></i><b>8.12.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.13" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#签名重放漏洞-signature-replay-vulnerability"><i class="fa fa-check"></i><b>8.13</b> 签名重放漏洞 (Signature Replay Vulnerability)</a>
+<ul>
+<li class="chapter" data-level="8.13.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#示例合约"><i class="fa fa-check"></i><b>8.13.1</b> 示例合约</a></li>
+<li class="chapter" data-level="8.13.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#发生了什么-3"><i class="fa fa-check"></i><b>8.13.2</b> 发生了什么？</a></li>
+<li class="chapter" data-level="8.13.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#预防措施-2"><i class="fa fa-check"></i><b>8.13.3</b> 预防措施</a></li>
+<li class="chapter" data-level="8.13.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-2"><i class="fa fa-check"></i><b>8.13.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.14" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#绕过合约大小检查-bypass-contract-size-check"><i class="fa fa-check"></i><b>8.14</b> 绕过合约大小检查 (Bypass Contract Size Check)</a>
+<ul>
+<li class="chapter" data-level="8.14.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#示例合约-1"><i class="fa fa-check"></i><b>8.14.1</b> 示例合约</a></li>
+<li class="chapter" data-level="8.14.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#结论-3"><i class="fa fa-check"></i><b>8.14.2</b> 结论</a></li>
+</ul></li>
+<li class="chapter" data-level="8.15" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#在相同地址部署不同合约-deploy-different-contracts-at-the-same-address"><i class="fa fa-check"></i><b>8.15</b> 在相同地址部署不同合约 (Deploy Different Contracts at the Same Address)</a>
+<ul>
+<li class="chapter" data-level="8.15.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#示例合约-2"><i class="fa fa-check"></i><b>8.15.1</b> 示例合约</a></li>
+<li class="chapter" data-level="8.15.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#攻击流程"><i class="fa fa-check"></i><b>8.15.2</b> 攻击流程</a></li>
+<li class="chapter" data-level="8.15.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#结论-4"><i class="fa fa-check"></i><b>8.15.3</b> 结论</a></li>
+</ul></li>
+<li class="chapter" data-level="8.16" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#vault-inflation-vulnerability"><i class="fa fa-check"></i><b>8.16</b> Vault Inflation Vulnerability</a>
+<ul>
+<li class="chapter" data-level="8.16.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#攻击示例"><i class="fa fa-check"></i><b>8.16.1</b> 攻击示例</a></li>
+<li class="chapter" data-level="8.16.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#保护措施"><i class="fa fa-check"></i><b>8.16.2</b> 保护措施</a></li>
+<li class="chapter" data-level="8.16.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#示例合约代码"><i class="fa fa-check"></i><b>8.16.3</b> 示例合约代码</a></li>
+<li class="chapter" data-level="8.16.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#结论-5"><i class="fa fa-check"></i><b>8.16.4</b> 结论</a></li>
+</ul></li>
+<li class="chapter" data-level="8.17" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#weth-permit-vulnerability"><i class="fa fa-check"></i><b>8.17</b> WETH Permit Vulnerability</a>
+<ul>
+<li class="chapter" data-level="8.17.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#攻击示例-1"><i class="fa fa-check"></i><b>8.17.1</b> 攻击示例</a></li>
+<li class="chapter" data-level="8.17.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约代码"><i class="fa fa-check"></i><b>8.17.2</b> 合约代码</a></li>
+<li class="chapter" data-level="8.17.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#其他合约"><i class="fa fa-check"></i><b>8.17.3</b> 其他合约</a></li>
+<li class="chapter" data-level="8.17.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#结论-6"><i class="fa fa-check"></i><b>8.17.4</b> 结论</a></li>
+</ul></li>
+<li class="chapter" data-level="8.18" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#echidna"><i class="fa fa-check"></i><b>8.18</b> Echidna</a>
+<ul>
+<li class="chapter" data-level="8.18.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#测试时间和发送者"><i class="fa fa-check"></i><b>8.18.1</b> 测试时间和发送者</a></li>
+</ul></li>
+<li class="chapter" data-level="8.19" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#evm-storage"><i class="fa fa-check"></i><b>8.19</b> EVM Storage</a></li>
+<li class="chapter" data-level="8.20" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#evm-memory-layout-in-solidity"><i class="fa fa-check"></i><b>8.20</b> EVM Memory Layout in Solidity</a>
+<ul>
+<li class="chapter" data-level="8.20.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约概述"><i class="fa fa-check"></i><b>8.20.1</b> 合约概述</a></li>
+<li class="chapter" data-level="8.20.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-3"><i class="fa fa-check"></i><b>8.20.2</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.21" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v2-swap"><i class="fa fa-check"></i><b>8.21</b> Uniswap V2 Swap</a>
+<ul>
+<li class="chapter" data-level="8.21.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约和变量定义"><i class="fa fa-check"></i><b>8.21.1</b> 1. 合约和变量定义</a></li>
+<li class="chapter" data-level="8.21.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#代币交换函数"><i class="fa fa-check"></i><b>8.21.2</b> 2. 代币交换函数</a></li>
+<li class="chapter" data-level="8.21.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#测试合约-1"><i class="fa fa-check"></i><b>8.21.3</b> 3. 测试合约</a></li>
+<li class="chapter" data-level="8.21.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-4"><i class="fa fa-check"></i><b>8.21.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.22" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v2-add-remove-liquidity"><i class="fa fa-check"></i><b>8.22</b> Uniswap V2 Add Remove Liquidity</a></li>
+<li class="chapter" data-level="8.23" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v2-optimal-one-sided-supply"><i class="fa fa-check"></i><b>8.23</b> Uniswap V2 Optimal One Sided Supply</a></li>
+<li class="chapter" data-level="8.24" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v2-flash-swap"><i class="fa fa-check"></i><b>8.24</b> Uniswap V2 Flash Swap</a>
+<ul>
+<li class="chapter" data-level="8.24.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#闪电借贷合约-uniswapv2flashswap"><i class="fa fa-check"></i><b>8.24.1</b> 1. <strong>闪电借贷合约 (UniswapV2FlashSwap)</strong></a></li>
+<li class="chapter" data-level="8.24.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义"><i class="fa fa-check"></i><b>8.24.2</b> 2. <strong>接口定义</strong></a></li>
+<li class="chapter" data-level="8.24.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#测试合约-uniswapv2flashswaptest"><i class="fa fa-check"></i><b>8.24.3</b> 3. <strong>测试合约 (UniswapV2FlashSwapTest)</strong></a></li>
+<li class="chapter" data-level="8.24.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-5"><i class="fa fa-check"></i><b>8.24.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.25" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-swap-examples"><i class="fa fa-check"></i><b>8.25</b> Uniswap V3 Swap Examples</a>
+<ul>
+<li class="chapter" data-level="8.25.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-单跳交换-uniswapv3singlehopswap"><i class="fa fa-check"></i><b>8.25.1</b> 1. <strong>Uniswap V3 单跳交换 (UniswapV3SingleHopSwap)</strong></a></li>
+<li class="chapter" data-level="8.25.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-多跳交换-uniswapv3multihopswap"><i class="fa fa-check"></i><b>8.25.2</b> 2. <strong>Uniswap V3 多跳交换 (UniswapV3MultiHopSwap)</strong></a></li>
+<li class="chapter" data-level="8.25.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-1"><i class="fa fa-check"></i><b>8.25.3</b> 3. <strong>接口定义</strong></a></li>
+<li class="chapter" data-level="8.25.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-6"><i class="fa fa-check"></i><b>8.25.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.26" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-liquidity-examples"><i class="fa fa-check"></i><b>8.26</b> Uniswap V3 Liquidity Examples</a>
+<ul>
+<li class="chapter" data-level="8.26.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约和常量定义"><i class="fa fa-check"></i><b>8.26.1</b> 1. <strong>合约和常量定义</strong></a></li>
+<li class="chapter" data-level="8.26.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswapv3liquidity合约"><i class="fa fa-check"></i><b>8.26.2</b> 2. <strong>UniswapV3Liquidity合约</strong></a></li>
+<li class="chapter" data-level="8.26.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#inonfungiblepositionmanager接口"><i class="fa fa-check"></i><b>8.26.3</b> 3. <strong><code>INonfungiblePositionManager</code>接口</strong></a></li>
+<li class="chapter" data-level="8.26.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#ierc20和iweth接口"><i class="fa fa-check"></i><b>8.26.4</b> 4. <strong><code>IERC20</code>和<code>IWETH</code>接口</strong></a></li>
+<li class="chapter" data-level="8.26.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#测试合约-uniswapv3liquiditytest"><i class="fa fa-check"></i><b>8.26.5</b> 5. <strong>测试合约 (UniswapV3LiquidityTest)</strong></a></li>
+<li class="chapter" data-level="8.26.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-7"><i class="fa fa-check"></i><b>8.26.6</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.27" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-flash-loan"><i class="fa fa-check"></i><b>8.27</b> Uniswap V3 Flash Loan</a>
+<ul>
+<li class="chapter" data-level="8.27.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswapv3flash合约"><i class="fa fa-check"></i><b>8.27.1</b> 1. <strong>UniswapV3Flash合约</strong></a></li>
+<li class="chapter" data-level="8.27.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#iuniswapv3pool接口"><i class="fa fa-check"></i><b>8.27.2</b> 2. <strong>IUniswapV3Pool接口</strong></a></li>
+<li class="chapter" data-level="8.27.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#ierc20接口"><i class="fa fa-check"></i><b>8.27.3</b> 3. <strong>IERC20接口</strong></a></li>
+<li class="chapter" data-level="8.27.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#测试合约-uniswapv3flashtest"><i class="fa fa-check"></i><b>8.27.4</b> 4. <strong>测试合约 (UniswapV3FlashTest)</strong></a></li>
+<li class="chapter" data-level="8.27.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-8"><i class="fa fa-check"></i><b>8.27.5</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.28" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-flash-swap-arbitrage"><i class="fa fa-check"></i><b>8.28</b> Uniswap V3 Flash Swap Arbitrage</a></li>
+<li class="chapter" data-level="8.29" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-flash-swap-arbitrage-example"><i class="fa fa-check"></i><b>8.29</b> Uniswap V3 Flash Swap Arbitrage Example</a>
+<ul>
+<li class="chapter" data-level="8.29.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswapv3flashswap合约"><i class="fa fa-check"></i><b>8.29.1</b> UniswapV3FlashSwap合约</a></li>
+<li class="chapter" data-level="8.29.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-2"><i class="fa fa-check"></i><b>8.29.2</b> 接口定义</a></li>
+<li class="chapter" data-level="8.29.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#测试合约-uniswapv3flashtest-1"><i class="fa fa-check"></i><b>8.29.3</b> 测试合约 (UniswapV3FlashTest)</a></li>
+<li class="chapter" data-level="8.29.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-9"><i class="fa fa-check"></i><b>8.29.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.30" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#chainlink-price-oracle"><i class="fa fa-check"></i><b>8.30</b> Chainlink Price Oracle</a>
+<ul>
+<li class="chapter" data-level="8.30.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#chainlinkpriceoracle合约"><i class="fa fa-check"></i><b>8.30.1</b> ChainlinkPriceOracle合约</a></li>
+<li class="chapter" data-level="8.30.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#aggregatorv3interface接口"><i class="fa fa-check"></i><b>8.30.2</b> AggregatorV3Interface接口</a></li>
+<li class="chapter" data-level="8.30.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-10"><i class="fa fa-check"></i><b>8.30.3</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.31" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#dai-proxy-examples"><i class="fa fa-check"></i><b>8.31</b> DAI Proxy Examples</a>
+<ul>
+<li class="chapter" data-level="8.31.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约声明和常量"><i class="fa fa-check"></i><b>8.31.1</b> 合约声明和常量</a></li>
+<li class="chapter" data-level="8.31.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#daiproxy合约"><i class="fa fa-check"></i><b>8.31.2</b> DaiProxy合约</a></li>
+<li class="chapter" data-level="8.31.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#函数定义"><i class="fa fa-check"></i><b>8.31.3</b> 函数定义</a></li>
+<li class="chapter" data-level="8.31.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-3"><i class="fa fa-check"></i><b>8.31.4</b> 接口定义</a></li>
+<li class="chapter" data-level="8.31.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-11"><i class="fa fa-check"></i><b>8.31.5</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.32" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#staking-rewards"><i class="fa fa-check"></i><b>8.32</b> Staking Rewards</a>
+<ul>
+<li class="chapter" data-level="8.32.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约声明和状态变量"><i class="fa fa-check"></i><b>8.32.1</b> 合约声明和状态变量</a></li>
+<li class="chapter" data-level="8.32.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#奖励相关的变量"><i class="fa fa-check"></i><b>8.32.2</b> 奖励相关的变量</a></li>
+<li class="chapter" data-level="8.32.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#用户相关的映射"><i class="fa fa-check"></i><b>8.32.3</b> 用户相关的映射</a></li>
+<li class="chapter" data-level="8.32.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总质押量和用户质押记录"><i class="fa fa-check"></i><b>8.32.4</b> 总质押量和用户质押记录</a></li>
+<li class="chapter" data-level="8.32.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#构造函数-5"><i class="fa fa-check"></i><b>8.32.5</b> 构造函数</a></li>
+<li class="chapter" data-level="8.32.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#修饰符"><i class="fa fa-check"></i><b>8.32.6</b> 修饰符</a></li>
+<li class="chapter" data-level="8.32.7" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#奖励计算函数"><i class="fa fa-check"></i><b>8.32.7</b> 奖励计算函数</a></li>
+<li class="chapter" data-level="8.32.8" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#质押和提取函数"><i class="fa fa-check"></i><b>8.32.8</b> 质押和提取函数</a></li>
+<li class="chapter" data-level="8.32.9" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#奖励领取和计算"><i class="fa fa-check"></i><b>8.32.9</b> 奖励领取和计算</a></li>
+<li class="chapter" data-level="8.32.10" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#管理函数"><i class="fa fa-check"></i><b>8.32.10</b> 管理函数</a></li>
+<li class="chapter" data-level="8.32.11" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#辅助函数"><i class="fa fa-check"></i><b>8.32.11</b> 辅助函数</a></li>
+<li class="chapter" data-level="8.32.12" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-4"><i class="fa fa-check"></i><b>8.32.12</b> 接口定义</a></li>
+<li class="chapter" data-level="8.32.13" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-12"><i class="fa fa-check"></i><b>8.32.13</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.33" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#discrete-staking-rewards"><i class="fa fa-check"></i><b>8.33</b> Discrete Staking Rewards</a>
+<ul>
+<li class="chapter" data-level="8.33.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约声明和状态变量-1"><i class="fa fa-check"></i><b>8.33.1</b> 合约声明和状态变量</a></li>
+<li class="chapter" data-level="8.33.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#奖励相关变量"><i class="fa fa-check"></i><b>8.33.2</b> 奖励相关变量</a></li>
+<li class="chapter" data-level="8.33.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#构造函数-6"><i class="fa fa-check"></i><b>8.33.3</b> 构造函数</a></li>
+<li class="chapter" data-level="8.33.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#更新奖励指数"><i class="fa fa-check"></i><b>8.33.4</b> 更新奖励指数</a></li>
+<li class="chapter" data-level="8.33.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#计算奖励"><i class="fa fa-check"></i><b>8.33.5</b> 计算奖励</a></li>
+<li class="chapter" data-level="8.33.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#计算已赚取的奖励"><i class="fa fa-check"></i><b>8.33.6</b> 计算已赚取的奖励</a></li>
+<li class="chapter" data-level="8.33.7" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#更新用户奖励"><i class="fa fa-check"></i><b>8.33.7</b> 更新用户奖励</a></li>
+<li class="chapter" data-level="8.33.8" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#质押和提取函数-1"><i class="fa fa-check"></i><b>8.33.8</b> 质押和提取函数</a></li>
+<li class="chapter" data-level="8.33.9" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#领取奖励函数"><i class="fa fa-check"></i><b>8.33.9</b> 领取奖励函数</a></li>
+<li class="chapter" data-level="8.33.10" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-5"><i class="fa fa-check"></i><b>8.33.10</b> 接口定义</a></li>
+<li class="chapter" data-level="8.33.11" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-13"><i class="fa fa-check"></i><b>8.33.11</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.34" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#vault"><i class="fa fa-check"></i><b>8.34</b> Vault</a>
+<ul>
+<li class="chapter" data-level="8.34.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约声明和状态变量-2"><i class="fa fa-check"></i><b>8.34.1</b> 合约声明和状态变量</a></li>
+<li class="chapter" data-level="8.34.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#铸造和销毁股份"><i class="fa fa-check"></i><b>8.34.2</b> 铸造和销毁股份</a></li>
+<li class="chapter" data-level="8.34.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#存款功能"><i class="fa fa-check"></i><b>8.34.3</b> 存款功能</a></li>
+<li class="chapter" data-level="8.34.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#提取功能"><i class="fa fa-check"></i><b>8.34.4</b> 提取功能</a></li>
+<li class="chapter" data-level="8.34.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-6"><i class="fa fa-check"></i><b>8.34.5</b> 接口定义</a></li>
+<li class="chapter" data-level="8.34.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-14"><i class="fa fa-check"></i><b>8.34.6</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.35" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#constant-sum-amm"><i class="fa fa-check"></i><b>8.35</b> Constant Sum AMM</a>
+<ul>
+<li class="chapter" data-level="8.35.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约声明和状态变量-3"><i class="fa fa-check"></i><b>8.35.1</b> 合约声明和状态变量</a></li>
+<li class="chapter" data-level="8.35.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#铸造和销毁股份-1"><i class="fa fa-check"></i><b>8.35.2</b> 铸造和销毁股份</a></li>
+<li class="chapter" data-level="8.35.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#更新储备量"><i class="fa fa-check"></i><b>8.35.3</b> 更新储备量</a></li>
+<li class="chapter" data-level="8.35.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#交换功能-1"><i class="fa fa-check"></i><b>8.35.4</b> 交换功能</a></li>
+<li class="chapter" data-level="8.35.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#添加流动性"><i class="fa fa-check"></i><b>8.35.5</b> 添加流动性</a></li>
+<li class="chapter" data-level="8.35.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#移除流动性"><i class="fa fa-check"></i><b>8.35.6</b> 移除流动性</a></li>
+<li class="chapter" data-level="8.35.7" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-7"><i class="fa fa-check"></i><b>8.35.7</b> 接口定义</a></li>
+<li class="chapter" data-level="8.35.8" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-15"><i class="fa fa-check"></i><b>8.35.8</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.36" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#constant-product-amm"><i class="fa fa-check"></i><b>8.36</b> Constant Product AMM</a>
+<ul>
+<li class="chapter" data-level="8.36.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约结构-1"><i class="fa fa-check"></i><b>8.36.1</b> 合约结构</a></li>
+<li class="chapter" data-level="8.36.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#内部函数"><i class="fa fa-check"></i><b>8.36.2</b> 内部函数</a></li>
+<li class="chapter" data-level="8.36.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#外部函数"><i class="fa fa-check"></i><b>8.36.3</b> 外部函数</a></li>
+<li class="chapter" data-level="8.36.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#辅助函数-1"><i class="fa fa-check"></i><b>8.36.4</b> 辅助函数</a></li>
+<li class="chapter" data-level="8.36.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-8"><i class="fa fa-check"></i><b>8.36.5</b> 接口定义</a></li>
+<li class="chapter" data-level="8.36.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-16"><i class="fa fa-check"></i><b>8.36.6</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.37" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#stable-swap-amm"><i class="fa fa-check"></i><b>8.37</b> Stable Swap AMM</a>
+<ul>
+<li class="chapter" data-level="8.37.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约结构与功能概述"><i class="fa fa-check"></i><b>8.37.1</b> 合约结构与功能概述</a></li>
+<li class="chapter" data-level="8.37.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#主要功能-5"><i class="fa fa-check"></i><b>8.37.2</b> 主要功能</a></li>
+<li class="chapter" data-level="8.37.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#计算方法"><i class="fa fa-check"></i><b>8.37.3</b> 计算方法</a></li>
+<li class="chapter" data-level="8.37.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-17"><i class="fa fa-check"></i><b>8.37.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.38" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#r-markdown"><i class="fa fa-check"></i><b>8.38</b> R Markdown</a></li>
+<li class="chapter" data-level="8.39" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#including-plots"><i class="fa fa-check"></i><b>8.39</b> Including Plots</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank"https://github.com/Token-Economy-Book</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Token Economy: How the Web3 reinvents the Internet</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="token-use-cases-代币用例" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Token Use Cases 代币用例<a href="token-use-cases-代币用例.html#token-use-cases-代币用例" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="资产代币与分权所有权" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> 资产代币与分权所有权<a href="token-use-cases-代币用例.html#资产代币与分权所有权" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<blockquote>
+<p>资产代币允许为任何物理资产或证券创建数字代表，并可能引入一系列之前不可行的新用例。它们是证券和资产市场自动化的下一步，利用智能合约替代整个后台办公室。</p>
+</blockquote>
+<p>资产的代币化是指为任何物理对象或金融资产创建代币化数字双胞胎的过程。代币因此代表物理对应物，由分布式账本共同管理。“资产代币”是一个广义术语，涵盖任何资产，如商品、艺术品、房地产或证券。“证券代币”是被金融市场法规归类为证券的特定类型资产代币。然而，什么构成证券的解释则受当地立法的影响。</p>
+<p>从法律角度来看，代币化（权利）物理资产及其他（虚拟）权利显得尤为重要。旨在代表虚拟资产的工具（如纸质证书和其他数字证书）可能很快就会被代币取代；对于物理资产而言，拥有权仍是最重要的联系。根据监管环境及智能合约的设置，资产代币可能有资格进行全球交易。比如，法国的投资者可以轻松地通过几次点击购买加拿大一家餐厅的股权代币，墨西哥的投资者则可以为印度的一栋公寓大楼提供资金。开放全球市场不仅增加了流动性，还为企业家和投资者提供了新的机会。这一趋势可能使得投资外国资产的股份变得可行，而之前获取这些股份要困难得多。</p>
+<p>任何物理商品或中小企业的股份都可以以客户端-服务器世界中成本的一小部分进行代币化，并分割为可在公开市场交易的代表性代币。为了代币化像公寓这样的实际资产，需要生成一个带有智能合约的代币，并将该代币与实际资产的价值关联。该资产的所有权及其相应的数字表示可以被分割为多个部分，并出售给多个（共同）所有者。即使一个代币代表的是不可分割的物理资产，如艺术品或房地产，该代币本身是可分割的。通常经济门槛较高的资产市场，如美术品或房地产，可以通过代币化和分割化来实现，潜在地创造出之前不可行的新用例。人们不再需要投资数百万欧元购买一件艺术品，而是可以购买一幅画的一部分。这提高了市场的深度和流动性。</p>
+<p>代币化现实世界的资产可能导致数万亿欧元的市场资本化，但需要几个先决条件：（i）专门从事资产代币的在线交易所；（ii）可以管理多种资产并理想上向代币持有者授予自我保管权的可信钱包托管者；（iii）对不同类型资产代币的监管环境需要明确定义。</p>
+<p>资产代币的风险和后果比证券代币更难预测，这给投资者、企业家和监管机构带来了挑战。证券代币可以与网络早期相比，当时出版商开始在线发布内容，仿佛它是印刷的纸张。起初，互联网只提供了一种新的分发渠道，并未改变内容的类型和格式。直到几年后，网站才添加了评论区，读者可以互动讨论主题。出版商也花了一段时间才意识到，他们可以添加通常不会出现在纸质或杂志上的新类型内容。直到社交媒体的出现，出版行业才真正被颠覆，新的碎片化和动态分发渠道让任何人都可以成为“影响者”。资产代币在金融市场中的地位，如同社交媒体在出版行业中的地位。它们更有可能彻底改变我们的经济，而证券代币则是通往这一目标的入口。</p>
+<div id="用例-1证券代币" class="section level3 hasAnchor" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> 用例 1：证券代币<a href="token-use-cases-代币用例.html#用例-1证券代币" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>证券代币提供了一种新的形式，用于表示、管理和分配现有证券。通过智能合约，股息支付可以实时进行，这对现代金融结算系统是一种升级。从监管机构的角度来看，这些代币仍然是传统证券，只是通过新技术进行了表示和管理。它们不是新产品，因此相对容易监管。全球的金融行为监管机构（如美国证券交易委员会（SEC）、奥地利金融市场监管局（FMA）、新加坡金融管理局（MAS）、德国金融监管局（BaFin）和英国金融行为监管局（FCA）等）已得出结论，任何可能被视为证券代币的代币都应接受监管。</p>
+<p>目前，对证券代币的定义在全球范围内并不一致，监管因国家而异。在某些司法管辖区，“证券代币”一词适用于任何代表公认资产或投资概念的代币，而其他地区则对证券的定义更为狭窄。例如，美国证券交易委员会（SEC）将代币定义为证券，前提是投资者以获利为目的进行资金投资。更具体地说，代币被视为证券需满足以下条件：（i）资金投资；（ii）利润预期；（iii）资金由共同企业持有；（iv）利润来源于第三方的努力。相较之下，欧洲对证券的定义包括在资本市场上可转让且可交易的标准化资产，这些资产没有支付工具，且可与股权或债务工具相媲美。</p>
+<p>在现有金融体系中，证券和其他金融产品的结算时间较长。尽管随着计算机和互联网的普及，流程有所改善，但结算仍然远未实时。交易的结算时间通常需要至少两个工作日。尽管如今已经存在全天候运营的市场，但这些市场很少是点对点的。证券代币可以促进无摩擦的结算流程，而不牺牲法律保护。智能合约替代了中介，并在买卖双方之间执行结算过程，从而减少了经纪费用。全面运营的24/7市场可以将结算时间缩短到几分钟甚至更短。</p>
+<p>合规性内置于智能合约中。自我执行的代码是解决证券交易复杂性的一种高效方式，因为监管可能因资产类型或投资者类型而异，考虑到所有利益相关者（买方、卖方和发行人）可能受不同管辖区的约束。目前，复杂的文件处理过程由一系列独立的账本执行，数据在每个参与者的服务器的封闭环境中进行管理。这种文件管理的混乱造成了许多低效率和时间滞后。代币的可编程特性也使得正式化特殊条件的成本更低、效率更高，这可能引入以前不可行的个性化资产类型。然而，任何用于交易证券代币的系统都需要纳入大量法律合同。证券代币的实施是一个复杂的技术与法律问题，并依赖于网络效应。第三方服务提供商已开始提供旨在允许透明发行资产代币和证券代币的代币标准，包括KYC和AML要求的相关流程。</p>
+<p>越来越多的市场参与者宣布推出与证券代币相关的服务。一些成熟公司已宣布建立专业交易平台，包括纽约证券交易所的创始人投资相关初创公司。瑞士交易所也计划建立一个受监管的证券代币交易所。其他在这一领域活跃的参与者包括“Bakkt”、“Securitize”、“OTCXN”、“tZERO”、“Polymath”、“Neufund”、“Binance”与马耳他证券交易所的合作、“Cezex”、“直布罗陀区块链交易所”、“Templum”、“Coinbase”和伦敦证券交易所（Bancor）。</p>
+</div>
+<div id="用例-2房地产代币化" class="section level3 hasAnchor" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> 用例 2：房地产代币化<a href="token-use-cases-代币用例.html#用例-2房地产代币化" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>房地产是全球市场资本化最大的一类资产，但房地产所有权并不向所有社会成员开放。许多低收入家庭根本无法负担得起房地产。购买者必须拥有良好的信用评分、稳定且高收入的工作，或提供其他资产作为抵押。此外，房地产市场高度分散且集中。数据由一系列第三方管理，如银行、律师、公证人和土地登记处，它们使用各自的专有且昂贵的软件，大多数情况下无法互通。智能合约有潜力在房地产行业中促进权利管理，包括整个结算过程。一旦房地产所有权被代币化，它可以在符合监管要求的情况下轻松注册和管理，并在公共基础设施上进行点对点交易。每个物业的哈希数据可以记录在分布式账本上，以提供所有与房地产相关活动的共享数据集，例如之前的所有者、进行的维修和设施。</p>
+<p>房地产是一种非流动资产，这意味着买卖资产的过程漫长且官僚化；所有权不会迅速转移。研究表明，使用基于Web3的土地登记处可以最小化官僚程序，减少市场摩擦和转让所有权所需的巨大成本。代币可以轻松分割，这意味着房地产所有者可以出售其公寓的部分股份。尽管出售物业股份并不是一个新概念，但代币化房地产将是自动化过程的下一步，使得以更低成本发行和出售这些资产更加高效。</p>
+<p>代币可以为现有房地产或正在开发的房地产项目发行。私人房主可以发行他们想购买的公寓的部分代币，从而在不需要通过银行或借款的情况下筹集资金。代币持有者将成为共同投资者，可以按其持有股份的比例收取部分租金。以前因经济原因被排除在外的人们现在可以投资于整个单位的一部分，这将使市场对经济条件较差的人更具包容性。租金收集由智能合约管理，所有权也更容易转让。例如，如果另一个人购买了你公寓的5%代币化价值，智能合约可以自动按月支付相应比例的租金。在未来出售公寓的情况下，该公寓的部分代币持有者可以获得他们的投资回报，这也可能由智能合约自动管理和执行。</p>
+<p>在使用部分代币时，重要的是要区分所授予的权利类型：所有权（作为一种投资，我可以随时出售和变现）和访问权（我可以进入该物业）。所有权还需要与实际资产的管理分离。代币的治理规则需要规定谁有权决定出售公寓。在大多数情况下，只授予利润分享权，而不授予投票权是可行的。然而，需要有规定明确代币持有者的权利，以防代币发行人未能支付租金给部分代币持有者。这些商业案例的细节需要符合监管标准，并具有切实可行的执行方式。存在多种已经建立的法律选择，用于解决部分所有权情况下的冲突，例如所谓的“跟随权”和“拖带权”[^2]，或“荷兰拍卖”[^3]，这些都可以在智能合约中建模，以解决特定情况下的问题。</p>
+<p>目前，申请房屋贷款的过程伴随着大量的监管监督和银行方面的尽职调查，以确保贷款人能够偿还贷款及其利息。如果不能偿还，银行会在土地所有权登记中共同注册。如果房主未能偿还贷款，银行可以要求没收该物业，出售并在市场上清算公寓以收回所发放的信贷。在部分所有权的情况下，这种情况将如何管理？由可信的第三方和清算人来处理吗？维护过程也需要由智能合约覆盖；否则，试图对成百上千，甚至更多的办公室大楼所有者提起诉讼将成为一场监管噩梦，因为这些所有者不履行维护责任。</p>
+<p>尽管房地产代币化潜力巨大，但这一用例伴随着许多实际挑战，主要涉及法律和监管问题，而这些问题因国家或州而异。房地产代币化的一个先决条件是房地产市场的法律程序必须与Web3兼容，从土地登记流程到接受智能合约流程的总体监管环境。在一些国家，土地所有权几乎没有得到追踪；在大多数国家，这一过程仍然以纸质文件为主，涉及无数中介。在房地产市场中，所有相关利益相关者，从开发商、经纪人到银行、房地产基金和设施管理者，都需要兼容分布式账本，才能使这一用例变得可行。</p>
+<p>房地产的代币化和分割也可能带来潜在的负面影响，需要监管监督。我们需要从导致2008年金融危机的美国住房市场崩溃中吸取教训[^4]。当许多人不了解自己所投资的内容时，房地产的部分所有权可能成为一种危险的投资游戏，导致不知情的投资者在做出投资决策时对市场动态缺乏整体认识，从而出现“魔法思维”。</p>
+<p>许多国家已经开始探索在某种分布式账本上注册土地所有权，越来越多的国家正在跟进。一个快速发展的生态系统正在形成，提供部分所有权解决方案和其他代币化房地产服务的服务提供商，包括“Atlant”、“IHT房地产协议”、“LATOKEN”、“Max Property Group”、“Meridio”、“BitRent”、“Etherty”、“Caviar”、“Propy”、“PropertyShare”、“Rentberry”、“Treehouse”或“Trust”。</p>
+</div>
+<div id="用例-3艺术代币化" class="section level3 hasAnchor" number="4.1.3">
+<h3><span class="header-section-number">4.1.3</span> 用例 3：艺术代币化<a href="token-use-cases-代币用例.html#用例-3艺术代币化" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>从投资角度来看，优秀艺术作品是许多高净值个体投资组合的重要组成部分。然而，经济条件较差的投资者无法接触到这一资产类别，因为最具吸引力的投资对象价格昂贵，通常由拍卖行和画廊主导，市场参与者有限，导致市场流动性低。艺术品维护成本高昂，通常在专门的保管库中进行，而不是在投资者的客厅里。此外，购买和销售艺术品的过程伴随着繁重的文档要求，以保证艺术品的真实性和来源，这是确保其价值的前提。当前系统依赖于受信任的第三方管理艺术供应链中一系列不连贯的数据库，这些数据库管理着保证价值的数字证书。音乐、电影和出版行业在艺术家与出版商、音乐公司、电影制片厂或在线流媒体服务之间结算版税时，也面临同样的问题。版税结算通常存在几个月到几年的时间滞后，过程效率低下且高度不透明。代币化艺术和娱乐市场有潜力解决当前系统的许多低效问题，包括部分所有权、来源、数字版权管理、结算和众筹。</p>
+<div id="部分所有权" class="section level4 hasAnchor" number="4.1.3.1">
+<h4><span class="header-section-number">4.1.3.1</span> 部分所有权<a href="token-use-cases-代币用例.html#部分所有权" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>经济条件较差的个人通常被排除在艺术投资机会之外，但他们可以购买昂贵艺术品的一部分。这可能导致对艺术投资需求的增加，从而潜在提高整体艺术价格并促进新类型艺术的生产，实现市场的民主化和多样化。管理艺术品的集体所有权是一个主要问题。艺术作品可以由有经验的保管人维护，所有代币持有者共同承担维护费用，支付由智能合约管理和执行。一个早期的例子是安迪·沃霍尔的画作《14个小电椅》，它在2018年通过“Maecenas”平台进行代币化和部分化，代币在以太坊网络上管理，所有权证书由智能合约管理并公开可验证。</p>
+</div>
+<div id="来源" class="section level4 hasAnchor" number="4.1.3.2">
+<h4><span class="header-section-number">4.1.3.2</span> 来源<a href="token-use-cases-代币用例.html#来源" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>代币化艺术有望开创一个更透明的市场，让潜在投资者可以访问经过验证的艺术作品。利用公共基础设施管理的代币进行来源确认，可以解决传统系统中的腐败、伪造和黑客攻击等挑战。与此相对，代币化系统将使用哈希和密码学公开验证艺术品的来源。所有权转移的管理将由智能合约进行，成本大幅降低，结算实时化。</p>
+</div>
+<div id="权利管理" class="section level4 hasAnchor" number="4.1.3.3">
+<h4><span class="header-section-number">4.1.3.3</span> 权利管理<a href="token-use-cases-代币用例.html#权利管理" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>智能合约作为权利管理工具，使得知识产权管理更加透明且无中介化，实时结算版税。艺术作品可以轻松出租给画廊，音乐家可以更快收取版税，平台提供商与艺术家之间的收入分配可以通过智能合约实时管理。例如，版税费用可以直接结算，不再需要出版商、电影制片厂或流媒体服务作为中介，从而消除对艺术家和贡献者的时间延迟补偿。版税可以以代币形式实时发送给艺术家，基于观看他们的艺术、观看电影或听取音轨的人数。</p>
+</div>
+<div id="众筹投资" class="section level4 hasAnchor" number="4.1.3.4">
+<h4><span class="header-section-number">4.1.3.4</span> 众筹/投资<a href="token-use-cases-代币用例.html#众筹投资" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>代币还可以用于众筹未来的艺术项目，投资者可以作为部分或整体拥有这些项目。任何对艺术项目进行资金支持的人都可以根据智能合约的条款获得相应的代币化价值的股份。艺术家可以设计智能合约，使其保持所创作艺术作品的部分所有权，同时其他代币持有者可以在公开市场上出售代币，或在集体出售作品时选择兑现。在这种情况下，艺术家可以在生产之前获得资金，同时保留对艺术品的部分所有权。代币还可以使画廊预先资助艺术品的购买。</p>
+</div>
+<div id="派生艺术作品" class="section level4 hasAnchor" number="4.1.3.5">
+<h4><span class="header-section-number">4.1.3.5</span> 派生艺术作品<a href="token-use-cases-代币用例.html#派生艺术作品" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>代币化艺术的另一个应用可能是新派生艺术作品的出现。可以创建复杂的智能合约，在购买真实画作时授予对派生艺术作品的访问权。可以增加额外功能，例如将数字文件链接到实物艺术品中，或在代币中整合增强现实功能，例如记录创作过程的视频。代币可以永久连接物理艺术品与其数字文件，使数字文件成为物理艺术品的一部分，进而增加其价值。艺术代币还开启了新的艺术表达和价值创造形式，如游戏化，可能导致艺术、虚拟现实和游戏的融合。</p>
+</div>
+</div>
+<div id="用例-4集体部分所有权" class="section level3 hasAnchor" number="4.1.4">
+<h3><span class="header-section-number">4.1.4</span> 用例 4：集体部分所有权<a href="token-use-cases-代币用例.html#用例-4集体部分所有权" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>智能合约管理的部分集体所有权的具体商业逻辑取决于具体用例。例如，一个办公大楼可以由共享工作空间的成员共同购买，此时决策也可以由集体管理。代币将授予投票权。共享工作空间可以基于使用权进行代币化，成员有权使用一定比例的空间。集体所有权也对许多非政府组织或草根运动有帮助。邻里社区可以共同购买和运营一个可再生能源驱动的微电网，因为集体分担成本比单个个人更可行。智能合约会将所产生并销售的多余能源的每月收入按所持股份的比例分配给所有成员。</p>
+<p>这种设置对于出租车司机也可能有吸引力。许多司机缺乏投资自己车辆的资金，因此他们为公司工作，提供基础设施，与车辆所有者分享收入或支付固定租金。部分集体所有权代币将允许多位出租车司机共同购买一辆车，而不是向他人租赁，并分摊班次、费用和维护成本。智能合约可以从每个人的收入中提取一部分，用于相关费用。</p>
+<p>此外，集体部分所有权代币还可以管理更大社区的公地，决定个人从社区资产中获益的权利。美国的阿拉斯加州和挪威已经向居民分配了他们的石油销售份额，既可以直接支付，也可以以财富基金的形式进行。这种过程可以进行代币化，以降低结算成本，同时提高透明度和问责制。</p>
+</div>
+<div id="章节总结-11" class="section level3 hasAnchor" number="4.1.5">
+<h3><span class="header-section-number">4.1.5</span> 章节总结<a href="token-use-cases-代币用例.html#章节总结-11" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>资产代币使得物理资产或证券的数字代表得以创建。这是证券和资产市场自动化的下一步，智能合约将取代整个后台管理。</p>
+<p>现有资产的代币化是指为任何物理对象或金融资产创建一个代币化数字双胞胎的过程。该代币代表着物理对应物，由分布式账本共同管理。</p>
+<p>“资产代币”是一个通用术语，可以包括商品、艺术品、房地产或证券等任何资产。“证券代币”是特定类型的资产代币，根据金融市场法规被归类为证券。然而，什么构成证券的解释则受当地立法的影响。</p>
+<p>证券代币提供了一种新的表示、管理和分发现有证券的方式。分红的支付可以通过智能合约实时进行，这对于最先进的金融结算系统来说是一种升级。从监管者的角度来看，这些代币是传统证券，仅通过新技术进行表示和管理。因此，它们不是新产品，因而相对容易监管。</p>
+<p>资产代币对金融市场的影响就如社交媒体对出版行业的影响。它们更有可能彻底改变我们的经济，而证券代币则是实现这一目标的入门工具。</p>
+<p>从法律角度来看，对物理资产（权利）和其他（虚拟）权利的代币化显得尤为重要。旨在表示虚拟资产的工具（如纸质证书和其他数字证书）很快可能被代币取代；对于物理资产而言，拥有权似乎仍是最重要的关联。</p>
+<p>根据监管环境和智能合约的设置，资产代币可能有资格进行全球交易。开放全球市场将增加流动性，为企业家和投资者提供新的机会。这一趋势可能使得在以前难以获得的外国资产中购买股份变得可行。</p>
+<p>智能合约有潜力在房地产行业中促进权利管理，包括整个结算过程。一旦房地产所有权被代币化，便可以在公共基础设施上轻松注册和管理，并在符合监管要求的情况下进行点对点交易。每个物业的哈希数据可以记录在分布式账本上，提供关于所有房地产相关活动（如前任所有者、维修记录和便利设施）的共享数据集。代币可以为现有房地产或正在开发的房地产项目发行。</p>
+<p>为了代币化像公寓这样的真实资产，需要生成一个智能合约代币，并将该代币与真实资产的价值关联。该资产的所有权及其对应的数字表示可以分割并出售给多个（共同）所有者。即使一个代币代表一个不可分割的物理资产，如艺术品或房地产，代币本身是可以分割的。</p>
+<p>代币化房地产的一个前提是，使房地产市场的法律流程与Web3兼容，从土地登记流程到接受智能合约流程的一般监管环境。</p>
+<p>艺术和娱乐市场的代币化可能会解决当前系统中的许多低效问题，包括部分所有权、来源验证、数字版权管理、结算和众筹。代币还可以促成新的衍生艺术作品的出现。</p>
+<p>通常具有高经济进入门槛的资产市场，如艺术品或房地产，可以被代币化和分割，可能产生之前不可行的新用例。现在，人们无需投资数百万欧元购买一件艺术品，可以购买一部分画作。这将增加市场的深度和流动性。</p>
+<p>任何实物商品或中小企业的股份也可以以比客户-服务器环境下更低的成本进行代币化，并分割成可代表的代币，在开放市场上交易。</p>
+</div>
+</div>
+<div id="目的驱动代币" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> 目的驱动代币<a href="token-use-cases-代币用例.html#目的驱动代币" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<blockquote>
+<p>目的驱动代币激励个体行为以实现集体目标。这个集体目标可能是公共利益，或减少对共同利益的负面外部性。目的驱动代币引入了一种新的集体价值创造形式，无需传统中介。它们为传统经济系统提供了一种替代方案，后者主要激励以私人商品形式创造个体价值。</p>
+</blockquote>
+<p>公共区块链网络可以用多种隐喻来描述：（i）分布式账本；（ii）通用状态机；（iii）治理机器；（iv）会计机器；（v）去中心化自治组织。然而，所有这些特征都源于比特币网络和类似的分布式账本首先是（vi）激励机器。工作量证明（Proof-of-Work）在没有中介的情况下革新了集体价值创造。它引入了一种共识机制，使网络参与者能够以诚实的方式共同管理分布式账本，并通过代币奖励他们。通过在匿名参与者之间对齐激励的理念，引入了一种新的公共基础设施，这种基础设施是自主的、自我维持的且抗攻击的（阅读更多：第一部分 - 比特币、区块链与其他分布式账本）。这激发了许多项目在这一激励行为的原则上构建我所称之为“目的驱动代币”的基础。这里的“目的”是指集体目标的理念，超越了个人利润最大化。集体目标可能是公共利益（例如，一个点对点支付网络）或减少共同利益的负面外部性（例如，减少二氧化碳排放）。</p>
+<p>比特币的工作量证明引入了一种超越经典经济价值创造的新型集体价值创造。该协议为一种能够超越国家和个体组织的新经济提供了操作系统。比特币协议的开源特性使任何人都可以获取代码、复制和修改，并发行自己的目的驱动网络。以太坊等网络将集体价值创造的理念提升到了一个新层次，提供了一种公共基础设施，可以用仅几行代码创建应用代币。通过这些应用代币，我们现在可以利用在公共和可验证基础设施上运行的简单智能合约，创造全新的经济类型。这些代币是易于编程的工具，可以将个体决策过程建模到智能合约中。任何目的都可以被激励。任何行为都可以被建模。不同类型的目的驱动代币示例如下：</p>
+<div id="激励网络状态共识" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> 激励网络状态共识<a href="token-use-cases-代币用例.html#激励网络状态共识" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>在工作量证明网络中，通过激励矿工使用本地网络代币的计算能力来保护网络，从而在节点之间达成共识。目标是使不信任的网络参与者在网络状态上达成分布式共识。奖励机制基于所有网络参与者都可能是腐败的假设，因此将交易写入区块链的过程故意设计得困难和低效，使恶意参与者攻击网络的成本增高。比特币、以太坊和类似网络提供了一种公共利益，类似于政府通常为其公民提供的服务：如铁路、水务或电力网络等公共设施。然而，与国家控制的公共利益不同，区块链网络的维护、开发和控制都是分布式的，且由本地代币对齐和激励。在比特币的案例中，公共利益代表着点对点支付基础设施；在以太坊的案例中，公共利益则代表点对点计算基础设施。然而，工作量证明并不是实现普遍状态的唯一激励机制。目前正在研究和开发更快或更高效的替代共识协议（阅读更多：第一部分 - 比特币、区块链与其他分布式账本）。</p>
+</div>
+<div id="激励社交媒体贡献" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> 激励社交媒体贡献<a href="token-use-cases-代币用例.html#激励社交媒体贡献" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Steemit 是一个基于区块链的社交网络，旨在激励内容创作和内容策划。任何用户都可以免费加入并贡献，从而为公共利益做出贡献。这个点对点社交网络的目标是奖励那些对社交媒体网络的增长和韧性作出贡献的人。Steemit 类似于“Facebook”或“Reddit”，但与 Facebook 或 Reddit 不同，网络是共同治理和维护的。网络贡献者因对基础区块链基础设施（Steem区块链）作出贡献，或在 Steemit 网站上上传或策划内容而获得奖励。获得的报酬取决于贡献的数量和贡献的受欢迎程度。其他激励贡献的网络示例包括“E-chat”、“Akasha”、“Minds”或“Golos”（阅读更多：第四部分 - Steemit）。</p>
+</div>
+<div id="激励清单贡献" class="section level3 hasAnchor" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> 激励清单贡献<a href="token-use-cases-代币用例.html#激励清单贡献" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>代币策划注册（TCRs）是一种加密经济机制，旨在激励对社交网络中公共列表或内容流的集体策划。集体目标是创建一个有用且高质量的列表。代币用于提供经济激励，以策划此类列表中信息的排名。TCR的机制旨在对齐代币持有者的激励，以产生对消费者有价值的列表，并提供对用户无法直接观察的内容的可靠质量信号。每个列表都有自己的本地代币（阅读更多：第四部分 - TCRs）。</p>
+</div>
+<div id="激励减少二氧化碳排放" class="section level3 hasAnchor" number="4.2.4">
+<h3><span class="header-section-number">4.2.4</span> 激励减少二氧化碳排放<a href="token-use-cases-代币用例.html#激励减少二氧化碳排放" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>由智能合约发行的加密代币也可以用于激励个人和公司以可持续的方式行动。在这种设置中，能够证明自己减少了二氧化碳排放的个人和组织可以获得在此证明基础上创建（铸造）的代币。根据代币的设计，二氧化碳奖励可以用来交换发行这些代币的组织提供的其他服务，项目之间可能差异很大。代币可能与用户身份相关（不可替代），或者可能被设计为可交易（可转让）。它们可能设计为在一段时间后过期，或者具有无限耐久性。“维也纳文化代币”、“Sweatcoin”或“Changers”激励人们骑自行车、步行或使用公共交通，而不是开车。其他项目则激励可再生能源的生产或消费，如“Solar Coin”、“Electric Chain”和“Sun Exchange”。另外，个人每次证明自己通过使用节能设备或关闭灯光减少了能源使用时，也可以获得代币，例如“Energi Mine”或“Electron”。人们也可以因植树（Proof-of-Tree-Planted）或清理海滩（Proof-of-Bottles-Recycled）、减少食物浪费等行为而获得激励。其中一些示例包括：“Plastic Bank”、“Earth Dollar”、“Bit Seeds”、“Eco Coin”、“Earth Token”和“Recycle To Coin”。</p>
+<p>目的驱动代币为传统经济系统提供了一种替代方案，后者主要激励个体价值创造：私人行为者从自然或劳动力中提取租金，并将其转化为产品，往往将成本外部化给社会，同时内化（并最大化）私人利润。然而，比特币引入的新集体价值创造现象可能需要更多的研究和开发，以及较长的试错阶段，才能更好地理解激励对公共利益贡献的潜力。运营用例仍然有限。</p>
+<p>目的驱动代币的“货币政策”可以通过管理这些代币的发行和权利的智能合约进行规范。这些代币可以是可替代的（可与其他同类代币交易）或不可替代的（基于身份的声誉代币）。例如，二氧化碳代币可以设计为只激励获得代币的人（不可转让）。代币也可以设定内置的过期日期。比特币和其他区块链协议代币被设计为可转让，因此可交易。代币可以被编程为有限的可转让性，以便只能在社区内部交换产品和服务，因此不会离开内部系统并兑换成法定货币，但在网络的内部经济中仍然是有用的（社区货币）。</p>
+<p>对经济学、公共选择理论、公共物品理论和行为科学的研究将对更好地理解目的驱动代币的设计和工程过程至关重要（阅读更多：第四部分 - 如何设计代币系统）。</p>
+</div>
+</div>
+<div id="公共物品与公地悲剧" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> 公共物品与公地悲剧<a href="token-use-cases-代币用例.html#公共物品与公地悲剧" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>在经济学中，“公共物品”一词指的是任何个人都可以在不支付费用的情况下使用的物品（非排他性，或无需许可），并且一个人的使用不会减少其他人可用的数量（非竞争性，或无限）。仅在一定程度上满足这两个条件的公共物品被称为不纯公共物品。公共物品可以由政府提供，也可以在自然界中存在。全球公共物品没有地理限制，且全球可用。例如：知识、互联网和某些自然资源。比特币支付网络可以被视为一种新的技术驱动公共物品，尽管是一种不纯的公共物品。网络的维护和保养是集体和无需许可的。网络的使用是无需许可和非竞争性的，但只有在未达到容量限制的情况下。在当前形式下，公共区块链网络的扩展性不佳，当网络拥堵时，可以被视为竞争性。点对点社交网络和代币策划注册也属于技术驱动的公共物品。</p>
+<p>公共物品往往会面临搭便车问题，某些个体在没有（充分）贡献其创建或维护的情况下消费公共物品。如果某个阈值的个人和机构选择搭便车，市场将无法提供所需的商品或服务。开源软件就是一种通常面临搭便车问题的公共物品。比特币协议也是这一搭便车问题的良好示例，因为只有少数人对代码作出贡献，且没有直接的激励，而许多人却在使用它。代币化社交媒体网络或代币策划注册在设计代币治理机制时也面临许多需要预见的搭便车问题（阅读更多：第四部分 - Steemit &amp; Token Curated Registries）。</p>
+<p>如果公共物品受到限制，它们就会变成俱乐部商品或私有商品。排他机制可能以会员制、版权、专利或付费墙的形式出现。俱乐部商品代表着人为稀缺的商品。许可账本可以视为此类俱乐部商品，其中只有联盟（俱乐部）的成员可以访问分布式账本并向其写入交易（阅读更多：第一部分 - 比特币、区块链与其他分布式账本）。</p>
+<p>公有物品与公共物品类似，因为它们是非排他性的（无需许可），但它们是竞争性的，这意味着一个人消费的物品会排除其他人消费的机会。公有物品的例子包括水和空气、森林，以及一般的自然资源。它们是公共的但稀缺的，通常程度各异。如果自然资源被开发或污染超出其可持续容量，就会阻止其他人消费这些资源。“公地悲剧”发生在个体为了自身短期利益而提取资源，忽视个体行为的集体动态及其对公共利益的长期影响。通过法规限制资源提取超出可持续水平，可能避免公地悲剧的发生。</p>
+<p>尽管世界的鱼类资源可以被视为非排他性的资源，但由于不同私人参与者在全球范围内持续进行深海捕鱼，它们是有限和减少的。先进的公共账本在某种程度上总是具有竞争性，但在至少目前更具公共物品特征。这种情况可能会随着技术的发展而改变。目的驱动代币可以被编程以维护或恢复公共利益，可能解决当今社会面临的许多公地悲剧问题。前文提到的二氧化碳代币可以提供一种“引导”个体共同减少公共利益负外部性的机制。</p>
+<div id="正外部性与负外部性" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> 正外部性与负外部性<a href="token-use-cases-代币用例.html#正外部性与负外部性" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>我们当前的经济系统主要激励以私有商品的形式创造个人价值。私有商品附带私人财产权，防止他人使用或享受其利益，除非他们为此付费（可排他）。对于实物商品，一个人的消费会阻止另一个人的消费（竞争性）。数字商品的情况则有所不同，但可以通过数字版权管理工具（如版权保护）创造人造稀缺性。私有商品可以租给他人，授予临时使用权。专利通过提供临时垄断权来创造人造稀缺性，成为法律机制，以强制排除其他任何希望使用该专利技术的人。</p>
+<p>私有商品的创造往往会导致对公共物品（如环境）的“负外部性”。这些负外部性受到地方、国家和国际组织的监管，通过法律（主要是负面激励）、税收（负面激励，除了减税立法）、引导（正面激励）和私有化（市场机制）。经济学中的外部性指的是影响未选择承担该成本或利益的个人或社区的成本或收益。“负外部性”是指个人和机构的活动对其他人或机构造成间接成本（负面影响）的结果。污染就是一个例子，消费具有负二氧化碳足迹的商品也是如此。制造业可能造成空气污染，给整个社会带来健康和清理成本。如果这些成本没有通过政府监管内化，造成外部性的行为者将继续其行为。“正外部性”则可能出现在两个相邻农民之间，他们对彼此产生积极的生态影响。利用代币激励减少二氧化碳排放可能是另一个正外部性的例子，这有助于提升公共利益，如改善城市空气质量。尽管公共物品的集体生产可能产生正外部性，但并不意味着不会存在其他负外部性。如果设计不当，目的驱动的代币可能同时具有正负外部性：虽然工作量证明是维护公共物品的重要机制，但比特币挖矿本身是能源密集型的，给社会带来了负外部性。</p>
+</div>
+<div id="行为经济学与引导" class="section level3 hasAnchor" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> 行为经济学与引导<a href="token-use-cases-代币用例.html#行为经济学与引导" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>目前代币化网络的设计面临许多“搭便车”和“公地悲剧”问题，这些问题在设计代币治理机制时需要被预见。此外，大多数代币建模的方法是基于理性假设：所有代理都自私地行事，并与其偏好和信念逻辑一致，基于充分的信息做出决策。当前的共识机制基于新古典经济理论和理性经济人（“经济人”）的概念，后者将经济决策简化为基于个人利润最大化的简单利润最大化和“完美自私”的理念。虽然“完美自私”和理性假设在区块链协议的背景下可能有意义，因为“共识”并不是由人类直接管理的，几乎完全是机器人活动，但这些理性假设对于设计人类行为机制以减少二氧化碳排放、对社交网络的贡献或对代币策划列表的贡献可能并不适用。</p>
+<p>替代经济理论，如行为经济学，基于个体行为更为复杂的假设。行为经济学是研究受经济理性以外的其他因素影响的个体和机构经济决策过程的经济学领域。心理、情感、文化、认知和社会因素也被考虑在内，得出的结论是，人们超过90%的决策基于心理捷径或“经验法则”。特别是在压力下和高度不确定的情况下，人类往往依赖轶事证据和刻板印象，以帮助他们更快地理解和应对事件。假设个体和机构的理性受到时间和认知限制的“约束”，且“足够好的”解决方案优于完美解决方案。行为经济学建立在认知心理学的研究成果上，该领域研究心理过程。</p>
+<p>引导建议基于“约束理性”的假设，提出可以通过将更健康的食品置于超市视线水平来支持个体的决策过程，从而提高被选中的机会。引导是20世纪90年代发展起来的概念，并被一些国家的政治家采用。行为经济学已在政策制定、商业环境和机器学习算法建模等领域得到应用。然而，批评者认为引导等同于心理操控和社会工程。目的驱动的代币也可以用于“引导”或“引导”个体朝向某些行动，例如减少二氧化碳排放。然而，任何类型的治理系统都在引导集体行动，并旨在社会工程。因此，行为经济学及其引导方法可以为设计目的驱动代币的治理规则提供重要工具，以实现公共物品的提供。</p>
+</div>
+<div id="认知心理学与行为分析" class="section level3 hasAnchor" number="4.3.3">
+<h3><span class="header-section-number">4.3.3</span> 认知心理学与行为分析<a href="token-use-cases-代币用例.html#认知心理学与行为分析" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>代币化激励并不是一个新概念，心理学中早有实验用于条件反射行为。心理学中的“代币经济”指的是一种行为改造程序，使用操作性条件反射，这是A.E. Kazdin在1977年描述的。在行为分析中，“操作性条件反射”指的是通过强化或惩罚来修改行为的学习过程，研究行为与外部刺激之间的关系。引导可以被视为一种集体行为条件反射工具，源自于行为分析和操作性条件反射等学科。Kazdin对控制人类行为、态度和思想持批评态度，并指出可能导致极权控制的伦理影响。尽管他将“行为技术”视为伦理中立，但他认为治理过程、决定目的及干预程度将影响个体自由，因此这套系统的使用或滥用取决于这些决策。在他之前的多位作者也讨论过使用行为原则设计社会的问题，这些担忧与引导理论相关。</p>
+<p>在目的驱动代币的机制设计中，需要考虑这些伦理问题。我们可以从行为经济学的伦理中学到很多，相关学科如工程学和控制论也发展了可以与代币工程相关的伦理原则。作为经济哲学一部分的商业伦理，探讨了商业和经济的哲学、政治和伦理基础。例如，工程伦理要求对任何设计，特别是公共基础设施，进行严格和仔细的测试，以最小化伤害风险；基础设施领域的工程师需要承担执照和责任，如果他们未能尽职尽责或尊重最佳实践。控制论中有“二阶控制论”的概念，即意识到自己的干预，这使你成为你正在设计或试图影响的系统的一部分。</p>
+<p>在过去几年中，数据科学和人工智能社区大多忽视了这些原则，这可能是由于追求利润最大化而牺牲伦理。商业背景下的伦理讨论常常被短期效率思维牺牲。这是一个系统性的问题，始于大学，像我自己的母校在1990年代就已从一般课程中剔除商业伦理。将工程、控制论和经济学的伦理原则与现代人工智能专业知识整合，是目的驱动代币加密经济设计的最接近参考案例。</p>
+</div>
+<div id="行为金融与行为博弈理论" class="section level3 hasAnchor" number="4.3.4">
+<h3><span class="header-section-number">4.3.4</span> 行为金融与行为博弈理论<a href="token-use-cases-代币用例.html#行为金融与行为博弈理论" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>行为金融研究市场参与者为何在经济上“非理性”，以及这种非理性行为带来的市场低效，以及他人如何从这种（可预测的）非理性中获利。行为金融解释了对新信息的反应如何影响市场波动，如泡沫和崩溃。这些发现是建模目的驱动代币和去中心化金融市场机制时需要考虑的重要方面。</p>
+<p>行为博弈理论是行为经济学的一个子领域，分析不同市场参与者所做战略决策的相互作用。它需要理解激励人们行动的动机。应用的方法包括博弈论、实验经济学和实验心理学，这些都研究参与者在游戏中的决策悖论。它为传统决策模型提供了替代方案，如“遗憾理论”、“超几何折现”和“前景理论”。例如，人们可能希望在做出决策后最小化遗憾感，因此可能根据他们因策略结果可能遭受的遗憾程度来评估选项。</p>
+<p>目的驱动代币的设计利用博弈论将人类推理建模为由协议或智能合约形式化的自动引导机制，并应考虑行为复杂性。此外，网络科学文献中有一类称为“网络形成博弈”的游戏，涵盖了从学术引用和合作网络的形成到Twitter图谱等各个方面。</p>
+<p>随着加密经济学和目的驱动代币的成熟，行为金融和行为博弈理论有可能在这些代币的加密经济建模中占据一席之地。许多代币化的使用案例，如共识协议、代币策划注册（TCRs）、代币绑定曲线和算法稳定币，建立在理性假设之上：所有代理都自私、追求利润最大化，并与其偏好和信念逻辑一致，基于充分的信息做出决策。然而，正如我们在行为学研究中了解到的，这一假设需要以其他形式的行为为补充。因此，有必要通过借鉴行为经济学、行为金融、行为博弈理论和认知心理学的概念，来扩展当前加密经济原语的假设，从而开发出更复杂的加密经济机制。</p>
+</div>
+<div id="机制设计与代币工程" class="section level3 hasAnchor" number="4.3.5">
+<h3><span class="header-section-number">4.3.5</span> 机制设计与代币工程<a href="token-use-cases-代币用例.html#机制设计与代币工程" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>共识协议的设计与经济学的一个子领域“机制设计”相关，后者处理如何设计一种激励每个人为共同目标做出贡献的游戏的问题。机制设计理论将经济激励与密码学相结合，旨在在假设所有参与者理性行事的战略环境中实现预期目标。这也被称为“反向博弈论”，因为它从游戏的最终结果出发，反向设计机制。Hurwicz、Maskin和Myerson因其在机制设计方面的研究而获得2007年诺贝尔经济学奖。</p>
+<p>并非所有代币都需要是加密经济机制的产物。资产代币（如证券代币）可以简单地通过智能合约代表财产权或使用权。而目的驱动代币则需要面向目的的机制。代币机制设计，也称为“代币工程”，是一个新兴领域。然而，除了工作量证明（Proof-of-Work）和权益证明（Proof-of-Stake）之外，最佳实践稀缺，许多现有用例存在相当大的设计缺陷。例如，使用代币激励减少二氧化碳排放并不是一件简单的事情，可能需要至少与开发工作量证明同样严格的研究。这个用例更复杂，需要来自外部世界的数据源，如硬件预言机和软件预言机。大多数现有目的驱动代币的机制设计未能将更复杂的行为动态整合到其协议中。为了能够充分应对“公地悲剧”和“搭便车”问题，我们需要对这些代币进行更细致的机制设计。</p>
+<p>“代币工程”是一个新兴的术语，采用了更具跨学科的方法，由Trent McConaghy在其文章“朝向代币工程的实践”中提出。他将代币工程定义为分析、设计和验证代币化生态系统的理论、实践和工具。他将创建代币机制与电气工程、群体机器人学、运筹学、软件工程、土木工程、航空航天工程、复杂系统设计、公共政策设计、特定经济学、机器人学、机器学习和人工智能相比较。这些学科都高度依赖于优化和决策的数学。</p>
+<p>然而，由于代币化网络的社会性质，机制设计和市场设计作为经济学和公共政策的子领域也需要被纳入相关学科的名单中。治理自主网络的协议，包括其规则、代理、节点、代币和治理结构，类似于国家，而非公司。因此，需要分析国家用于建模其代理行为的工具：宏观经济学、微观经济学，特别是行为经济学、行为金融学、行为博弈理论，以及一些异端学派，如制度经济学、生态经济学和复杂性经济学。需要识别现有模型、方法和解决方案，并评估它们是否以及如何可以适应于在代币化网络中创造有用机制，以实现共同目标。</p>
+<p>经济学、数学，甚至工程学科已经开发了各种模型和方法，以形式化理性代理的经济动机和行为，这些模型已经被国家政府、监管机构和机构使用并仍在使用。需要解决的问题是这些经济模型在代币驱动生态系统中的适用性和适用程度。可以通过以下方式实现：(i) 识别代币经济学与现有经济学领域的相似性，以及机器人技术、自动化和控制工程，这些领域也提供在不确定性下工作的工具；(ii) 基于现有经济和数学模型，形式化代币化生态系统的网络设计和网络评估模型；(iii) 设计一个自下而上的代币工程框架，以便实现未来先进的生态系统设计。</p>
+<p>创建机制是一个优化问题，旨在在一组约束下最大化个体参与者（如其收入或声誉）的目标函数。虽然以太坊和类似协议使得只需几行代码即可创建任何类型的代币，使用在公共基础设施上运行的简单智能合约，但我们仍然面临以下挑战：(i) 缺乏典型的构建块和标准，也称为“加密经济原语”；(ii) 缺乏必要的建模和预测工具，以设计这些代币的治理功能，特别是对于意在自动激励某种行为的更复杂类型的目的驱动代币；(iii) 此外，关于代币设计的最佳实践较少。虽然在过去几年中，通过代币销售发行了大量代币——主要是为了筹资目的——但大多数这些发行的代币缺乏适当的功能和机制设计。迄今为止，学术界与研究该领域的开发者之间的交集较少。代币发行者社区被建议在设计目的驱动代币协议时，采用机制设计的相关方法和研究成果。</p>
+</div>
+<div id="章节总结-12" class="section level3 hasAnchor" number="4.3.6">
+<h3><span class="header-section-number">4.3.6</span> 章节总结<a href="token-use-cases-代币用例.html#章节总结-12" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>目的驱动的代币激励个体行为以贡献于集体目标，这一目标可能是公共利益或减少负外部性。这里的“目的”不仅涉及最大化个人利润，还包括实现集体目标。</p>
+<p>Web3代币是易于编程的工具，可以将个体决策过程模型化到智能合约中，任何目的和行为均可被激励。目的驱动代币的示例包括：激励网络状态共识、社交媒体贡献、列表贡献、公共列表的集体策划或减少CO2排放。</p>
+<p>目的驱动代币提供了一种替代传统经济系统的方式，后者主要激励个人价值创造，导致私营部门从自然或劳动力中提取租金，并将成本外部化。经济学、公共选择理论、公共物品理论和行为科学的研究将对目的驱动代币的设计与工程过程至关重要。</p>
+<p>公共物品是任何个体都能使用而无需支付的商品，且一个人的使用不会减少其他人的可用性。比特币支付网络可视为一种技术驱动的公共物品，尽管它是“非纯”的，网络的维护和使用是集体的、无需许可的，但在容量限制达到时则变得具有竞争性。</p>
+<p>公共物品容易出现搭便车问题，即一些人消费公共物品却没有足够贡献其创造或维护。开放源代码软件和比特币协议都是此问题的例子。设计代币治理机制时需预见到这些问题。</p>
+<p>如果公共物品受到限制，它们会变成俱乐部商品或私有商品。俱乐部商品代表人为稀缺的商品。权限账本可视为俱乐部商品，只有成员能够访问并在上面进行交易。</p>
+<p>私有商品的创建往往会对公共商品造成负外部性，外部性是指影响未选择承担成本或收益的个人或社区的成本或收益。负外部性是人们和机构的活动对他人或机构造成间接成本的结果。例如，激励减少CO2排放的代币就是一种正外部性，能促进公共利益，如城市的空气质量。</p>
+<p>尽管公共物品的集体生产可以产生正外部性，但这并不排除其他负外部性的出现。如果设计不佳，目的驱动代币可能同时具有正负外部性。例如，工作量证明是维护公共物品的必要机制，但比特币挖矿的能源密集性却对社会产生负外部性。</p>
+<p>目前代币化网络的设计面临许多搭便车和公地悲剧的问题，这需要在设计代币治理机制时予以考虑。</p>
+<p>当前的共识机制基于新古典经济理论和理性经济行为者的概念，而后者简化了经济决策为基于个人利润最大化的行为。然而，这种假设在代币驱动的生态系统中并不总是适用，尤其是在涉及人类行为的复杂性时。</p>
+<p>行为经济学研究个体行为受多种非理性因素的影响，代币激励并非新事物，心理学中已有相关实验。代币经济的设计利用博弈论将人类推理模型化为自动化机制，并应考虑行为复杂性。</p>
+<p>设计共识协议与机制设计相关，后者探讨如何设计激励每个人贡献于集体目标的游戏。并非所有代币都需要是加密经济机制的产物，资产代币可以简单地代表财产权，而目的驱动代币则需要更复杂的设计。</p>
+<p>治理自主网络的协议与国家的治理相似，因此需要分析国家用于建模其代理行为的工具：宏观经济学、微观经济学、行为经济学等。这些分析将为设计有效的目的驱动代币提供理论基础。</p>
+</div>
+</div>
+<div id="steemithive-和-reddit代币化社交网络" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Steemit、Hive 和 Reddit：代币化社交网络<a href="token-use-cases-代币用例.html#steemithive-和-reddit代币化社交网络" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Steemit 是一个去中心化的社交网络，用户通过对网络的贡献获得代币奖励。它运行在 Steem 区块链上，这是一种专门用于去中心化社交网络的公共基础设施。</p>
+<p><strong>免责声明</strong>：Steemit 的治理规则及其底层的 Steem 区块链频繁发生协议更改，相关文档较为零散，一些事实难以查证。要全面理解当前的治理规则，需阅读当前的代码。因此，以下章节中提到的某些事实可能已经过时或不一致，但仍有助于描绘系统的复杂性。在撰写本书时，Steemit 网络经历了一次由核心社区驱动的新延续（Hive），并受到当前事件的影响。尽管网络似乎正在下降，但它仍然为探索代币化社交网络的最佳实践和最差实践提供了一个有形的用例。</p>
+<p>Steemit 是一个运行在 Steem 区块链上的去中心化应用程序。与基于 Web2 的社交媒体应用相比，Steemit 具有以下特点：(i) 无广告；(ii) 所有数据在账本上公开，这意味着没有单一机构拥有你的交易数据；(iii) 网络贡献者通过网络代币获得奖励。获得的报酬取决于贡献的数量和受欢迎程度。Steemit 是无权限的，允许任何用户免费加入。注册可以通过电子邮件或电话号码进行，需人工验证；也可以支付费用创建账户。两种程序都旨在增加账户创建的努力/成本，以对抗垃圾邮件、机器人和占名现象。</p>
+<p>Steemit 可能是第一个也是运行时间最长的去中心化应用。它于 2015 年构思，并自 2016 年以来一直在运营。截至本书撰写时，网络拥有超过一百万注册用户、25,000 篇帖子、100,000 条评论以及每天在 Steem 区块链上处理的 140 万笔交易。因此，它是加密社区中比较成熟的项目之一。Steemit 上线的时间与以太坊网络出现大致相同，彼时尚不可能在不创建自己分布式基础设施的情况下创建去中心化应用。从今天的角度来看，Steemit 协议似乎过于复杂且过时，但在当时它是一个具有远见的项目，走在时代的前面。项目创始人创建了自己的专用基础设施（Steem 区块链和本地代币 STEEM）以及自己的稳定代币（STEEM dollar）。如今，这种复杂性并非必需，因为任何人都可以在像以太坊这样的智能合约网络上构建去中心化社交网络，并使用许多公开可用的稳定代币。创始人 Dan Larimer 还创建了“BitShares”和“EOS”区块链网络，二者均使用“Graphene”作为共识机制。Steem 区块链同样使用 Graphene，并为 Steemit 社交媒体网络以及其他去中心化应用（如“d.tube”，类似于 YouTube 的去中心化视频平台，以及“d.sound”，类似于 Spotify 或 Soundcloud 的去中心化音频流媒体服务）提供基础设施。这些平台都使用 Steem 区块链来执行其智能合约，但用户和流量均少于 Steemit。尽管 Steemit 存在许多设计缺陷，它仍为理解代币化和去中心化社交媒体应用提供了深刻的用例。</p>
+<div id="当今社交媒体的问题" class="section level3 hasAnchor" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> 当今社交媒体的问题<a href="token-use-cases-代币用例.html#当今社交媒体的问题" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>在过去十年中，社交媒体已成为人们与同龄人沟通和消费信息的重要组成部分。随着社交媒体的出现，传统媒体变得去专业化，任何人都可以通过创建社交媒体账户来贡献和策划内容，从而影响公众舆论。Facebook、Twitter 和 Reddit 替代了报纸，YouTube 替代了电视，滑动和滚动成为新的频道切换方式。随着这些社交媒体平台的兴起，它们从自由表达的开放空间转变为少数大玩家的寡头垄断。</p>
+<p>在早期，Facebook 和 Twitter 等社交媒体网站上的策划过程由用户自主进行。但这种自主权已被基于平台提供者开发的算法数据流所取代，这些数据流现在注入了越来越多的广告。社交媒体平台已成为我们内容的策划者，完全控制着我们的数据流。通常，这些经过社会工程化的数据流旨在让用户尽可能长时间地留在平台上，形成上瘾，并优化广告收入，往往优先展示受欢迎的内容，同时抑制不太受欢迎的帖子（更多内容请阅读：基本注意代币和代币策划注册）。</p>
+<p>虽然用户贡献了有价值的内容和策划服务，但他们没有办法直接将其贡献货币化。此外，发布在这些平台上的内容可能会受到运营公司或某些国家政府的审查和控制。用户可能被禁止发布特定类型的内容，且用户账户随时可能被停用。数据隐私和控制也是这些基于 Web2 的社交媒体平台的问题。个人信息和用户行为（如内容偏好、购买模式、性取向、种族、性别或政治观点）会被追踪并存储在提供这些社交媒体服务的公司的服务器上。这些数据也可能被转交给其他公司和机构。虽然这些数据收集大多用于生成针对性广告的广告收入，但也曾被用于政治操控，可能成为人物评估和社会画像的基础。像剑桥分析丑闻这样的事件，涉及个人数据被转交给其他机构，这些机构随后利用这些数据操纵2016年美国总统选举或脱欧公投的选民，已经侵蚀了公众对社交媒体网络的信任。</p>
+</div>
+<div id="steemit-的代币经济学" class="section level3 hasAnchor" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> Steemit 的代币经济学<a href="token-use-cases-代币用例.html#steemit-的代币经济学" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>去中心化社交网络如 Steemit 具有 (i) 无数据垄断，所有交易数据公开可见，用户可通过 Steem 区块浏览器访问，(ii) 不需要广告收入，因为网络由 (iii) 为其贡献获得代币奖励的用户共同管理。用户可以使用“标签和主题”来查找或标记内容，这使得 Steemit 更类似于 Reddit 而非 Facebook。用户通过三种不同类型的网络代币获得奖励：“Steem”、“Steem Dollar”和“Steem Power”。</p>
+<p><strong>Steem (STEEM)</strong> 是 Steem 区块链的原生代币，具有可转让性，每天都会创造新代币。</p>
+<p><strong>Steem Power (SP)</strong> 是一种声望代币，旨在反映用户在社交网络中的影响力。新账户会收到初始 SP 代币，之后通过对网络的贡献获得 SP，也可以以 1:1 的比例用 Steem 购买。SP 的数量越多，用户在网络中的贡献奖励越高。如果拥有大量 SP 的用户为他人帖子点赞，该用户将获得比其他 SP 较少的用户点赞更多的代币。SP 可转换回 Steem，称为“减电”，但这一过程被故意延长至十三周，以防止用户一次性出售代币，从而导致价格崩溃和市场操控。</p>
+<p><strong>Steem Dollar (SBD)</strong> 是一种稳定代币，与美元按 1:1 的比例挂钩。SBD 可以在公开市场上购买或通过贡献获得（社交媒体网络的贡献奖励中有 50% 以 SBD 支付）。一旦获得，这些 SBD 代币可以： (i) 兑现；(ii) 持有；或 (iii) 转换为 Steem，经过 3.5 天的转换过程后在公开市场上出售，以避免“套利攻击”。由于 SBD 旨在保持稳定价格，持有 SBD 代币的人将错失 Steem 的价格上涨。为了鼓励 SBD 代币持有者持有 SBD，他们每年可获得 10% 的利息，这一利率是可变的，可在协议升级中更改。</p>
+<p>Steemit 网络有三种不同类型的用户：(i) 内容创作者：发布内容；(ii) 活跃用户：通过点赞来策划内容；(iii) 被动用户：消费内容。内容创作者发布帖子，但只有在其他用户（内容策划者）为其帖子点赞后，才能获得代币奖励。如果一篇帖子表现良好，为该帖点赞的策划者将比为不受欢迎帖子点赞的策划者获得更多的 SP。奖励来自两个奖励池，以 Steem Power 和 Steem Dollar 的混合形式发放，具体分配由内容创作者决定。奖励仅在内容发布后的前七天支付，之后帖子仍会在线，但不再能获得奖励。</p>
+<p>获得的代币数量取决于帖子获得的点赞数量，以及点赞的策划者所拥有的 Steem Power 数量。若一位策划者拥有 2,000 SP，另一位拥有 20,000 SP，则两次点赞的效果将不同。为激励高质量内容，用户在特定时间内的点赞次数受到限制。此外，如果同一用户决定点赞多个帖子，则每次投票的权重会降低，具体取决于投票之间经过的时间。网络每天以 20% 的速度恢复投票权。两者机制的目的是防止投票垃圾邮件，激励优质决策。然而，实际上，用户往往会投票给他们预期会受欢迎的内容，例如 meme，而不一定是他们认为的优质内容。</p>
+<p>Steemit 应用程序运行在采用“委托权益证明”（DPoS）作为共识算法的 Steem 区块链网络上。DPoS 是一种权益证明的变体，区块链网络上的代币持有者社区为 21 个所谓的“见证人”投票，将他们的 STEEM 代币委托给这些见证人。见证人代表代币持有者验证交易并创建区块。就网络性能而言，DPoS 比工作量证明更具可扩展性，这是一个支持社交网络进行数千笔交易的前提。</p>
+<p>Steem 区块链不断创造新的 STEEM 代币，这些代币添加到“奖励池”中，代币持有者将根据协议中定义的治理规则获得奖励。根据当前的治理规则，15% 的新铸造 STEEM 代币奖励给持有 SP 的用户，75% 分配给内容创作者和策划者，10% 支付给见证人。STEEM 代币的初始货币政策高度通货膨胀，每年几乎翻一番。由于社区的压力，STEEM 的通货膨胀率调整为每年 9.5%。截至本书撰写时，STEEM 的通货膨胀率为 9%，并将每年减少 0.5%。</p>
+</div>
+<div id="steemit-的批评" class="section level3 hasAnchor" number="4.4.3">
+<h3><span class="header-section-number">4.4.3</span> Steemit 的批评<a href="token-use-cases-代币用例.html#steemit-的批评" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>尽管 Steemit 及其底层的 Steem 区块链基础设施展示了重新定义社交网络的潜力，但其代币设计背后存在一些根本的设计缺陷。此外，由于 Steem 区块链上的所有数据都是公开的，任何人都可以利用这些数据创建去中心化应用程序，为 Steemit 社区开发有用的工具，例如“Catch a Whale”或“Steem Market”。</p>
+<p><strong>开放数据</strong>：与 Web2 社交媒体平台不同，Steemit 区块链上的所有交易数据都是公开透明的，任何人都可以通过简单的链分析进行检查。这使得 Steemit 更像 Twitter、Medium 或 YouTube，而不是 Facebook，所有人都能看到用户的行为。为了提供更具隐私保护的设计，协议中需要实施替代的加密算法，如多方计算或零知识证明，以及其他混淆技术。Web3 社区目前的趋势是构建更具隐私保护的区块链网络，这似乎也促使 Steemit 制定了遮蔽部分公共数据的路线图。</p>
+<p><strong>声誉可用金钱购买</strong>：Steemit 原本旨在设计一个优质内容的社交媒体网络。然而，由于声誉代币设计的缺陷，激励优质内容的效果并不理想。尽管 Steem Power (SP) 被设想为声誉代币，但它基于网络参与者行为的简化假设。代币机制未考虑到“公共悲剧”或短期经济思维。SP 可以用法币购买，因此愿意投资大量金钱的用户能够快速增强其网络权力，赚取比那些有机积累声誉的用户更多的收益。这种简单的代币设计假设，持有更多代币（即在网络中有更多股份）的人会自动激励贡献优质内容。然而，不同用户的兴趣各异，个人品味也是相对的。任何有意义的声誉代币设计都需要个性化，而不是成为网络中所有用户的通用指标。多年来，这些设计缺陷导致少数富有代币持有者的权力垄断，形成网络中巨大的权力不对称。是否能经济上获益于网络贡献，取决于所有代币的当前汇率，也与个人的 SP 有关。最近的网络分析显示，只有 2% 的帖子获得显著回报，而大多数帖子可能无法弥补生产成本，这在很大程度上也是权力不对称的结果。</p>
+<p><strong>权力不对称</strong>：关于代币分配状态的信息似乎存在很多不透明，这对一个基于区块链的应用程序而言是奇怪的。Steemwhales.com 和 steemd.com 曾经发布过分配图，但已停止运营。当前在这一主题上的不透明程度引人注目，具体数字难以研究，主要因为 SP 和 SBD 可互换，相关的列表排名混乱或已被放弃。关于这一主题的任何在线请求通常会得到机器人的无效回复。唯一可靠的数字是几年前，前十名代币持有者控制了 79.3% 的 SP、85% 的 Steem 和 45% 的 SBD。根据可得数据，中位数用户平均持有约 2,000 SP 或更少，而高净值代币持有者（也称为鲸鱼）持有 2,000,000 SP。值得注意的是，已发布的富人榜单是否最新尚不明确，也没有找到分配图。可以合理假设，由于当前的激励设计偏向大型代币持有者，过去两年这种权力分化加剧。</p>
+<p><strong>机器人与投票交易</strong>：理论上，激励机制旨在鼓励用户创造和策划相关的优质内容。然而，网络活动的现实表明，奖励模型往往会鼓励产生以点击诱饵为驱动的内容。尽管在账户创建过程中有一些防机器人措施，但 SP 是可转让代币，这意味着可以从一个用户委托给另一个用户。这导致了基于潜在盈利能力对帖子进行投票的机器人出现。机器人可以与委托其 SP 的代币持有者分配奖励。因此，Steemit 上的内容策划往往不是基于质量，而是优化以最大化利润。内容的生产趋向于潜在盈利，而创作者会考虑哪些内容可能会被高声望策划者和机器人注意到。机器人可以互相点赞，从而形成对盈利预期的循环反馈，考虑到相对较早的投票更具盈利性，且如果后续投票较多，效果更佳。Steemit 的治理设计面临的其他挑战包括投票交易和富有成员的霸凌，影响力的垄断、由大代币持有者的明显控制及强迫审查。</p>
+<p><strong>自我点赞</strong>：Steemit 允许用户为自己的帖子自我点赞，这在网络中引发了许多讨论。反对者批评自我点赞的偏见，认为这降低了策划过程的质量。支持者则认为，不自我点赞意味着稀释自己的股份，将权力仅给予其他用户。此外，他们认为如果用户希望自我点赞但不能这样做，他们将简单地创建第二个账户。</p>
+<p><strong>内容治理</strong>：Steemit 上的内容不进行审查或审查。一些人认为这缺乏治理，而一些社区成员支持“抗审查的去中心化应用程序”，其他人则批评缺乏内容审查，特别是在涉及儿童色情方面。另一方面，似乎有些用户因违反“服务条款”而被禁止使用 Steemit。</p>
+<p><strong>密钥管理</strong>：钱包软件的可用性和密钥恢复很重要。基于区块链的系统不允许集中式密码恢复。丢失密码且没有备份的 Steemit 用户将失去对其资金的访问。只要社会密钥恢复解决方案未到位，安全的密钥管理将成为用户采用的瓶颈。</p>
+<p><strong>用户吸引与留存</strong>：虽然许多早期 Steemit 用户是出于意识形态原因加入网络，但绝大多数用户只是一次性用户，或者仅发布几条帖子便不再返回，原因有多种：在开始通过贡献赚取金钱之前，需要花时间建立追随者。此外，网络中当前的分配不平等，源于激励机制偏向早期进入者和持有大量代币的用户，使得用户留在网络中的吸引力减弱。</p>
+</div>
+<div id="steemit-硬分叉hive-网络" class="section level3 hasAnchor" number="4.4.4">
+<h3><span class="header-section-number">4.4.4</span> Steemit 硬分叉：Hive 网络<a href="token-use-cases-代币用例.html#steemit-硬分叉hive-网络" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>2020年2月，Steemit Inc. 被 Tron 基金会收购，该基金会管理着 Tron 区块链。Steem 生态系统的社区成员对这次收购及其新领导层表示担忧，尤其是 CEO Justin Sun，他提出了将 STEEM 代币迁移到 Tron 网络的计划。然而，最大的担忧在于，随着收购，Tron 基金会还控制了约 20% 的总 STEEM 代币供应，这部分代币被社区称为“Steemit Inc. 的忍者挖矿股份”。这些忍者代币多年前已预挖并分配给 STEEM 的创始人，他们现已将 Steemit Inc. 出售给 Tron 基金会。尽管这些忍者代币一直构成威胁，但它们从未被用于投票等网络控制行为。过去，STEEM 社区曾对网络创始人不会滥用这些代币充满信心，但由于对新所有者的不信任和对潜在权力抢夺的担忧，STEEM 的见证人几乎立即利用用户授权的投票执行了对 Steem 区块链的软分叉。</p>
+<p>通过这次软分叉，忍者代币地址被阻止进行未来的网络控制活动。社区投票支持这一软分叉，以防止新所有者（Tron 基金会）使用忍者代币。见证人将软分叉解释为“维持目前由 Steemit Inc. 持有股份的状态及其预期用途的临时保护协议。”2020年3月初，一次由社区主导的分叉因 Tron 基金会与少数代币交易所协调，试图以那些交易所上用户的 STEEM 代币来追溯性地撤销软分叉而失败。这种对用户代币的滥用引发了激烈的争论。</p>
+<p>核心社区选择通过硬分叉进行分裂，而非在 Steem 网络内争夺权力。2020年3月中旬，Steem 区块链协议和 Steemit 应用程序被分叉为一个名为“Hive”的新网络。所有由 Steemit Inc. 控制的忍者代币被审查，不会在 Hive 网络中反映。所有其他网络代币将被迁移到 Hive，Steemit 应用程序中的所有博客数据也将迁移到 Hive 网络。每位博客作者将决定未来使用 Steemit 还是 Hive。如果博客作者继续在 Steemit 上发布，他们的新帖子将仍由 Steem 区块链管理；如果选择 Hive，他们的新帖子将在 Hive 网络上发布。理论上，所有在 Steem 区块链上运行的其他应用程序，如“Splinterlands”、“Steemian”、“d-tube”和“d.sound”，也可能迁移到 Hive 网络。</p>
+<p>这次收购、随后的软分叉和硬分叉展示了区块链网络的去中心化特性，同时也揭示了委托权益证明（DPoS）共识机制的潜在攻击向量。原本意在作为去中心化社交网络的 Steemit 却容易受到中心化努力的影响，包括 Tron 基金会的收购和他们与交易所的勾结，后者在未征得用户同意的情况下使用其用户代币进行投票。这也展示了见证人的权力，他们作为这些分叉的主要领导者。</p>
+<p>Tron 基金会的 CEO 将这些分叉视为“恶意黑客”的行为，违反了“私人财产的神圣性”，并审查了与 Hive 硬分叉相关的约 4500 条帖子和评论。然而，考虑到博客作者向 Hive 的迁移，Tron 基金会及其涉及的交易所后来撤回了他们的决定，并调整了口吻。新的 Steemit Inc. 所有者承认他们审查了讨论 Hive 硬分叉的 Steemit 基于的帖子，并以维护私人利益为由辩解。这次用户的分散迫使新所有者发布了一篇博客文章，试图重建信任，表示他们希望“尽快将治理权重新交还给社区……并说服用户回归 Steemit 项目。”整个冲突反映了 Web2 和 Web3 之间的文化变迁，显示出一些个人和机构仍在努力理解 Web3 的去中心化特性和对中心化控制的范式变化。</p>
+<p>尽管 Steemit 为社交媒体网络的新纪元铺平了道路，展示了如何在代币经济中重新思考社交网络，但其设计缺陷仍然显著。如果 Steemit 或 Hive 希望生存下去，他们需要改变代币经济，消除权力结构中的不平等，并设计与用户身份相关的声誉代币。否则，新内容创作者将很难在系统中获得关注。尽管 Steem 区块链和 Steemit 应用程序不断调整治理规则，认真听取部分社区反馈，但代币设计缺陷可能过于根本。未来可能会出现新的竞争者，如“Akasha”、“all.me”、“Belacam”、“DLive”、“E-chat”、“Golos”、“Minds”、“Mithril”、“5media”、“Social X”或“UUNIO”，它们可能提供更具韧性的代币经济。</p>
+</div>
+<div id="reddit将-web2-平台代币化" class="section level3 hasAnchor" number="4.4.5">
+<h3><span class="header-section-number">4.4.5</span> Reddit：将 Web2 平台代币化<a href="token-use-cases-代币用例.html#reddit将-web2-平台代币化" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>“Reddit” 是一个以主题为导向的 Web2 社交媒体平台，用户可以通过创建子板块（subreddits）进行讨论。子板块代表用户创建的板块，有助于围绕各种主题引导讨论。用户可以提交评论，这些评论可以被其他用户点赞、点踩或评论。帖子可见性的排名由点赞和点踩的数量决定。“Karma” 点数决定了用户在网络中的声誉。Reddit 成立于 2005 年，目前有超过 200 万个子板块，排名全球访问量前 20 的网站之一。</p>
+<p>在 2020 年 5 月，两个子板块——r/Cryptocurrency 和 r/FortNiteBR，分别拥有超过 240 万用户，宣布推出自己的子板块代币——MOON 和 BRICK，这两种代币将由以太坊网络管理。两种代币可以视为将所有子板块代币化的测试用例。代币将在以太坊测试网“Rinkeby”上管理几个月，随后迁移到以太坊主网。“Reddit Vault” 是一个集成在 Reddit 移动应用中的以太坊钱包，用于与以太坊网络进行通信。这两种代币设计为可转让，用户可以将 MOON 和 BRICK 代币发送到任何其他 ERC-20 兼容的钱包。代币还附带特殊的社区投票权，尽管目前尚不清楚这种投票过程将如何进行。在初始设计中，代币可用于动画表情、独家徽章和使用 GIF 回复 Reddit 评论。代币的货币政策有所不同，至少在某种程度上可以由每个子板块社区决定。这意味着每个子板块社区将对代币的属性和功能（发行率、铸造过程、投票权、可转让性、实用属性）拥有一定的控制权。r/Cryptocurrency 宣布 MOON 代币每月固定发行 500 万个，发行率每月下降 2.5%，直到总量达到 2.5 亿个。r/FortNiteBR 尚未为其 BRICK 代币指定发行率。在撰写本书时，仍不清楚何时或是否会有交易所上市这些代币。通过这一步，Reddit 成为第一个正式宣布代币化社交媒体活动的 Web2 平台。其他现有社交媒体网络很可能很快跟进。最大的挑战将是设计代币，以防止经济系统的目的被游戏化。</p>
+</div>
+<div id="章节总结-13" class="section level3 hasAnchor" number="4.4.6">
+<h3><span class="header-section-number">4.4.6</span> 章节总结<a href="token-use-cases-代币用例.html#章节总结-13" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Steemit 是一个去中心化的社交网络，用户的贡献会获得网络代币的奖励。与基于 Web2 的社交媒体应用程序不同，去中心化社交网络如 Steemit 没有数据垄断，意味着所有交易数据都是公开可见的，并且不需要广告收入，因为网络是由贡献者共同管理的，贡献者会因对网络的贡献而获得代币。支付的多少取决于用户的贡献数量和受欢迎程度。</p>
+<p>Steemit 有三种不同类型的用户：（a）内容创作者：发布内容；（b）活跃用户：通过点赞（upvote）来策划内容；（c）被动用户：消费内容。用户通过三种不同类型的网络代币获得对网络的贡献奖励：“Steem”、“Steem Dollar”和“Steem Power”。</p>
+<p>尽管 Steemit 和其基础的 Steem 区块链基础设施是重新定义社交网络的良好案例，但代币设计背后的经济学存在一些基本缺陷。由于声誉代币的设计缺陷，目前在激励和提供高质量内容方面存在许多问题。虽然 Steem Power（SP）本应作为声誉代币，但其基于网络参与者行为的过于简单化假设。</p>
+<p>代币机制没有考虑到“公地悲剧”或短期经济思维。声誉代币（Steem Power）可以用法币购买。因此，愿意投入大量资金购买 Steem Power 的用户，可以比试图有机建立声誉的用户更快地提高其网络权力并赚取更多金钱。此外，声誉代币的设计没有考虑到不同用户的不同兴趣，个体品味是相对的。</p>
+<p>网络活动的现实表明，奖励模型常常鼓励创作点击诱饵式内容，受机器人驱动。虽然在账户创建过程中有一些针对机器人的预防措施，Steem Power 是一种可转让代币，这意味着它可以从一个用户转让到另一个用户。这导致了程序化机器人被编程用于基于潜在盈利性为帖子投票的现象。机器人可以与代币持有者共享奖励。这些机器人可以互相为其他机器人投票，从而创造循环反馈，考虑到如果投票相对较早，投票将更有利可图，且如果会有更多投票跟随。</p>
+<p>Steemit 允许用户自我投票其帖子，这在网络上引发了许多讨论。反对者批评自我投票的偏见，认为这降低了策展过程的质量。支持者则认为，不自我投票意味着稀释自己的股份，并只将权力交给其他用户。此外，他们还辩称，如果用户想要自我投票而无法这样做，他们将简单创建第二个账户。</p>
+<p>与 Web2 社交媒体平台不同，Steemit 区块链上的所有交易数据对每个人都是公开透明的，可以通过简单的链分析进行检验。这意味着任何人都可以检查 Steemit 生态系统中发生的事情以及谁做了什么。需要在协议中实施替代的加密算法，如多方计算或零知识证明，以及额外的混淆技术，以便提供更具设计隐私。</p>
+<p>在 2020 年 3 月，发生了一次敌意收购和有争议的硬分叉，社区分叉成一个名为“Hive”的新网络。</p>
+<p>新的竞争者，如“Akasha”、“all.me”、“Belacam”、“DLive”、“E-chat”、“Golos”、“Minds”、“Mithril”、“5media”、“Social X”或“UUNIO”，可能会在未来几年提供更具韧性的代币经济学。</p>
+</div>
+</div>
+<div id="基本注意力代币广告的重新定义" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> 基本注意力代币：广告的重新定义<a href="token-use-cases-代币用例.html#基本注意力代币广告的重新定义" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<blockquote>
+<p>基本注意力代币项目的理念是将用户的注意力代币化，从而创建一个更透明、更高效的广告市场。基本注意力代币颠覆了广告行业各参与者的角色，重新定义了谁拥有你的注意力和网络浏览体验，谁从中获得收益的问题。</p>
+</blockquote>
+<p>历史上，经济交易主要基于用金钱、债务或其他产品交换商品。选择有限，客户的期望相对较低。由于商品稀缺，生产者不需要个性化其产品或与其他产品区分开来。工业革命（1860-1920年）降低了生产成本，改变了商品供需之间的动态。随着生产开始超过需求，市场竞争日益激烈，产品商品化，销售和营销成为公司区分其产品与竞争对手的方式。随之而来的是销售革命（1920-1940年）。接着是营销革命（1940-1990年），这导致了二十世纪末和二十一世纪初更细致的营销革命，专注于关系营销和社交媒体营销。自由贸易协定和互联网的出现使公司越来越多地将生产和服务外包到其他国家，专注于产品设计、品牌塑造和广告宣传。</p>
+<p>自农业革命以来，人类首次接近资源丰富的阶段，如食品、金钱和知识。现代大多数短缺问题源于分配效率低下，且很少是实际短缺的结果。在信息泛滥、供应链优化和算法市场机制的时代，这种低效率可以进一步减少。15世纪印刷机的发明可以被视为第一次信息革命，而互联网的出现带来了第二次信息革命，随之而来的是信息的丰富。数据已成为信息经济的燃料，而注意力则是稀缺资源。随着我们逐渐接近“零边际成本社会”，时间和注意力成为两种最稀缺的资源。一个人能用于关注广告的时间是有限的。</p>
+<div id="注意力经济数据市场与隐私" class="section level3 hasAnchor" number="4.5.1">
+<h3><span class="header-section-number">4.5.1</span> 注意力经济、数据市场与隐私<a href="token-use-cases-代币用例.html#注意力经济数据市场与隐私" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Web2平台，尤其是社交媒体平台和搜索引擎，并没有直接的商业模式来从其提供的服务中产生收入。他们唯一拥有的是用户数据，这些数据成为基于用户行为的定向广告的基础。这彻底改变了广告行业的格局。目前的广告技术生态系统主要由两家公司控制：Alphabet（谷歌）和Facebook。从网页浏览历史到基于位置的数据，我们日常的移动行为都在被这些服务提供商追踪，并转售给市场行业的数据经纪人。数据经纪人分析并转售这些数据给广告商。算法方法从这些原始数据中提取信息，以评估哪些客户对哪些广告商最为相关。如今，用户几乎没有对其个人数据在Web2服务提供商的封闭环境中发生的事情进行直接控制。</p>
+<p>收集特定特征的消费者名单并将这些名单出售给市场公司和广告商并不是一项新鲜事。然而，互联网极大降低了收集和处理此类名单的成本，并允许在更加个性化的层面上进行。结合机器学习应用，我们现在能够以前所未有的程度个性化广告，这在之前是不可行的。在定向广告的早期阶段，使用Facebook、谷歌及类似广告网络的市场营销人员只能根据单一服务提供商收集的数据来定位个体。然而，在2012年，Facebook开始允许公司上传自己的名单，并将其数据与Facebook数据进行关联。这使得公司能够链接来自不同来源的数据集，并根据电子邮件地址或电话号码来定位用户。其他公司，如谷歌和Twitter，也很快推出了类似的功能。复杂的方法已经被开发出来，以通过跨不同用户账户、设备以及有时甚至线下数据链接不同公司的数据集，来分析互联网用户的行为。这些数据集可以使用指向个人的伪匿名标识符（如电子邮件地址、电话号码和Cookies）轻松链接。Cookies是发布者用来跨互联网服务跟踪和链接个人偏好和行为的强大工具。</p>
+<p>此外，在当前基于客户端-服务器的互联网环境中，用户和广告商对其数据发生的事情几乎没有直接控制权。大数据公司成为数据泄露和隐私侵犯的聚集地，这一点在“剑桥分析公司文件”中表现得尤为明显，该文件显示Facebook数据被用于操控英国和美国的选举。定向广告与个性化数据流的结合被许多人视为削弱用户自主权的工具，并催生了个体意见的回音室。数以百万计的用户在设备上安装了广告拦截器，以对抗这种监视趋势。发布者对此的反应是通过弹出窗口和消息轰炸用户，要求他们将网站列入白名单或完全禁用广告拦截器。目前超过6亿台设备似乎在使用广告拦截软件。</p>
+<p>广告行业在这些数据经纪人和服务提供商的供应链中也存在不透明的问题。一些不道德甚至欺诈性的广告技术提供商声称提供定向广告，而实际上用户可能收到的是他们最近购买的产品的广告。购买此类“自定义受众”的广告商无法直接洞察广告技术提供商的封闭环境中真实发生的事情。他们必须信任第三方提供商，认为广告得到了妥善交付。2016年，估计有超过70亿美元的在线广告欺诈发生，从错误投放到恶意广告。</p>
+</div>
+<div id="基本注意力代币bat" class="section level3 hasAnchor" number="4.5.2">
+<h3><span class="header-section-number">4.5.2</span> 基本注意力代币（BAT）<a href="token-use-cases-代币用例.html#基本注意力代币bat" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>当今数字广告涉及两个主要利益相关者：广告商和发布者，以及许多为广告商和发布者服务的中介服务。用户在系统中几乎没有主动角色，除了有限的选择退出可能性。基本注意力代币项目颠覆了广告行业各参与者的角色，重新定义了谁拥有你的注意力和网络浏览体验，谁从中获得收益的问题。基本注意力代币提供了针对当前行业挑战的代币化解决方案。其理念是利用加密代币和保护隐私的浏览器创建一个去中心化的广告系统。广告通过P2P方式直接在“Brave”浏览器中进行，该去中心化应用与以太坊网络通信，并管理两种代币：BAT（基本注意力代币）和BAM（基本注意力指标）。</p>
+<p>BAT代币可在发布者、广告商和用户之间进行价值转移，具体方式为：(i) 用户以保护隐私的方式获得查看广告的补偿，(ii) 发布者获得比现有情况更高的广告收入份额，(iii) 广告商能够获得更好的投资回报以及更准确的数据。用户可以选择根据他们的注意力赚取BAT代币。当他们在Brave浏览器中激活广告时，浏览器会根据他们的浏览历史显示相关广告作为系统通知。</p>
+<p><strong>基本注意力指标（BAM）</strong> 允许在浏览器中准确跟踪和报告用户注意力。尽管浏览器持续追踪用户的注意力，但这些数据是匿名的，因为它从未离开在用户设备上本地运行的浏览器软件。设备内的机器学习算法决定个性化广告的相关内容。每个广告的“注意力价值”取决于广告的观看时长以及其他指标，如广告像素与相关内容的可见比例等。数据分析直接在浏览器上进行，以提供定向广告，而不会向投放广告的公司（广告商）泄露基础数据。广告商可以直接访问可信的指标，而无需第三方追踪，也不妨碍用户的隐私。这种去中介化的程度可以提高定向广告的效果。</p>
+<p>在本书撰写时，Brave浏览器已有超过1300万月活跃用户，他们使用Brave浏览网页、管理其代币并进行其他操作。与当前的网页浏览器不同，Brave浏览器内置了广告拦截功能，并使用Tor网络。这种广告拦截也使浏览器速度更快。此外，Brave浏览器提供了更强的安全性，因为它会将没有HTTPS的网站升级为使用HTTPS协议。隐私不是一个需要手动安装的可选浏览器扩展。该浏览器还提供分析仪表板，以监控和管理激励计划、广告匹配算法和注意力测量系统等功能。</p>
+<p>一些人认为，像“万物中心”（Hub of All Things）这样的基于云的服务，例如个人数据微服务器，已经提供了将个人数据控制权转回给用户的机会，用户可以配置自己的个人数据存储基础设施。然而，这些服务仍然属于边缘现象。尽管这些服务确实提供了对数据存储位置的更多控制，用户仍然必须依赖第三方进行身份管理和托管服务，这无法提供与BAT等区块链解决方案相同的自主性和安全性。</p>
+<p><strong>BAT的详细运作方式：</strong> 任何下载该应用的人都将获得初始数量的BAT代币。广告商向发布者支付BAT代币以展示个性化广告，这些广告由Brave浏览器中的算法基于本地收集的数据进行过滤。这意味着用户保留对其数据的所有权和控制权。在投放广告时，广告商通过智能合约以锁定状态发送BAT代币。如果用户查看广告，智能合约会解锁BAT代币，从而使用户获得高达70%的广告收入。承载广告的发布者将获得其余部分，这可能激励他们提供相关的高质量内容，而不是随机发送无关的广告。用户可以因其时间和注意力而获得补偿，并且可以将这些代币用于其他在线活动，如为艺术家和内容创作者的免费在线内容打赏。</p>
+<p>这种打赏选项与“Patreon”等服务的运作方式相似，但消除了对Patreon等第三方服务的需求。未来，用户还可以使用BAT代币支付订阅、数字商品和其他服务。在本书撰写时，BAT代币可用于向超过1000个组织进行慈善捐赠，如红十字会或世界自然基金会。BAT已与TAP网络达成合作，该公司是一家提供奖励服务的技术公司，拥有超过250,000个商业合作伙伴，如亚马逊、苹果、沃尔玛、美国航空、星巴克和HBO。用户还将能够用他们的BAT代币兑换来自这些公司的奖励，这可能进一步激励用户采用Brave和BAT。此外，还有超过28,000个Brave认证发布者接受BAT代币，如Vimeo、Vice、华盛顿邮报、《卫报》和MarketWatch。</p>
+</div>
+<div id="展望与挑战" class="section level3 hasAnchor" number="4.5.3">
+<h3><span class="header-section-number">4.5.3</span> 展望与挑战<a href="token-use-cases-代币用例.html#展望与挑战" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>基于Web3的广告解决方案为发布者提供了更高的透明度，而不牺牲用户隐私。由于这一解决方案的开源特性，浏览器软件可以进行审计，所有交易都可以公开验证。开源特性有助于提高系统的韧性并减少欺诈行为。然而，在BAT能够实现大规模市场采用之前，仍然存在一些需要解决的挑战。</p>
+<p>与Steemit不同，BAT在代币经济学和代币治理方面是一个中心化的解决方案。虽然STEEM和Steem Power是基于对Steem生态系统贡献的证明而铸造的目的性代币，但BAT代币则与法定货币挂钩。BAT代币并不是基于特定行为的证明而铸造，而是最初通过代币销售以法定货币进行融资的。BAT模型中的代币流动和价值创造似乎反映了传统的价值创造模型，基于一池预挖的BAT代币。Brave的创始人和管理者决定发行多少代币以及代币流动的方式：在风险投资者的私人资本注入后，BAT项目于2017年进行了代币销售，销售在30秒内结束，筹集了约3500万美元（156,250 ETH）。总共创建了15亿个代币，其中10亿个在代币销售中出售，其余代币保留。Brave团队为未来发展分配了2亿个代币（BAT开发池），并将在用户下载浏览器时，按先到先得的原则分多批次免费发放3亿个代币（用户增长池）。首次发放始于2017年12月。用户增长池目前仍持有约2.5亿个BAT。就代币分配而言，前100名用户拥有72%的全部代币供应量。</p>
+<p>BAT项目仍处于推广的早期阶段，许多功能正在开发中。需要开发反欺诈机制以限制每位用户所投放的广告数量。这是一个挑战，因为任何人都可以在不同设备上打开任意数量的钱包。此外，为了使代币提取符合监管机构的要求，可能需要某些KYC（了解您的客户）机制，特别是在反洗钱立法的背景下。目前钱包是单向的；代币不能提取。用户需要使用第三方服务将法定货币转换为BAT，反之亦然。这可能是短期限制，随着系统的成熟，最终会得到解决。</p>
+<p>说服用户切换到像Brave这样的新浏览器可能会很困难，因为浏览器市场份额历来相对稳定。然而，与传统浏览器相比，Brave提供隐私功能和收益机会。通过观看广告赚钱，同时承诺前所未有的隐私水平，可能会改变浏览器市场的动态。一旦Brave的所有功能完全推出并正常运行，可能会足够吸引用户付出努力在他们的设备上安装新的软件。</p>
+<p>然而，广告商可能是BAT采用的最大瓶颈。谷歌和Facebook目前主导广告技术行业，估计市场份额约为70%。他们庞大的用户基础使他们在广告商和发布者中颇受欢迎。虽然他们在新闻推送或搜索结果中提供广告选项，但BAT目前仅提供展示广告，这对广告商吸引力不够。BAT项目在其路线图中计划将BAT的使用扩展到广告之外的浏览器内价值转移场景。他们是否能成功实现这一计划仍然不明朗。</p>
+<p>从长远来看，BAT生态系统或类似的注意力代币可能成为社交媒体上微支付的主流方式，不仅用于广告支付，还用于奖励内容创作和内容策展。除了BAT之外，还有其他项目正在开发类似的解决方案，例如专注于视频广告的AdEx项目。</p>
+</div>
+<div id="章节总结-14" class="section level3 hasAnchor" number="4.5.4">
+<h3><span class="header-section-number">4.5.4</span> 章节总结<a href="token-use-cases-代币用例.html#章节总结-14" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>基本注意力代币（BAT）为广告行业当前的挑战提供了代币化解决方案，重新定义了用户、发布者和广告商之间的互动方式。它重新审视了谁拥有你的注意力和上网体验，谁从中获得报酬。该项目利用代币激励和保护隐私的浏览器应用，创建了一个去中心化的广告交易所。</p>
+<p>“Brave”浏览器是一个去中心化应用，与以太坊网络通信，管理两种代币：BAT（基本注意力代币）和BAM（基本注意力指标）。</p>
+<p>BAT代币可以在发布者、广告商和用户之间转移价值，具体方式为： (i) 用户在保护隐私的前提下获得广告观看补偿， (ii) 发布者获得比现有模式更高的广告收入份额， (iii) 广告商获得更好的投资回报和更准确的数据。用户可以选择根据自己的注意力赚取BAT代币。当他们在Brave浏览器中激活广告时，浏览器会根据他们的浏览历史以系统通知的形式显示相关广告。广告以P2P方式直接在用户的钱包和浏览器中进行。</p>
+<p>基本注意力指标（BAM）允许在浏览器中准确跟踪和报告用户注意力。设备内的机器学习算法决定个性化广告的相关内容。数据分析直接在浏览器内进行，以便提供针对性的广告，而不向投放广告的公司（广告商）透露基础数据。广告商可以直接访问可信的指标，而无需第三方跟踪，也不损害用户隐私。</p>
+<p>尽管浏览器不断跟踪用户的注意力，这些数据是匿名的，因为它从未离开本地运行的浏览器软件。用户对自己的数据保持所有权和控制权。</p>
+<p>基于Web3的广告解决方案为发布者提供了更高的透明度，而不牺牲用户的隐私。由于这一解决方案的开源特性，浏览器软件可以进行审计，所有交易都可以公开验证。开源特性有助于提高系统的韧性并减少欺诈行为。</p>
+<p>在投放广告时，广告商通过智能合约以锁定状态发送BAT代币。如果用户观看广告，智能合约会解锁BAT代币，补偿用户最多70%的广告收入。发布广告的发布者获得剩余部分，这可能激励他们提供相关的优质内容，而不是随机发送无关的广告。</p>
+<p>用户可以为自己的时间和注意力获得补偿，并将这些代币用于其他在线活动，例如向艺术家和内容创作者打赏他们的免费在线内容。BAT代币还可以用于向第三方组织进行慈善捐款。</p>
+</div>
+</div>
+<div id="代币策划注册新的搜索方式" class="section level2 hasAnchor" number="4.6">
+<h2><span class="header-section-number">4.6</span> 代币策划注册：新的搜索方式？<a href="token-use-cases-代币用例.html#代币策划注册新的搜索方式" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<blockquote>
+<p>代币策划注册提供了一种市场机制，用于内容策划，能够补充集中式策划服务。代币作为经济激励，被用来策划列表或对列表中的信息进行排名，包括社交网络中的内容供给或电子商务平台的推荐算法。</p>
+</blockquote>
+<p>列表和注册证明是组织、排名和分享信息的有效工具。我们在日常决策过程中使用列表，例如“最佳书籍”、“最佳餐厅”、“顶级大学”、“值得投资的代币”、“最佳电影”、“最佳经典电影”、“最佳恐怖电影”、“某电子商务平台某类别的最佳产品”、“该地区最佳预算或豪华酒店”。这些列表或注册可以是私人或公共的，通常由中心化管理。我们可以使用白名单或黑名单来过滤相关信息。任何报纸或杂志实际上也是相关信息的策划列表。无论是每日新闻还是时尚杂志，这些出版物中的内容都经过精心选择和排序，通常将更重要的信息突出显示在封面和前几页，而不是放在中间或最后部分。这种过滤是第三方策划过程的结果，这样读者可以节省大量自己研究和过滤信息的时间。策划过程外包给值得信赖的编辑，他们负责认真策划。</p>
+<p>自互联网出现以来，这类列表、排名或推荐服务变得越来越重要。互联网大幅降低了信息发布和分享的成本，导致从所有在线噪音中筛选出有意义的信息变得困难。最初的在线列表是收集和整理来自其他网站信息的网站，帮助用户在网上搜索相关信息。早期的“搜索引擎”由付费人员手动创建，他们负责像图书馆的书架一样对在线内容进行分类，但这种过程并不可扩展。海量信息促生了一种新形式的公共列表创建，通过应用（i）机器学习算法和（ii）群体智慧机制来推导出有意义的列表和排名。谷歌是首批引入算法搜索的搜索引擎之一，而Tripadvisor则引入了“群体智慧”解决方案，汇总个人推荐生成“该地区最佳酒店”列表。这种第三方策划，无论是公共的还是私人的、算法驱动的还是基于群体智慧的，都容易受到审查和操控，因为它们是集中管理的。</p>
+<p>在线服务的用户必须相信提供此类策划服务的互联网平台是诚实的，并希望他们对餐厅或酒店的品味与自己的品味相符。在私人管理的列表中，列表所有者可以任意添加或删除列表成员，或要求希望列入名单的人员支付费用。他们的排名方法通常不公开，可能被操控，或者可能与用户的品味或判断不一致。像Tripadvisor这样的公共列表也可能被大量匿名用户操控，他们可能通过垃圾信息、虚假评分或社交工程来影响列表。为了减轻这些集体策划列表的问题，通常会任命半集中化的列表管理员进行手动干预，这实际上是一个集中化的点，且不易扩展。例如，Facebook将其大部分手动内容策划审核外包给菲律宾等低收入国家以节省成本。</p>
+<p>第三方策划和推荐服务提供商的方法在很大程度上是不公开的，导致过滤算法缺乏透明性。策划任务涉及维护白名单或黑名单、管理数据供给、过滤评论或提供上下文特定的推荐。机器学习算法通过将个性化用户数据与其他所有用户的行为统计数据进行关联来推导建议。电子商务平台如eBay或亚马逊使用机器学习来排名搜索结果，一旦您选择了某个商品，便会建议可能与您相关的其他产品。视频流媒体服务如Netflix使用机器学习来推荐可能相关的电影，而音乐平台如Soundcloud或Spotify则建议您可能喜欢的音乐播放列表。社交媒体平台如Twitter、Facebook或Instagram则利用机器学习对您的信息流中的帖子和广告进行排名。然而，只有少数几家公司控制着我们今天使用的搜索引擎、社交网络和其他数字服务的策划过程。</p>
+<div id="代币策划注册tcrs如何运作" class="section level3 hasAnchor" number="4.6.1">
+<h3><span class="header-section-number">4.6.1</span> 代币策划注册（TCRs）如何运作<a href="token-use-cases-代币用例.html#代币策划注册tcrs如何运作" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>代币策划注册（TCRs）是由Mike Goldin提出的一种市场机制，用于在没有第三方协调的情况下共同策划列表。代币提供了一种经济激励，以策划对消费者有价值的列表。交易通过分布式账本自主结算和清算。TCR旨在代表一种公共利益，任何人都可以参与其中。</p>
+<div id="前提条件" class="section level4 hasAnchor" number="4.6.1.1">
+<h4><span class="header-section-number">4.6.1.1</span> 前提条件<a href="token-use-cases-代币用例.html#前提条件" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>要建立一个TCR，需要（i）定义列表的目的，(ii) 发行本地代币，以及 (iii) 制定治理机制，确保所有代币持有者都有动力维护高质量的列表。</p>
+</div>
+<div id="利益相关者" class="section level4 hasAnchor" number="4.6.1.2">
+<h4><span class="header-section-number">4.6.1.2</span> 利益相关者<a href="token-use-cases-代币用例.html#利益相关者" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li><strong>候选者</strong>提供列表内容；</li>
+<li><strong>消费者</strong>使用该列表；</li>
+<li><strong>策展人</strong>（代币持有者）共同管理列表的质量。</li>
+</ul>
+</div>
+<div id="过程" class="section level4 hasAnchor" number="4.6.1.3">
+<h4><span class="header-section-number">4.6.1.3</span> 过程<a href="token-use-cases-代币用例.html#过程" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>候选者需要存入一定数量的代币以申请列入列表。任何代币持有者都可以参与策划过程，并在一定时间内对候选者的申请是否应被列入列表进行投票。如果他们认为该申请应被排除，可以挑战该列表。为此，他们必须在智能合约中存入一定数量的代币，锁定一部分其网络股份。一旦发起挑战，所有其他代币持有者也可以通过抵押他们的代币进行投票。如果在投票期结束时，大多数代币持有者拒绝该申请，则申请者的存款将被分配给挑战者和所有投票反对该申请的代币持有者。否则，该候选者的列表将被添加到注册中，智能合约会将挑战者的存款分配给申请者和所有投票支持该列表的代币持有者。建议TCR将投票过程分为两个阶段：承诺阶段和揭示阶段。结果仅在承诺阶段完成后公开广播，以避免“协调攻击”，即某个策展人可能会对其他策展人的投票过程产生影响。代币在承诺阶段被锁定，在揭示阶段解锁。</p>
+</div>
+<div id="代币" class="section level4 hasAnchor" number="4.6.1.4">
+<h4><span class="header-section-number">4.6.1.4</span> 代币<a href="token-use-cases-代币用例.html#代币" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>代币设计为可转让和同质的（所有代币设计为相等）。假设每个列表需要其自己的代币，以可靠地传达列表的质量和网络的价值。代币的价格是供求的结果，因此被视为所有代币持有者集体行动的绩效指标。如果TCR接受非本地代币作为支付手段，例如BTC或ETH，代币持有者的集体表现将无法反映列表的表现，因此经济激励机制将无法正常运作。</p>
+</div>
+<div id="机制设计" class="section level4 hasAnchor" number="4.6.1.5">
+<h4><span class="header-section-number">4.6.1.5</span> 机制设计<a href="token-use-cases-代币用例.html#机制设计" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>激励机制需要对齐利益，确保代币持有者投票真实是有利的，并且不会导致系统欺诈。认为会被拒绝的候选者不太可能申请；否则，他们将失去代币。另一方面，理论上，代币持有者可以拒绝每个候选者，但这与他们增加代币价值的利益相悖。空列表对任何人都没有吸引力。所有利益相关者的盈利能力和质量需要良好对齐，以便能够产生客观且高质量的列表。</p>
+</div>
+<div id="设计假设" class="section level4 hasAnchor" number="4.6.1.6">
+<h4><span class="header-section-number">4.6.1.6</span> 设计假设<a href="token-use-cases-代币用例.html#设计假设" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>TCR的概念基于以下假设：自由市场的列表可能比集中管理的列表和数据供给提供更好的质量策划机制。还假设经济参与者希望最大化利润，并在任何时候都表现理性。候选者被认为对列入列表有兴趣以进行广告，并愿意支付列入费用，因为在此类列表上的位置验证了其服务的质量。策展人同样在网络中持有网络代币，对维护有流量的良好列表获得更多收益，因此他们有动力真实策划列表。代币持有者的投票权与其持有或抵押的代币数量成正比。基于这种比例投票权的想法是，利益最大的参与者最有动力为网络的最佳利益行事。消费者则寻求高质量的信息，使用列表进行决策。如果列表质量良好，消费者将愿意查阅该列表，这将使候选者更有兴趣申请列入，进而增强该列表的整体经济。</p>
+</div>
+</div>
+<div id="攻击向量" class="section level3 hasAnchor" number="4.6.2">
+<h3><span class="header-section-number">4.6.2</span> 攻击向量<a href="token-use-cases-代币用例.html#攻击向量" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>注册的经济学需要设计得考虑所有可能的攻击向量。已识别出多种攻击向量，例如“恶搞”、“疯子攻击”、“注册中毒”或“掷硬币”。每种潜在攻击的解决方案需要在TCR的治理规则中反映，以保证高质量的列表。</p>
+<ul>
+<li><p><strong>恶搞</strong>：恶搞者可能会试图向列表中添加不符合标准的内容。这种恶搞在现有的Web2平台上也会发生，例如亚马逊，添加评论几乎不需要成本，除了撰写评论的费用。解决方案需要设计成使恶搞者添加低质量列表的成本较高，失去存入的列表费用便是一种机制。但即便列表费用对大多数用户来说足够高，非经济动机的攻击者或资金充足的攻击者仍可能通过非相关的列表淹没系统。可以提高最低存款额，这可能会排除资金不足的合格申请者，从而形成经济进入壁垒。</p></li>
+<li><p><strong>注册中毒</strong>：指的是曾因良好理由而被接受的列表，后来的服务质量下降，不再符合列表要求。机制需要设计成激励代币持有者发现并挑战“毒化”注册的列表。</p></li>
+<li><p><strong>搭便车</strong>：代币持有者可能选择搭便车，不积极参与任何投票过程，希望其他代币持有者能维护列表的质量，从而保持其代币持有的价值。</p></li>
+<li><p><strong>掷硬币</strong>：做出错误决策没有直接惩罚，只有间接的长期影响，可能会反映在列表质量下降后代币价格上。为了短期最大化利润，代币持有者可能认为随机投票（掷硬币）更为合理，而不是花时间进行理性评估。假设“掷硬币者”和“真实代币持有者”之间的投票分配能够在此掷硬币行为的影响下维持列表的完整性，但如果太多策展人通过掷硬币搭便车，列表质量可能会受到威胁。</p></li>
+<li><p><strong>疯子攻击</strong>：这指的是可能有经济动机来破坏列表质量的人的潜在操控尝试，他们会花费大量资金通过低质量列表淹没注册（51%攻击）。机制需要设计得使51%攻击的成本较高。然而，考虑到潜在的“搭便车”问题，只有少数代币持有者可能会积极参与对提案的投票，这意味着在实际操作中，疯子攻击可能并不如理论上的所有代币持有者的51%攻击那么昂贵。</p></li>
+<li><p><strong>投票模仿</strong>：某些代币持有者可能会模仿群体行为，以便始终处于多数投票区块，从而处于胜利一方并始终获得代币。为避免这种情况，已引入了承诺-揭示方案，确保其他人的投票仅在投票期结束后才会被揭示。</p></li>
+</ul>
+</div>
+<div id="tcrs的批评" class="section level3 hasAnchor" number="4.6.3">
+<h3><span class="header-section-number">4.6.3</span> TCRs的批评<a href="token-use-cases-代币用例.html#tcrs的批评" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>代币策划注册（TCRs）如果能够提供抵抗操控的替代方案，将可能改变游戏规则。然而，批评者指出，使用代币加权投票的TCR存在几个问题：（i）无法提供细致的策划；（ii）无法取代主观声誉系统；（iii）存在“最低经济”规模的问题。他们认为，仅仅在系统中持有股份不足以建立高质量的策划，因为代币持有者更可能追求短期利润，随时可以出售代币并退出系统，这在长期内对列表的集体质量有害。此外，任何TCR都需要一个最低市场规模以抵抗操控尝试，这意味着新列表面临“鸡与蛋”的问题。消费者不会对小型或半空的注册感兴趣，而候选者也不会对一个没有人访问的注册申请感兴趣。</p>
+<p>另一个问题是，TCR并不适用于所有类型的注册。Bulkin明确表示反对，并区分“主观TCR”和“客观TCR”。他认为，TCR只有在（i）存在对列表问题的客观答案，并且（ii）答案可公开观察（如某地的气温）时才能成功。</p>
+<p>Bulkin批评代币投票未必能为主观列表提供更高质量的策划，并且受到小型和大型代币持有者之间的权力不对称的影响，尤其是当注册代币可以通过金钱而非声誉获得时。为了获得胜利，代币持有者可能会被激励投票支持他们认为大多数代币持有者或大型代币持有者将支持的选择。Bulkin指出，主观问题不能通过Goldin提出的客观机制准确回答。对于受主观口味或意见影响的列表，需要更强的协调信号，这将需要一组定义良好的策展人，他们的价值观高度一致。在这种设置中，信任策展人和理解他们的动机非常重要。对于高质量的主观列表，Bulkin建议将TCR与社会声誉系统结合，以为TCR添加必要的上下文。由于不同人具有不同的社会价值，增加社会价值的上下文在策划某些类型的列表时至关重要。他还认为，声誉分数比财富更可能均匀分布，并且当包括主观声誉系统时，TCR更容易启动，这将解决“最低经济”问题，使列表对早期用户足够有吸引力。添加社会声誉还可以解决投票模仿的问题，如果坏行为者失去声誉或账户被列入黑名单，这种设置还可以缓解投票圈和某些投票购买攻击。</p>
+<p>此外，Mike Goldin的方法没有考虑可能的“搭便车”问题，一些代币持有者可能选择保持被动，仅因投机原因投资代币。这些“搭便车者”希望其他策展人会以可信的方式投票，从而保持网络质量。搭便车是公共物品的典型问题。为了解决这个问题，治理规则可以设计成强制代币持有者投票。然而，这很可能导致所谓的“投票模仿”或“掷硬币”，即随机投票以节省研究和决策的时间，这也可能会随着时间推移降低注册的质量。虽然TCR的概念可以用来构建一个抵抗操控的去中心化列表，但没有声誉系统将无法实现。</p>
+<p>由于TCR尚未公开测试，因此尚不清楚哪些治理规则在长期内有效，以及如何最优设置治理列表内部经济的变量。这些变量可能因列表的类型和目的而异，例如：（i）代币持有者提交挑战投票的时间量；（ii）代币持有者揭示投票的时间量；（iii）实施特定结果所需的投票百分比。定义这些变量的一大挑战可能是代币持有者挑战申请的时间。如果设定时间过长，代币持有者可能会忘记投票。治理规则参数的更改可以以类似于对注册新应用进行投票的方式进行投票。为提出新治理机制，代币持有者可以抵押代币并提交申请，由所有其他代币持有者投票。新治理机制的应用可以以与注册申请相同的方式进行评估，这意味着它们也会受到相同攻击向量的影响。</p>
+</div>
+<div id="tcr的其他类型" class="section level3 hasAnchor" number="4.6.4">
+<h3><span class="header-section-number">4.6.4</span> TCR的其他类型<a href="token-use-cases-代币用例.html#tcr的其他类型" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>对Mike Goldin提出的初始概念进行了多种替代提案，以减轻前述一些攻击向量或为列表增加信息质量。以下是几种TCR变体的简要介绍：</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>有序TCR</strong>：简单TCR为无序列表， curators投票决定是否纳入条目并对其进行排名。每个条目都有独占排名，两个条目不能相同。</p></li>
+<li><p><strong>分级TCR</strong>：有序TCR的简单变体，两个条目可以拥有相同的声誉点，条目可以拥有相同的排名，而不占用唯一索引，提供更好的质量信号。</p></li>
+<li><p><strong>分层TCR</strong>：引入不同的接受层次。条目可通过预定义规则进行初步资格审核，并需满足额外标准以进入下一层，从而提高列表的整体质量。</p></li>
+<li><p><strong>嵌套TCR</strong>：列表的条目指向其他列表，反映不同属性之间的关系。</p></li>
+<li><p><strong>组合TCR</strong>：可视化多个条目，代币持有者可共同定义可接受的集合、范围和参数。</p></li>
+<li><p><strong>连续代币策划注册</strong>：将连续代币模型与TCR结合，创建流动性市场，代币根据预设的算法曲线铸造。注册的价值取决于列表的实用性。</p></li>
+</ol>
+<p>虽然经典的TCR提案可能用例有限，但更复杂和精细化提案的出现是一个有趣的现象。越来越多的项目开始在其代币设计中实施各种TCR提案的元素，例如“Relevant”构建的声誉协议，结合主观标准和TCR，以抵御假新闻的社交新闻阅读器。其他使用TCR的项目包括“AdChain”、“Distric0x”和“Messari”。</p>
+</div>
+<div id="章节总结-15" class="section level3 hasAnchor" number="4.6.5">
+<h3><span class="header-section-number">4.6.5</span> 章节总结<a href="token-use-cases-代币用例.html#章节总结-15" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>在线列表和推荐引擎通过（i）机器学习算法和（ii）群体智慧机制来生成有意义的列表、排名和推荐。这些列表或注册表可以是私人或公共的，通常由中央管理。白名单或黑名单用于过滤相关信息，节省用户研究和筛选信息的时间。然而，第三方策展易受审查和操纵。</p>
+<p>策展任务涉及管理和维护数据源、过滤评论或提供上下文特定的推荐。机器学习算法通过将个性化用户数据与其他用户的统计行为数据关联，得出建议。这些方法大多未公开，导致过滤算法缺乏透明度。</p>
+<p>代币策划注册（TCR）提供了一种代币化市场机制，用于在缺乏第三方协调和集中管理的情况下共同策划列表。代币作为经济激励来执行策展任务，交易由分布式账本自主结算。</p>
+<p>TCR旨在代表公共利益，任何人都可以参与。设立TCR需要（i）定义列表的目的，（ii）创建本地代币，以及（iii）建立治理机制，以确保所有代币持有者有动力维护高质量列表。</p>
+<p>利益相关者包括（i）候选人提供列表内容，（ii）消费者使用列表，以及（iii）策展人（代币持有者）共同管理列表质量。</p>
+<p>候选人必须存入一定数量的代币以申请列表。任何代币持有者都可以参与策展过程，并在规定时间内对候选人是否应纳入列表进行投票。为此，他们必须将一定数量的代币存入智能合约，锁定他们的一部分网络权益。</p>
+<p>如果在投票期结束时，申请被大多数代币持有者拒绝，申请者的存款将分配给挑战者和所有其他投票拒绝的代币持有者。否则，候选人的列表将添加到注册表中，智能合约将把挑战者的存款分配给申请者和所有投票接受该列表的代币持有者。</p>
+<p>候选人若认为自己会被拒绝，则不太可能申请；否则，他们将失去代币。另一方面，代币持有者理论上可以拒绝每个候选人，但这与他们提高代币价值的利益相悖。空列表对任何人都没有吸引力。所有利益相关者的盈利能力和质量需要良好对齐，以便生成客观且高质量的列表。</p>
+<p>代币的价格是供需的结果，因此被视为所有代币持有者集体行为的表现指标。如果TCR接受非本地代币作为支付手段，代币持有者的集体表现将无法反映列表的表现，经济激励机制因此失效。</p>
+<p>代币持有者的投票权与他们所持有的代币数量成正比。比例投票权基于这样一个理念：拥有更多权益的人更有动力以网络最佳利益行事。</p>
+<p>已识别出多个攻击向量，如“恶搞”、“疯狂人攻击”、“注册表中毒”或“抛硬币”。每个潜在攻击的解决方案需要在TCR的治理规则中体现，以保证高质量的策展。</p>
+<p>TCR只有在（i）存在客观答案和（ii）答案是公开可观察的情况下才能成功。主观问题无法通过客观机制准确回答。容易受到主观口味或意见影响的列表需要更强的协调信号，这要求拥有明确价值观的策展人组合。将TCR与社会声誉系统结合可能会为TCR提供必要的上下文，从而解决这一问题，并减轻经典TCR的一些攻击向量。</p>
+<p>对客观和主观TCR的替代提案包括：（i）有序TCR，（ii）分级TCR，（iii）分层TCR，（iv）嵌套TCR，（v）组合TCR，或（vi）连续代币策划注册。这些提案减轻了前述一些攻击向量，或为列表增加了信息质量。它们的代币治理规则各不相同。</p>
+</div>
+</div>
+<div id="如何设计代币系统" class="section level2 hasAnchor" number="4.7">
+<h2><span class="header-section-number">4.7</span> 如何设计代币系统<a href="token-use-cases-代币用例.html#如何设计代币系统" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>如果您希望将业务或社区代币化，并使其适应Web3，应该如何进行代币设计？您需要提出哪些问题？您的团队需要具备哪些知识和技能，以便能够有效地“设计”或“工程化”这些代币？本章旨在理解在设计和工程新代币系统过程中相关的问题，这取决于您希望创建的代币类型。</p>
+<p>设计思维方法在Web2的初创企业和规模化企业的产品设计实践中得到了广泛应用，尤其关注以用户为中心的设计。设计思维的概念可以追溯到1950年代，并在1990年代被商业界广泛接受。其目的是应用创造性技术来解决新问题，采用解决方案导向的整体方法。设计思维方法帮助战略性地规划新技术、产品或服务的概念，过程包括问题定义、创意、解决方案策略、建模、原型制作、测试和评估，以及迭代反馈循环。</p>
+<p>在新兴的Web3中，“工程”一词在设计代币系统的背景下被日益广泛使用，形成了一个“代币工程”社区。使用“工程”一词的动机在于体现Web3网络及其潜在应用的基础设施和任务关键性质。Trent McConaghy指出，“工程是关于系统的严格分析、设计和验证；所有这些都借助理论与实践相结合的工具。工程还是一种责任的学科：对您构建的机器负责。”他可能是第一个提出“代币工程”这一术语的人，希望“代币生态系统设计”能成为一个严谨分析、设计和验证的领域。</p>
+<p>“设计”和“工程”这两个术语紧密相关但并不相同，它们相辅相成。虽然“设计”可能是更为人所知和直观的术语，带有更主观、创造性甚至艺术性的含义，“工程”则强调技术方面，将组成部分的组合与创建可预测且稳健的整体相结合。</p>
+<p>代币工程与电气工程和公共政策设计相似，都是关于系统及其假设的严格分析、设计和验证。然而，与电气工程不同，设计人类行为更像是引导国家经济和公共政策设计，因为这需要更多“模糊”的建模技术。随着人工智能和更好的模拟工具的出现，我们可能能够设计和部署更有效的目的驱动代币，这些代币也考虑到未知的概率分布、代理的未知或对抗行为、潜在的网络外部性以及对社会其他部分造成的“公地悲剧”。</p>
+<p>虽然“代币工程”社区强调严格的软件工程实践的必要性，但在理论和实践中，往往更关注我所称的“技术工程”方面。大多数区块链/Web3/代币初创企业团队成员的构成很好地反映了这一技术中心主义。然而，工程实践的最终目标始终是社会目标。仅通过技术视角看待工程，可能会加剧对我们为何以及如何构建技术的还原主义思维。</p>
+<p>在设计代币系统时，越来越多的人意识到需要将“工程”一词以更广泛的方式使用。Web3通过分布式账本和智能合约为互联网提供了治理层和经济层。如果出现问题，后果将十分严重，如2016年的“TheDAO”漏洞或2017年的“Parity”多签合约漏洞，导致数百万欧元从一个或多个智能合约中被提取，或2020年更近期的DeFi黑客事件。因此，我建议明确区分代币的“技术工程”、“法律工程”、“经济工程”和“伦理工程”方面。</p>
+<p><img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/28_TokenEngineering.png" /></p>
+<div id="技术工程" class="section level3 hasAnchor" number="4.7.1">
+<h3><span class="header-section-number">4.7.1</span> 技术工程<a href="token-use-cases-代币用例.html#技术工程" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>在创建代币系统时，需要决定是创建基础设施代币还是应用代币，以及如何在技术上实施该代币系统。<strong>基础设施代币</strong>是指那些引导公共区块链网络（第一层）或第二层协议（如状态通道）以及其他Web3协议（如分布式文件存储网络）的代币。这些代币以目的驱动，激励集体维护相关网络。设计过程中的关键问题与安全性、可扩展性和隐私性相关。</p>
+<p><strong>安全性</strong>方面涉及设计加密经济机制，以提供所需的安全级别。</p>
+<p><strong>可扩展性</strong>方面则处理安全性、去中心化和可扩展性之间的权衡。维护安全性和高水平去中心化的同时实现可扩展性，是一个具有多种权衡的工程问题。目前正在测试不同的可扩展性技术，如分片、互操作性、状态通道和减少交易膨胀的替代加密工具。</p>
+<p><strong>隐私性</strong>方面涉及使用何种类型的加密技术，以实现正确的“隐私设计”。早期的区块链网络中，代币及其交易包含的数据对任何人都是公开的。通过额外的加密机制，可以以更具隐私保护的方式管理访问权限。然而，这并非无代价，每增加一种加密都会增加合约调用的成本。</p>
+<p><strong>应用代币</strong>则由底层分布式账本和其他Web3网络管理。技术工程过程需要考虑使用哪种基础设施和代币标准，还需考虑代币系统的潜在互操作性需求。</p>
+<p><strong>基础设施使用</strong>：由于应用代币由分布式账本管理，因此代币的隐私、可扩展性、去中心化和安全性需求必须由底层基础设施满足。因此，在选择一个解决方案与另一个之间的权衡时，必须考虑基础设施限制。</p>
+<p><strong>互操作性</strong>：尽管目前分布式账本的互操作性有限，但未来可能出现的解决方案可能会偏向某一系统。根据您的代币系统在长期内对互操作性的需求，基础设施问题需要予以考虑。</p>
+<p><strong>标准</strong>：技术工程过程可以选择不断增长的标准化代币合约列表。使用的代币标准取决于代币应具备的属性（隐私性、可替代性、可转让性、到期日），而这些属性又取决于代币的目的，同时考虑所有经济、法律或伦理约束。</p>
+<p><img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/27_TokenEngineeringAspects.png" /></p>
+</div>
+<div id="法律工程" class="section level3 hasAnchor" number="4.7.2">
+<h3><span class="header-section-number">4.7.2</span> 法律工程<a href="token-use-cases-代币用例.html#法律工程" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>在处理“简单代币系统”时，法律工程是主要任务。“简单”一词在复杂系统领域中常用。在代币工程的背景下，“简单”指的是潜在代币的商业或治理模型的动态是已知的，例如（i）中央银行货币，（ii）证券和其他资产，（iii）身份和认证过程，（iv）投票权，（v）代金券和优惠券，或（vi）入场券和其他访问权。这些用例的相关商业或治理流程经过数十年，甚至数世纪的压力测试，潜在的漏洞也在多年的试错过程中被封闭，并且已有相关法规。对这些商业/治理流程的代币化主要需要法律工程，即使现有资产、访问权和投票权的代币化符合法律法规。法律工程因此涉及传统治理模型的代币化，其中智能合约取代了许多现有的人工/纸质/客户端-服务器操作。身份代币、货币代币、资产代币或投票权代币的法律工程过程中需要回答以下相关问题：</p>
+<ul>
+<li>需要考虑哪些跨国/国家/地方司法管辖区？</li>
+<li>可能涉及哪些监管机构？</li>
+<li>我们如何设计智能合约以确保其法律合规？</li>
+<li>是否需要改变司法管辖区以适应代币化和Web3的新可能性/动态？</li>
+</ul>
+</div>
+<div id="经济工程" class="section level3 hasAnchor" number="4.7.3">
+<h3><span class="header-section-number">4.7.3</span> 经济工程<a href="token-use-cases-代币用例.html#经济工程" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>在设计“复杂代币系统”时，经济工程是主要需求。这些目的驱动代币的激励和治理规则与社区的共同目标相结合，通过自动化机制引导集体行动。治理模型通常是未知的，是在Web3中通过智能合约和分布式账本调节集体行动的新可能性的结果。许多人称这些代币为“实用代币”、“工作代币”或“共识代币”。这些代币共同的特点是引导集体行动朝向共同的目的，这些目的可以是共识、资源共享、声誉和策展、减少二氧化碳排放等。设计此类系统所需的工具可以在经济学、网络科学、网络物理系统和社会技术系统中找到。</p>
+<p>经济学研究经济制度、政策和伦理，包括资源配置、财富差异和市场动态等问题，这些问题涉及商品和服务的生产、分配和消费。</p>
+<p>网络科学研究复杂网络，从生物网络到经典的电信网络，再到计算机网络和社交网络。使用的方法包括数学、物理学、计算机科学和社会学。</p>
+<p>网络物理系统是由计算机算法控制或监控的机制，与互联网及其用户紧密集成。例如，电网和大规模交通系统都共享一种特性：不受控的人类行为可能以完全违反直觉的方式创造不良或甚至不安全的条件。</p>
+<p>社会技术系统这个术语最早出现在1940年代，指的是私营和公共组织及社区的社会和技术方面的互动，在线和现实世界中。它研究一个社会使用的复杂基础设施，如互联网和其他通信网络、供应链和法律系统，以及人类行为。两者之间的关系可以是简单的（线性因果关系）或复杂的（非线性且难以引导和预测）。</p>
+<p>在此类设计过程中需要回答的主要问题包括：</p>
+<ul>
+<li>代币系统的目标：您想创建什么样的系统？</li>
+<li>您需要多少种不同的代币类型？一些代币系统具有多种代币类型，以在网络内引导集体行动。前面章节中提到的例子有去中心化社交媒体网络Steemit（STEEM、SP、SBD）或稳定代币MakerDAO（DAI、WETH、PETH、SIN、MKR）。其他代币系统只有一种代币，如比特币网络。一般而言，代币类型越多，网络的动态引导越复杂。</li>
+<li>目的：明确代币的目的对于进一步的设计过程至关重要。经过对100多个代币系统的分析，发现目的越明确，网络的韧性越强。个人认为，代币应该只有一个目的。如果有多个目的，您可能需要更多的代币类型。否则，您的代币系统的机制设计可能会变得过于复杂。</li>
+<li>属性：一旦定义了目的，就可以考虑所有经济、法律或伦理约束来推导代币的属性。这些约束可能会影响代币系统的动态。属性选择和潜在动态的示例包括：（i）可转让性：代币是绑定于唯一身份（个人或机构）还是具有有限的可转让性？根据用例，答案会有所不同。有限的可转让性会自动减少代币的流动性，使其作为交换媒介变得不可行。例如，声誉代币需要绑定于网络中的个人或组织的身份，并且不应具有可转让性。（ii）可替代性：如果代币是相同的且不绑定于身份，则需要确定代币系统的货币政策，包括通货膨胀率，因为代币可以充当交换媒介（支付代币）。（iii）到期日：如果代币有到期日，这将减少代币的通货膨胀。到期日也可能在代金券或入场券等访问权的情况下是可取的。</li>
+<li>证明机制：代币的属性是建模容错机制的基础，以引导网络朝向集体目标。此类容错机制的目的是定义代币的铸造行为，以便对腐败、攻击或错误具有抗性。工作量证明（Proof-of-Work）已被证明能够实现目的（点对点交易）。然而，Steemit网络的声誉代币（Steem Power）没有针对其目的（作为指示高质量内容的容错声誉代币）设计出有效的代币机制。</li>
+</ul>
+</div>
+<div id="伦理工程" class="section level3 hasAnchor" number="4.7.4">
+<h3><span class="header-section-number">4.7.4</span> 伦理工程<a href="token-use-cases-代币用例.html#伦理工程" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>代币系统的设计还需要伦理和政治思考。我们希望创建什么样的系统并不是一个技术性问题，而是一个社会经济和政治问题。在设计此类系统之前，必须回答政治、道德和伦理的问题。如果我们未能在设计思维过程中融入伦理问题，就会产生“协议偏见”。历史表明，最终所有这些问题都需要解决。然而，如果在系统创建后再去处理这些问题，由于系统惯性，这些偏见很难逆转（参见剑桥分析公司丑闻以及随之而来的隐私、控制和社交媒体治理的讨论，以及Facebook网络当前面临的挑战）。不过，我们不必重新发明轮子。我们可以将工程伦理应用于基于互联网的系统的创建，这是硅谷及其他互联网时代的巨头未能做到的。</p>
+<p>在代币设计方面，两个最重要的伦理和政治问题是：</p>
+<div id="透明度与隐私" class="section level4 hasAnchor" number="4.7.4.1">
+<h4><span class="header-section-number">4.7.4.1</span> 透明度与隐私<a href="token-use-cases-代币用例.html#透明度与隐私" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>公共与私人利益之间的权衡是一个古老的政治讨论，政治科学和社会学对此进行了研究。虽然个体隐私很重要，但这可能会损害公共利益。以供应链透明度为例：尽管大多数消费者可能同意，他们希望获得关于商品和服务供应链上发生的事情的更多信息，但提供这样的透明度可能会侵犯个人权利（例如，在工厂安装摄像头监控工人权益也可能侵犯工人的隐私，具体取决于数据的揭示方式）。因此，在回答此类问题时，聘请具备相关专业知识的社会科学家至关重要。</p>
+</div>
+<div id="权力结构" class="section level4 hasAnchor" number="4.7.4.2">
+<h4><span class="header-section-number">4.7.4.2</span> 权力结构<a href="token-use-cases-代币用例.html#权力结构" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>去中心化、安全性和可扩展性之间的权衡是区块链网络中备受讨论的话题。去中心化三难问题引发了一个政治问题，即根据用例和社区的价值观需要/想要多少去中心化。去中心化越多，网络速度越慢，反之亦然。否则，就不得不牺牲网络的安全性。在设计像Steemit.com这样的社交媒体网络上的声誉代币时，权力结构也很重要。在其当前设计中，大多数声誉代币（Steem Power）由网络中的少数大玩家拥有，只有他们决定哪些故事是相关的。</p>
+</div>
+</div>
+<div id="多学科团队的重要性" class="section level3 hasAnchor" number="4.7.5">
+<h3><span class="header-section-number">4.7.5</span> 多学科团队的重要性<a href="token-use-cases-代币用例.html#多学科团队的重要性" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>要涵盖上述所有方面，需要一个跨学科的团队，具备四个工程领域的必要专业知识，密切合作。除了技术工程师外，团队中还应包括律师、经济学家和社会科学家，确保在高层和基层的决策中形成共识。然而，跨学科的工作需要时间和努力，因为这四个领域存在重叠，学科之间的沟通需要一定的适应过程。Web1和Web2时代的快速和粗糙的方法，即“先做再说”的开发过程，在Web3中并不奏效。一旦偏见进入协议，就很难在没有所有网络参与者共识的情况下进行更改。因此，我们需要从硅谷的“基于模因的开发”转向包括工程过程所有方面的“基于工程的开发”。“简单代币系统”可能主要需要法律和技术工程，而“复杂代币系统”则需要在四个领域之间取得良好的平衡。</p>
+</div>
+<div id="章节总结-16" class="section level3 hasAnchor" number="4.7.6">
+<h3><span class="header-section-number">4.7.6</span> 章节总结<a href="token-use-cases-代币用例.html#章节总结-16" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>“设计”和“工程”这两个术语密切相关，但并不相同。相反，它们相辅相成。虽然“设计”这一术语可能更为人所知且更直观，带有更多主观、创造甚至艺术的含义，但“工程”则更强调技术方面，即将不动的部分组合成一个可预测且稳健的整体。</p>
+<p>设计是工程过程的一部分。“工程设计”这一术语用于描述工程过程中的开放性部分，这部分最终更具主观性。类似于电气工程和公共政策设计，代币工程涉及系统及其假设的严谨分析、设计和验证。这些假设需要借助工具来调和理论与实践。与电气工程不同，设计人类行为更类似于引导国家经济和公共政策设计，因为这需要更多“模糊”的建模技术。</p>
+<p>随着人工智能和更好的仿真工具的出现，我们可能能够设计和部署更有效的目的驱动型代币，同时考虑未知的概率分布、代理的未知或对抗性行为、潜在的网络外部性以及对社会其他部分造成的“公地悲剧”。</p>
+<p>工程是创造技术的实践，其最终总是具有社会目标。从纯技术的角度看待工程会延续一种简化的思维方式，影响我们为何以及如何构建技术。人们似乎越来越认识到，在设计代币系统时使用“工程”一词的广泛意义是必要的。</p>
+<p>Web3及其分布式账本和智能合约为互联网提供了治理层和经济层。如果出现问题，附带损害将会很大。</p>
+<p>技术工程涉及创建基础代币或应用代币的技术问题，以及如何在技术上实现代币系统：基础代币还是应用代币？安全方面涉及设计加密经济机制以提供所需的安全级别。可扩展性方面则关注安全性、去中心化和可扩展性之间的权衡。隐私方面则关注应使用何种加密技术以实现适当的“隐私设计”。</p>
+<p>代币的法律工程是处理“简单代币系统”时的主要任务。“简单”这一术语通常用于复杂系统领域。在代币工程的背景下，“简单”指的是潜在代币的商业或治理模型的动态是众所周知的，例如（i）中央银行货币，（ii）证券和其他资产，（iii）身份和认证过程，（iv）投票权，（v）代金券和优惠券，或（vi）入场券和其他访问权。对已知的商业/治理过程进行代币化需要使现有资产、访问权和投票权的代币化符合当地立法。</p>
+<p>经济工程主要在设计“复杂代币系统”时需要。社区的激励和治理规则与“目的驱动代币”相联系，通过自动化机制引导社区的集体行动。设计此类系统所需的工具可以在经济学、网络科学、网络物理系统和社会技术系统中找到。在此设计过程中需要回答的主要问题包括：你希望创建什么样的系统？你需要多少种不同的代币类型？目的是什么？属性：可转让性、可替代性、过期日期？</p>
+<p>代币系统的设计还需要伦理和政治思考。我们希望创建什么样的系统并不是一个技术性问题，而是一个社会经济和政治问题。政治、道德和伦理问题需要得到回答，理想情况下是在设计此类系统之前，其中最重要的问题围绕“透明度与隐私”和“权力结构”展开。如果我们未能在此类系统的设计思维过程中融入伦理问题，就会产生“协议偏见”。</p>
+<p>在团队中除了技术工程师之外，还需要律师、经济学家和社会科学家的参与，这对开发稳健的代币系统至关重要。然而，跨学科的工作需要时间和努力，因为这四个类别重叠，学科之间的沟通需要一定的适应过程。</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="代币经济和去中心化金融.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="补充内容.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-parts.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

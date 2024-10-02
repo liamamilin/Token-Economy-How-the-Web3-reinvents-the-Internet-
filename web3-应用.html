@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Web3 应用 | Token Economy: How the Web3 reinvents the Internet</title>
+  <meta name="description" content="Chapter 2 Web3 应用 | Token Economy: How the Web3 reinvents the Internet" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Web3 应用 | Token Economy: How the Web3 reinvents the Internet" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Chapter 2 Web3 应用 | Token Economy: How the Web3 reinvents the Internet" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Web3 应用 | Token Economy: How the Web3 reinvents the Internet" />
+  
+  <meta name="twitter:description" content="Chapter 2 Web3 应用 | Token Economy: How the Web3 reinvents the Internet" />
+  
+
+<meta name="author" content="米霖 译" />
+
+
+<meta name="date" content="2024-10-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="代币经济和去中心化金融.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Token Economy: How the Web3 reinvents the Internet</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like https://bookdown.org/yihui/bookdown</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#有状态网络"><i class="fa fa-check"></i><b>1.1</b> 1. 有状态网络</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#区块链-一种有状态的协议"><i class="fa fa-check"></i><b>1.1.1</b> 区块链: 一种有状态的协议</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#其他web3-协议"><i class="fa fa-check"></i><b>1.1.2</b> 其他Web3 协议</a></li>
+<li class="chapter" data-level="1.1.3" data-path="index.html"><a href="index.html#web3-中的去中心化应用"><i class="fa fa-check"></i><b>1.1.3</b> Web3 中的去中心化应用</a></li>
+<li class="chapter" data-level="1.1.4" data-path="index.html"><a href="index.html#章节概括"><i class="fa fa-check"></i><b>1.1.4</b> 章节概括</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#跟踪代币比特币区块链及其他分布式账本"><i class="fa fa-check"></i><b>1.2</b> 2. 跟踪代币：比特币、区块链及其他分布式账本</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#加密经济学共识与工作量证明"><i class="fa fa-check"></i><b>1.2.1</b> 加密经济学、共识与工作量证明</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#网络节点"><i class="fa fa-check"></i><b>1.2.2</b> 网络节点</a></li>
+<li class="chapter" data-level="1.2.3" data-path="index.html"><a href="index.html#网络攻击"><i class="fa fa-check"></i><b>1.2.3</b> 网络攻击</a></li>
+<li class="chapter" data-level="1.2.4" data-path="index.html"><a href="index.html#协议分叉与网络分裂"><i class="fa fa-check"></i><b>1.2.4</b> 协议分叉与网络分裂</a></li>
+<li class="chapter" data-level="1.2.5" data-path="index.html"><a href="index.html#替代分布式账本系统"><i class="fa fa-check"></i><b>1.2.5</b> 替代分布式账本系统</a></li>
+<li class="chapter" data-level="1.2.6" data-path="index.html"><a href="index.html#替代的共识机制"><i class="fa fa-check"></i><b>1.2.6</b> 替代的共识机制</a></li>
+<li class="chapter" data-level="1.2.7" data-path="index.html"><a href="index.html#是否需要代币"><i class="fa fa-check"></i><b>1.2.7</b> 是否需要代币？</a></li>
+<li class="chapter" data-level="1.2.8" data-path="index.html"><a href="index.html#使用案例与应用"><i class="fa fa-check"></i><b>1.2.8</b> 使用案例与应用</a></li>
+<li class="chapter" data-level="1.2.9" data-path="index.html"><a href="index.html#章节总结"><i class="fa fa-check"></i><b>1.2.9</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#代币安全-密码学"><i class="fa fa-check"></i><b>1.3</b> 3. 代币安全 ： 密码学</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#公钥密码学"><i class="fa fa-check"></i><b>1.3.1</b> 公钥密码学</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#安全算法"><i class="fa fa-check"></i><b>1.3.2</b> 安全算法</a></li>
+<li class="chapter" data-level="1.3.3" data-path="index.html"><a href="index.html#哈希"><i class="fa fa-check"></i><b>1.3.3</b> 哈希</a></li>
+<li class="chapter" data-level="1.3.4" data-path="index.html"><a href="index.html#钱包与数字签名"><i class="fa fa-check"></i><b>1.3.4</b> 钱包与数字签名</a></li>
+<li class="chapter" data-level="1.3.5" data-path="index.html"><a href="index.html#钱包类型与密钥管理"><i class="fa fa-check"></i><b>1.3.5</b> 钱包类型与密钥管理</a></li>
+<li class="chapter" data-level="1.3.6" data-path="index.html"><a href="index.html#发送代币"><i class="fa fa-check"></i><b>1.3.6</b> 发送代币</a></li>
+<li class="chapter" data-level="1.3.7" data-path="index.html"><a href="index.html#章节总结-1"><i class="fa fa-check"></i><b>1.3.7</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#谁控制着代币以用户为中心的身份"><i class="fa fa-check"></i><b>1.4</b> 4. 谁控制着代币?以用户为中心的身份</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i><b>1.4.1</b> Disclaimer</a></li>
+<li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#身份管理"><i class="fa fa-check"></i><b>1.4.2</b> 身份管理</a></li>
+<li class="chapter" data-level="1.4.3" data-path="index.html"><a href="index.html#标识符"><i class="fa fa-check"></i><b>1.4.3</b> 标识符</a></li>
+<li class="chapter" data-level="1.4.4" data-path="index.html"><a href="index.html#认证"><i class="fa fa-check"></i><b>1.4.4</b> 认证</a></li>
+<li class="chapter" data-level="1.4.5" data-path="index.html"><a href="index.html#声明与凭证"><i class="fa fa-check"></i><b>1.4.5</b> 声明与凭证</a></li>
+<li class="chapter" data-level="1.4.6" data-path="index.html"><a href="index.html#server-centric-identities"><i class="fa fa-check"></i><b>1.4.6</b> Server-Centric Identities</a></li>
+<li class="chapter" data-level="1.4.7" data-path="index.html"><a href="index.html#history-of-digital-identity-management"><i class="fa fa-check"></i><b>1.4.7</b> History of Digital Identity Management</a></li>
+<li class="chapter" data-level="1.4.8" data-path="index.html"><a href="index.html#user-centric-identities-using-dids"><i class="fa fa-check"></i><b>1.4.8</b> User-Centric Identities using DIDs</a></li>
+<li class="chapter" data-level="1.4.9" data-path="index.html"><a href="index.html#outlook"><i class="fa fa-check"></i><b>1.4.9</b> Outlook</a></li>
+<li class="chapter" data-level="1.4.10" data-path="index.html"><a href="index.html#chapter-summary"><i class="fa fa-check"></i><b>1.4.10</b> Chapter Summary</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="web3-应用.html"><a href="web3-应用.html"><i class="fa fa-check"></i><b>2</b> Web3 应用</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="web3-应用.html"><a href="web3-应用.html#智能合约"><i class="fa fa-check"></i><b>2.1</b> 智能合约</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="web3-应用.html"><a href="web3-应用.html#自我执行的协议"><i class="fa fa-check"></i><b>2.1.1</b> 自我执行的协议</a></li>
+<li class="chapter" data-level="2.1.2" data-path="web3-应用.html"><a href="web3-应用.html#智能合约的调用与外部数据"><i class="fa fa-check"></i><b>2.1.2</b> 智能合约的调用与外部数据</a></li>
+<li class="chapter" data-level="2.1.3" data-path="web3-应用.html"><a href="web3-应用.html#行业应用案例"><i class="fa fa-check"></i><b>2.1.3</b> 行业应用案例</a></li>
+<li class="chapter" data-level="2.1.4" data-path="web3-应用.html"><a href="web3-应用.html#预言机"><i class="fa fa-check"></i><b>2.1.4</b> 预言机</a></li>
+<li class="chapter" data-level="2.1.5" data-path="web3-应用.html"><a href="web3-应用.html#二手车购买案例"><i class="fa fa-check"></i><b>2.1.5</b> 二手车购买案例</a></li>
+<li class="chapter" data-level="2.1.6" data-path="web3-应用.html"><a href="web3-应用.html#智能合约的历史"><i class="fa fa-check"></i><b>2.1.6</b> 智能合约的历史</a></li>
+<li class="chapter" data-level="2.1.7" data-path="web3-应用.html"><a href="web3-应用.html#章节总结-2"><i class="fa fa-check"></i><b>2.1.7</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="web3-应用.html"><a href="web3-应用.html#web3-网络与其他-dao-的制度经济学"><i class="fa fa-check"></i><b>2.2</b> Web3 网络与其他 DAO 的制度经济学</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="web3-应用.html"><a href="web3-应用.html#daos-与传统组织"><i class="fa fa-check"></i><b>2.2.1</b> DAOs 与传统组织</a></li>
+<li class="chapter" data-level="2.2.2" data-path="web3-应用.html"><a href="web3-应用.html#公司演变与企业理论"><i class="fa fa-check"></i><b>2.2.2</b> 公司演变与“企业理论”</a></li>
+<li class="chapter" data-level="2.2.3" data-path="web3-应用.html"><a href="web3-应用.html#国家治理与代议制民主"><i class="fa fa-check"></i><b>2.2.3</b> 国家治理与代议制民主</a></li>
+<li class="chapter" data-level="2.2.4" data-path="web3-应用.html"><a href="web3-应用.html#去中心化自治组织"><i class="fa fa-check"></i><b>2.2.4</b> 去中心化自治组织</a></li>
+<li class="chapter" data-level="2.2.5" data-path="web3-应用.html"><a href="web3-应用.html#web3-网络与基于智能合约的-dao"><i class="fa fa-check"></i><b>2.2.5</b> Web3 网络与基于智能合约的 DAO</a></li>
+<li class="chapter" data-level="2.2.6" data-path="web3-应用.html"><a href="web3-应用.html#dao-的制度经济学"><i class="fa fa-check"></i><b>2.2.6</b> DAO 的制度经济学</a></li>
+<li class="chapter" data-level="2.2.7" data-path="web3-应用.html"><a href="web3-应用.html#dao-的货币与财政政策"><i class="fa fa-check"></i><b>2.2.7</b> DAO 的货币与财政政策</a></li>
+<li class="chapter" data-level="2.2.8" data-path="web3-应用.html"><a href="web3-应用.html#章节总结-3"><i class="fa fa-check"></i><b>2.2.8</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="web3-应用.html"><a href="web3-应用.html#web3-网络与其他-daos-的治理"><i class="fa fa-check"></i><b>2.3</b> Web3 网络与其他 DAOs 的治理</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="web3-应用.html"><a href="web3-应用.html#web3-网络治理的挑战"><i class="fa fa-check"></i><b>2.3.1</b> Web3 网络治理的挑战</a></li>
+<li class="chapter" data-level="2.3.2" data-path="web3-应用.html"><a href="web3-应用.html#网络中的制衡机制"><i class="fa fa-check"></i><b>2.3.2</b> 网络中的制衡机制</a></li>
+<li class="chapter" data-level="2.3.3" data-path="web3-应用.html"><a href="web3-应用.html#链外治理与链上治理"><i class="fa fa-check"></i><b>2.3.3</b> 链外治理与链上治理</a></li>
+<li class="chapter" data-level="2.3.4" data-path="web3-应用.html"><a href="web3-应用.html#去中心化神话与无信任网络"><i class="fa fa-check"></i><b>2.3.4</b> 去中心化神话与无信任网络</a></li>
+<li class="chapter" data-level="2.3.5" data-path="web3-应用.html"><a href="web3-应用.html#章节总结-4"><i class="fa fa-check"></i><b>2.3.5</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="web3-应用.html"><a href="web3-应用.html#代币token"><i class="fa fa-check"></i><b>2.4</b> 代币（Token）</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="web3-应用.html"><a href="web3-应用.html#代币的历史"><i class="fa fa-check"></i><b>2.4.1</b> 代币的历史</a></li>
+<li class="chapter" data-level="2.4.2" data-path="web3-应用.html"><a href="web3-应用.html#加密代币"><i class="fa fa-check"></i><b>2.4.2</b> 加密代币</a></li>
+<li class="chapter" data-level="2.4.3" data-path="web3-应用.html"><a href="web3-应用.html#代币的属性"><i class="fa fa-check"></i><b>2.4.3</b> 代币的属性</a></li>
+<li class="chapter" data-level="2.4.4" data-path="web3-应用.html"><a href="web3-应用.html#非同质化代币-nft"><i class="fa fa-check"></i><b>2.4.4</b> 非同质化代币 (NFT)</a></li>
+<li class="chapter" data-level="2.4.5" data-path="web3-应用.html"><a href="web3-应用.html#章节总结-5"><i class="fa fa-check"></i><b>2.4.5</b> 章节总结</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html"><i class="fa fa-check"></i><b>3</b> 代币经济和去中心化金融</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#货币与去中心化金融defi的未来"><i class="fa fa-check"></i><b>3.1</b> 货币与去中心化金融（DeFi）的未来</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#货币的属性"><i class="fa fa-check"></i><b>3.1.1</b> 货币的属性</a></li>
+<li class="chapter" data-level="3.1.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#货币的类型"><i class="fa fa-check"></i><b>3.1.2</b> 货币的类型</a></li>
+<li class="chapter" data-level="3.1.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#货币还是非货币"><i class="fa fa-check"></i><b>3.1.3</b> 货币还是非货币？</a></li>
+<li class="chapter" data-level="3.1.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#去中心化金融defi迈向数字货币经济"><i class="fa fa-check"></i><b>3.1.4</b> 去中心化金融（DeFi）：迈向数字货币经济</a></li>
+<li class="chapter" data-level="3.1.5" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#章节总结-6"><i class="fa fa-check"></i><b>3.1.5</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#稳定代币-stable-tokens"><i class="fa fa-check"></i><b>3.2</b> 稳定代币 Stable Tokens</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#资产担保的稳定代币"><i class="fa fa-check"></i><b>3.2.1</b> 资产担保的稳定代币</a></li>
+<li class="chapter" data-level="3.2.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#加密担保的稳定代币"><i class="fa fa-check"></i><b>3.2.2</b> 加密担保的稳定代币</a></li>
+<li class="chapter" data-level="3.2.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#中央银行数字货币"><i class="fa fa-check"></i><b>3.2.3</b> 中央银行数字货币</a></li>
+<li class="chapter" data-level="3.2.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#算法稳定代币"><i class="fa fa-check"></i><b>3.2.4</b> 算法稳定代币</a></li>
+<li class="chapter" data-level="3.2.5" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#挑战与展望"><i class="fa fa-check"></i><b>3.2.5</b> 挑战与展望</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#隐私代币"><i class="fa fa-check"></i><b>3.3</b> 隐私代币</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#区块链代币的隐私性"><i class="fa fa-check"></i><b>3.3.1</b> 区块链代币的隐私性</a></li>
+<li class="chapter" data-level="3.3.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#隐私代币的历史"><i class="fa fa-check"></i><b>3.3.2</b> 隐私代币的历史</a></li>
+<li class="chapter" data-level="3.3.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#完全web3隐私"><i class="fa fa-check"></i><b>3.3.3</b> 完全Web3隐私</a></li>
+<li class="chapter" data-level="3.3.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#隐私的法律与政治方面"><i class="fa fa-check"></i><b>3.3.4</b> 隐私的法律与政治方面</a></li>
+<li class="chapter" data-level="3.3.5" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#章节总结-7"><i class="fa fa-check"></i><b>3.3.5</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#交易代币原子交换与去中心化交易所"><i class="fa fa-check"></i><b>3.4</b> 交易代币、原子交换与去中心化交易所</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#集中式交易所的挑战"><i class="fa fa-check"></i><b>3.4.1</b> 集中式交易所的挑战</a></li>
+<li class="chapter" data-level="3.4.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#原子交换-atomic-swaps"><i class="fa fa-check"></i><b>3.4.2</b> 原子交换 Atomic Swaps</a></li>
+<li class="chapter" data-level="3.4.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#去中心化交易所"><i class="fa fa-check"></i><b>3.4.3</b> 去中心化交易所</a></li>
+<li class="chapter" data-level="3.4.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#章节总结-8"><i class="fa fa-check"></i><b>3.4.4</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#借贷代币与去中心化信用系统"><i class="fa fa-check"></i><b>3.5</b> 借贷代币与去中心化信用系统</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#p2p-借贷"><i class="fa fa-check"></i><b>3.5.1</b> P2P 借贷</a></li>
+<li class="chapter" data-level="3.5.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#p2p-借款"><i class="fa fa-check"></i><b>3.5.2</b> P2P 借款</a></li>
+<li class="chapter" data-level="3.5.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#闪电贷款"><i class="fa fa-check"></i><b>3.5.3</b> 闪电贷款</a></li>
+<li class="chapter" data-level="3.5.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#p2p-借贷协议"><i class="fa fa-check"></i><b>3.5.4</b> P2P 借贷协议</a></li>
+<li class="chapter" data-level="3.5.5" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#闪电攻击"><i class="fa fa-check"></i><b>3.5.5</b> 闪电攻击</a></li>
+<li class="chapter" data-level="3.5.6" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#章节总结-9"><i class="fa fa-check"></i><b>3.5.6</b> 章节总结</a></li>
+<li class="chapter" data-level="3.5.7" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#闪电贷款-1"><i class="fa fa-check"></i><b>3.5.7</b> 闪电贷款</a></li>
+<li class="chapter" data-level="3.5.8" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#闪电攻击-1"><i class="fa fa-check"></i><b>3.5.8</b> 闪电攻击</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#token-sales-icos-itos-ieos-stos"><i class="fa fa-check"></i><b>3.6</b> Token Sales: ICOs, ITOs, IEOs, STOs</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#history-of-token-sales"><i class="fa fa-check"></i><b>3.6.1</b> History of Token Sales</a></li>
+<li class="chapter" data-level="3.6.2" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#types-of-token-sales"><i class="fa fa-check"></i><b>3.6.2</b> Types of Token Sales</a></li>
+<li class="chapter" data-level="3.6.3" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#challenges-of-token-sales"><i class="fa fa-check"></i><b>3.6.3</b> Challenges of Token Sales</a></li>
+<li class="chapter" data-level="3.6.4" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#initial-exchange-offerings-ieos-首次公开发行"><i class="fa fa-check"></i><b>3.6.4</b> Initial Exchange Offerings (IEOs) 首次公开发行</a></li>
+<li class="chapter" data-level="3.6.5" data-path="代币经济和去中心化金融.html"><a href="代币经济和去中心化金融.html#章节总结-10"><i class="fa fa-check"></i><b>3.6.5</b> 章节总结</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html"><i class="fa fa-check"></i><b>4</b> Token Use Cases 代币用例</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#资产代币与分权所有权"><i class="fa fa-check"></i><b>4.1</b> 资产代币与分权所有权</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#用例-1证券代币"><i class="fa fa-check"></i><b>4.1.1</b> 用例 1：证券代币</a></li>
+<li class="chapter" data-level="4.1.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#用例-2房地产代币化"><i class="fa fa-check"></i><b>4.1.2</b> 用例 2：房地产代币化</a></li>
+<li class="chapter" data-level="4.1.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#用例-3艺术代币化"><i class="fa fa-check"></i><b>4.1.3</b> 用例 3：艺术代币化</a></li>
+<li class="chapter" data-level="4.1.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#用例-4集体部分所有权"><i class="fa fa-check"></i><b>4.1.4</b> 用例 4：集体部分所有权</a></li>
+<li class="chapter" data-level="4.1.5" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#章节总结-11"><i class="fa fa-check"></i><b>4.1.5</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#目的驱动代币"><i class="fa fa-check"></i><b>4.2</b> 目的驱动代币</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#激励网络状态共识"><i class="fa fa-check"></i><b>4.2.1</b> 激励网络状态共识</a></li>
+<li class="chapter" data-level="4.2.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#激励社交媒体贡献"><i class="fa fa-check"></i><b>4.2.2</b> 激励社交媒体贡献</a></li>
+<li class="chapter" data-level="4.2.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#激励清单贡献"><i class="fa fa-check"></i><b>4.2.3</b> 激励清单贡献</a></li>
+<li class="chapter" data-level="4.2.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#激励减少二氧化碳排放"><i class="fa fa-check"></i><b>4.2.4</b> 激励减少二氧化碳排放</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#公共物品与公地悲剧"><i class="fa fa-check"></i><b>4.3</b> 公共物品与公地悲剧</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#正外部性与负外部性"><i class="fa fa-check"></i><b>4.3.1</b> 正外部性与负外部性</a></li>
+<li class="chapter" data-level="4.3.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#行为经济学与引导"><i class="fa fa-check"></i><b>4.3.2</b> 行为经济学与引导</a></li>
+<li class="chapter" data-level="4.3.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#认知心理学与行为分析"><i class="fa fa-check"></i><b>4.3.3</b> 认知心理学与行为分析</a></li>
+<li class="chapter" data-level="4.3.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#行为金融与行为博弈理论"><i class="fa fa-check"></i><b>4.3.4</b> 行为金融与行为博弈理论</a></li>
+<li class="chapter" data-level="4.3.5" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#机制设计与代币工程"><i class="fa fa-check"></i><b>4.3.5</b> 机制设计与代币工程</a></li>
+<li class="chapter" data-level="4.3.6" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#章节总结-12"><i class="fa fa-check"></i><b>4.3.6</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#steemithive-和-reddit代币化社交网络"><i class="fa fa-check"></i><b>4.4</b> Steemit、Hive 和 Reddit：代币化社交网络</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#当今社交媒体的问题"><i class="fa fa-check"></i><b>4.4.1</b> 当今社交媒体的问题</a></li>
+<li class="chapter" data-level="4.4.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#steemit-的代币经济学"><i class="fa fa-check"></i><b>4.4.2</b> Steemit 的代币经济学</a></li>
+<li class="chapter" data-level="4.4.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#steemit-的批评"><i class="fa fa-check"></i><b>4.4.3</b> Steemit 的批评</a></li>
+<li class="chapter" data-level="4.4.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#steemit-硬分叉hive-网络"><i class="fa fa-check"></i><b>4.4.4</b> Steemit 硬分叉：Hive 网络</a></li>
+<li class="chapter" data-level="4.4.5" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#reddit将-web2-平台代币化"><i class="fa fa-check"></i><b>4.4.5</b> Reddit：将 Web2 平台代币化</a></li>
+<li class="chapter" data-level="4.4.6" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#章节总结-13"><i class="fa fa-check"></i><b>4.4.6</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#基本注意力代币广告的重新定义"><i class="fa fa-check"></i><b>4.5</b> 基本注意力代币：广告的重新定义</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#注意力经济数据市场与隐私"><i class="fa fa-check"></i><b>4.5.1</b> 注意力经济、数据市场与隐私</a></li>
+<li class="chapter" data-level="4.5.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#基本注意力代币bat"><i class="fa fa-check"></i><b>4.5.2</b> 基本注意力代币（BAT）</a></li>
+<li class="chapter" data-level="4.5.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#展望与挑战"><i class="fa fa-check"></i><b>4.5.3</b> 展望与挑战</a></li>
+<li class="chapter" data-level="4.5.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#章节总结-14"><i class="fa fa-check"></i><b>4.5.4</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#代币策划注册新的搜索方式"><i class="fa fa-check"></i><b>4.6</b> 代币策划注册：新的搜索方式？</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#代币策划注册tcrs如何运作"><i class="fa fa-check"></i><b>4.6.1</b> 代币策划注册（TCRs）如何运作</a></li>
+<li class="chapter" data-level="4.6.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#攻击向量"><i class="fa fa-check"></i><b>4.6.2</b> 攻击向量</a></li>
+<li class="chapter" data-level="4.6.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#tcrs的批评"><i class="fa fa-check"></i><b>4.6.3</b> TCRs的批评</a></li>
+<li class="chapter" data-level="4.6.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#tcr的其他类型"><i class="fa fa-check"></i><b>4.6.4</b> TCR的其他类型</a></li>
+<li class="chapter" data-level="4.6.5" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#章节总结-15"><i class="fa fa-check"></i><b>4.6.5</b> 章节总结</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#如何设计代币系统"><i class="fa fa-check"></i><b>4.7</b> 如何设计代币系统</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#技术工程"><i class="fa fa-check"></i><b>4.7.1</b> 技术工程</a></li>
+<li class="chapter" data-level="4.7.2" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#法律工程"><i class="fa fa-check"></i><b>4.7.2</b> 法律工程</a></li>
+<li class="chapter" data-level="4.7.3" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#经济工程"><i class="fa fa-check"></i><b>4.7.3</b> 经济工程</a></li>
+<li class="chapter" data-level="4.7.4" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#伦理工程"><i class="fa fa-check"></i><b>4.7.4</b> 伦理工程</a></li>
+<li class="chapter" data-level="4.7.5" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#多学科团队的重要性"><i class="fa fa-check"></i><b>4.7.5</b> 多学科团队的重要性</a></li>
+<li class="chapter" data-level="4.7.6" data-path="token-use-cases-代币用例.html"><a href="token-use-cases-代币用例.html#章节总结-16"><i class="fa fa-check"></i><b>4.7.6</b> 章节总结</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="补充内容.html"><a href="补充内容.html"><i class="fa fa-check"></i><b>5</b> 补充内容</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="补充内容.html"><a href="补充内容.html#比特币与web3的起源"><i class="fa fa-check"></i><b>5.1</b> 比特币与Web3的起源</a></li>
+<li class="chapter" data-level="5.2" data-path="补充内容.html"><a href="补充内容.html#区块链可扩展性解决方案"><i class="fa fa-check"></i><b>5.2</b> 区块链可扩展性解决方案</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="补充内容.html"><a href="补充内容.html#状态通道"><i class="fa fa-check"></i><b>5.2.1</b> 状态通道</a></li>
+<li class="chapter" data-level="5.2.2" data-path="补充内容.html"><a href="补充内容.html#侧链"><i class="fa fa-check"></i><b>5.2.2</b> 侧链</a></li>
+<li class="chapter" data-level="5.2.3" data-path="补充内容.html"><a href="补充内容.html#区块链互操作性"><i class="fa fa-check"></i><b>5.2.3</b> 区块链互操作性</a></li>
+<li class="chapter" data-level="5.2.4" data-path="补充内容.html"><a href="补充内容.html#分片"><i class="fa fa-check"></i><b>5.2.4</b> 分片</a></li>
+<li class="chapter" data-level="5.2.5" data-path="补充内容.html"><a href="补充内容.html#替代加密算法"><i class="fa fa-check"></i><b>5.2.5</b> 替代加密算法</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="补充内容.html"><a href="补充内容.html#libra与celo"><i class="fa fa-check"></i><b>5.3</b> Libra与Celo</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="solidity-example.html"><a href="solidity-example.html"><i class="fa fa-check"></i><b>6</b> Solidity Example</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="solidity-example.html"><a href="solidity-example.html#hellow-world"><i class="fa fa-check"></i><b>6.1</b> 1. Hellow world</a></li>
+<li class="chapter" data-level="6.2" data-path="solidity-example.html"><a href="solidity-example.html#简单合约"><i class="fa fa-check"></i><b>6.2</b> 2. 简单合约</a></li>
+<li class="chapter" data-level="6.3" data-path="solidity-example.html"><a href="solidity-example.html#数据类型"><i class="fa fa-check"></i><b>6.3</b> 3. 数据类型</a></li>
+<li class="chapter" data-level="6.4" data-path="solidity-example.html"><a href="solidity-example.html#变量"><i class="fa fa-check"></i><b>6.4</b> 4. 变量</a></li>
+<li class="chapter" data-level="6.5" data-path="solidity-example.html"><a href="solidity-example.html#常量"><i class="fa fa-check"></i><b>6.5</b> 5. 常量</a></li>
+<li class="chapter" data-level="6.6" data-path="solidity-example.html"><a href="solidity-example.html#不可变-immutable"><i class="fa fa-check"></i><b>6.6</b> 6. 不可变 Immutable</a></li>
+<li class="chapter" data-level="6.7" data-path="solidity-example.html"><a href="solidity-example.html#状态变量的读写"><i class="fa fa-check"></i><b>6.7</b> 7. 状态变量的读写</a></li>
+<li class="chapter" data-level="6.8" data-path="solidity-example.html"><a href="solidity-example.html#以太-ether-和-wei"><i class="fa fa-check"></i><b>6.8</b> 8. 以太 Ether 和 Wei</a></li>
+<li class="chapter" data-level="6.9" data-path="solidity-example.html"><a href="solidity-example.html#gas"><i class="fa fa-check"></i><b>6.9</b> 9. gas</a></li>
+<li class="chapter" data-level="6.10" data-path="solidity-example.html"><a href="solidity-example.html#条件判断"><i class="fa fa-check"></i><b>6.10</b> 10. 条件判断</a></li>
+<li class="chapter" data-level="6.11" data-path="solidity-example.html"><a href="solidity-example.html#循环"><i class="fa fa-check"></i><b>6.11</b> 11. 循环</a></li>
+<li class="chapter" data-level="6.12" data-path="solidity-example.html"><a href="solidity-example.html#mapping"><i class="fa fa-check"></i><b>6.12</b> 12. mapping</a></li>
+<li class="chapter" data-level="6.13" data-path="solidity-example.html"><a href="solidity-example.html#array"><i class="fa fa-check"></i><b>6.13</b> 13. array</a></li>
+<li class="chapter" data-level="6.14" data-path="solidity-example.html"><a href="solidity-example.html#枚举"><i class="fa fa-check"></i><b>6.14</b> 14. 枚举</a></li>
+<li class="chapter" data-level="6.15" data-path="solidity-example.html"><a href="solidity-example.html#用户定义类型"><i class="fa fa-check"></i><b>6.15</b> 15. 用户定义类型</a></li>
+<li class="chapter" data-level="6.16" data-path="solidity-example.html"><a href="solidity-example.html#结构体"><i class="fa fa-check"></i><b>6.16</b> 16. 结构体</a></li>
+<li class="chapter" data-level="6.17" data-path="solidity-example.html"><a href="solidity-example.html#数据位置---storage-memorycalldata"><i class="fa fa-check"></i><b>6.17</b> 17. 数据位置 - storage ， memory，calldata</a></li>
+<li class="chapter" data-level="6.18" data-path="solidity-example.html"><a href="solidity-example.html#暂时存储"><i class="fa fa-check"></i><b>6.18</b> 18. 暂时存储</a></li>
+<li class="chapter" data-level="6.19" data-path="solidity-example.html"><a href="solidity-example.html#函数"><i class="fa fa-check"></i><b>6.19</b> 19. 函数</a></li>
+<li class="chapter" data-level="6.20" data-path="solidity-example.html"><a href="solidity-example.html#view-和-pure-函数"><i class="fa fa-check"></i><b>6.20</b> 20. view 和 pure 函数</a></li>
+<li class="chapter" data-level="6.21" data-path="solidity-example.html"><a href="solidity-example.html#错误"><i class="fa fa-check"></i><b>6.21</b> 21. 错误</a></li>
+<li class="chapter" data-level="6.22" data-path="solidity-example.html"><a href="solidity-example.html#函数修饰符"><i class="fa fa-check"></i><b>6.22</b> 22. 函数修饰符</a></li>
+<li class="chapter" data-level="6.23" data-path="solidity-example.html"><a href="solidity-example.html#event-事件"><i class="fa fa-check"></i><b>6.23</b> 23 event 事件</a></li>
+<li class="chapter" data-level="6.24" data-path="solidity-example.html"><a href="solidity-example.html#事件高级主题"><i class="fa fa-check"></i><b>6.24</b> 24. 事件高级主题</a></li>
+<li class="chapter" data-level="6.25" data-path="solidity-example.html"><a href="solidity-example.html#构造函数"><i class="fa fa-check"></i><b>6.25</b> 25. 构造函数</a></li>
+<li class="chapter" data-level="6.26" data-path="solidity-example.html"><a href="solidity-example.html#继承"><i class="fa fa-check"></i><b>6.26</b> 26 继承</a></li>
+<li class="chapter" data-level="6.27" data-path="solidity-example.html"><a href="solidity-example.html#隐藏继承状态变量"><i class="fa fa-check"></i><b>6.27</b> 27 隐藏继承状态变量</a></li>
+<li class="chapter" data-level="6.28" data-path="solidity-example.html"><a href="solidity-example.html#调用父合约"><i class="fa fa-check"></i><b>6.28</b> 28.调用父合约</a></li>
+<li class="chapter" data-level="6.29" data-path="solidity-example.html"><a href="solidity-example.html#visibility-可见度"><i class="fa fa-check"></i><b>6.29</b> 29. visibility 可见度</a></li>
+<li class="chapter" data-level="6.30" data-path="solidity-example.html"><a href="solidity-example.html#interface-接口"><i class="fa fa-check"></i><b>6.30</b> 30 interface 接口</a></li>
+<li class="chapter" data-level="6.31" data-path="solidity-example.html"><a href="solidity-example.html#payable"><i class="fa fa-check"></i><b>6.31</b> 31 payable</a></li>
+<li class="chapter" data-level="6.32" data-path="solidity-example.html"><a href="solidity-example.html#发送以太币"><i class="fa fa-check"></i><b>6.32</b> 32 发送以太币</a>
+<ul>
+<li class="chapter" data-level="6.32.1" data-path="solidity-example.html"><a href="solidity-example.html#发送以太币transfersendcall"><i class="fa fa-check"></i><b>6.32.1</b> 发送以太币（transfer、send、call）</a></li>
+</ul></li>
+<li class="chapter" data-level="6.33" data-path="solidity-example.html"><a href="solidity-example.html#fallback"><i class="fa fa-check"></i><b>6.33</b> 33 Fallback</a></li>
+<li class="chapter" data-level="6.34" data-path="solidity-example.html"><a href="solidity-example.html#call"><i class="fa fa-check"></i><b>6.34</b> 34 call</a>
+<ul>
+<li class="chapter" data-level="6.34.1" data-path="solidity-example.html"><a href="solidity-example.html#call-函数"><i class="fa fa-check"></i><b>6.34.1</b> call 函数</a></li>
+</ul></li>
+<li class="chapter" data-level="6.35" data-path="solidity-example.html"><a href="solidity-example.html#delegatecall"><i class="fa fa-check"></i><b>6.35</b> 35 Delegatecall</a>
+<ul>
+<li class="chapter" data-level="6.35.1" data-path="solidity-example.html"><a href="solidity-example.html#delegatecall-1"><i class="fa fa-check"></i><b>6.35.1</b> delegatecall</a></li>
+</ul></li>
+<li class="chapter" data-level="6.36" data-path="solidity-example.html"><a href="solidity-example.html#function-selector-函数选择器"><i class="fa fa-check"></i><b>6.36</b> 36 Function selector 函数选择器</a></li>
+<li class="chapter" data-level="6.37" data-path="solidity-example.html"><a href="solidity-example.html#合约间调用"><i class="fa fa-check"></i><b>6.37</b> 37 合约间调用</a></li>
+<li class="chapter" data-level="6.38" data-path="solidity-example.html"><a href="solidity-example.html#通过合约创建其他合约"><i class="fa fa-check"></i><b>6.38</b> 38 通过合约创建其他合约</a></li>
+<li class="chapter" data-level="6.39" data-path="solidity-example.html"><a href="solidity-example.html#trycatch"><i class="fa fa-check"></i><b>6.39</b> 39 try/catch</a></li>
+<li class="chapter" data-level="6.40" data-path="solidity-example.html"><a href="solidity-example.html#import-导入"><i class="fa fa-check"></i><b>6.40</b> 40 import 导入</a>
+<ul>
+<li class="chapter" data-level="6.40.1" data-path="solidity-example.html"><a href="solidity-example.html#本地导入"><i class="fa fa-check"></i><b>6.40.1</b> 本地导入</a></li>
+<li class="chapter" data-level="6.40.2" data-path="solidity-example.html"><a href="solidity-example.html#外部导入"><i class="fa fa-check"></i><b>6.40.2</b> 外部导入</a></li>
+<li class="chapter" data-level="6.40.3" data-path="solidity-example.html"><a href="solidity-example.html#代码说明"><i class="fa fa-check"></i><b>6.40.3</b> 代码说明</a></li>
+</ul></li>
+<li class="chapter" data-level="6.41" data-path="solidity-example.html"><a href="solidity-example.html#library"><i class="fa fa-check"></i><b>6.41</b> 41 library</a>
+<ul>
+<li class="chapter" data-level="6.41.1" data-path="solidity-example.html"><a href="solidity-example.html#solidity-中的库"><i class="fa fa-check"></i><b>6.41.1</b> Solidity 中的库</a></li>
+<li class="chapter" data-level="6.41.2" data-path="solidity-example.html"><a href="solidity-example.html#关键点"><i class="fa fa-check"></i><b>6.41.2</b> 关键点</a></li>
+</ul></li>
+<li class="chapter" data-level="6.42" data-path="solidity-example.html"><a href="solidity-example.html#abi-encode"><i class="fa fa-check"></i><b>6.42</b> 42 ABI Encode</a></li>
+<li class="chapter" data-level="6.43" data-path="solidity-example.html"><a href="solidity-example.html#abi-decode"><i class="fa fa-check"></i><b>6.43</b> 43 ABI Decode</a></li>
+<li class="chapter" data-level="6.44" data-path="solidity-example.html"><a href="solidity-example.html#hashing-with-keccak256"><i class="fa fa-check"></i><b>6.44</b> 44 Hashing with Keccak256</a>
+<ul>
+<li class="chapter" data-level="6.44.1" data-path="solidity-example.html"><a href="solidity-example.html#keccak256-函数"><i class="fa fa-check"></i><b>6.44.1</b> keccak256 函数</a></li>
+</ul></li>
+<li class="chapter" data-level="6.45" data-path="solidity-example.html"><a href="solidity-example.html#验证签名"><i class="fa fa-check"></i><b>6.45</b> 45 验证签名</a></li>
+<li class="chapter" data-level="6.46" data-path="solidity-example.html"><a href="solidity-example.html#节省-gas-的技巧"><i class="fa fa-check"></i><b>6.46</b> 46 节省 gas 的技巧</a></li>
+<li class="chapter" data-level="6.47" data-path="solidity-example.html"><a href="solidity-example.html#按位运算符-bitwise-operators"><i class="fa fa-check"></i><b>6.47</b> 47 按位运算符 Bitwise Operators</a></li>
+<li class="chapter" data-level="6.48" data-path="solidity-example.html"><a href="solidity-example.html#数字溢出"><i class="fa fa-check"></i><b>6.48</b> 48 数字溢出</a></li>
+<li class="chapter" data-level="6.49" data-path="solidity-example.html"><a href="solidity-example.html#assembly"><i class="fa fa-check"></i><b>6.49</b> 49 Assembly</a>
+<ul>
+<li class="chapter" data-level="6.49.1" data-path="solidity-example.html"><a href="solidity-example.html#assembly-的特点"><i class="fa fa-check"></i><b>6.49.1</b> Assembly 的特点</a></li>
+<li class="chapter" data-level="6.49.2" data-path="solidity-example.html"><a href="solidity-example.html#示例"><i class="fa fa-check"></i><b>6.49.2</b> 示例</a></li>
+<li class="chapter" data-level="6.49.3" data-path="solidity-example.html"><a href="solidity-example.html#注意事项"><i class="fa fa-check"></i><b>6.49.3</b> 注意事项</a></li>
+<li class="chapter" data-level="6.49.4" data-path="solidity-example.html"><a href="solidity-example.html#assembly-conditional-statements"><i class="fa fa-check"></i><b>6.49.4</b> Assembly Conditional Statements</a></li>
+<li class="chapter" data-level="6.49.5" data-path="solidity-example.html"><a href="solidity-example.html#assembly-loop"><i class="fa fa-check"></i><b>6.49.5</b> Assembly Loop</a></li>
+<li class="chapter" data-level="6.49.6" data-path="solidity-example.html"><a href="solidity-example.html#assembly-error"><i class="fa fa-check"></i><b>6.49.6</b> Assembly Error</a></li>
+<li class="chapter" data-level="6.49.7" data-path="solidity-example.html"><a href="solidity-example.html#assembly-math"><i class="fa fa-check"></i><b>6.49.7</b> Assembly Math</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>7</b> Applications</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="applications.html"><a href="applications.html#ether-wallet"><i class="fa fa-check"></i><b>7.1</b> 1 Ether Wallet</a></li>
+<li class="chapter" data-level="7.2" data-path="applications.html"><a href="applications.html#多签名钱包"><i class="fa fa-check"></i><b>7.2</b> 2 多签名钱包</a></li>
+<li class="chapter" data-level="7.3" data-path="applications.html"><a href="applications.html#merkle树"><i class="fa fa-check"></i><b>7.3</b> 3 Merkle树</a></li>
+<li class="chapter" data-level="7.4" data-path="applications.html"><a href="applications.html#iterable映射"><i class="fa fa-check"></i><b>7.4</b> 4 Iterable映射</a></li>
+<li class="chapter" data-level="7.5" data-path="applications.html"><a href="applications.html#erc20-标准"><i class="fa fa-check"></i><b>7.5</b> 5 ERC20 标准</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="applications.html"><a href="applications.html#erc20-标准-1"><i class="fa fa-check"></i><b>7.5.1</b> ERC20 标准</a></li>
+<li class="chapter" data-level="7.5.2" data-path="applications.html"><a href="applications.html#erc20-代币合约示例"><i class="fa fa-check"></i><b>7.5.2</b> ERC20 代币合约示例</a></li>
+<li class="chapter" data-level="7.5.3" data-path="applications.html"><a href="applications.html#创建您自己的-erc20-代币"><i class="fa fa-check"></i><b>7.5.3</b> 创建您自己的 ERC20 代币</a></li>
+<li class="chapter" data-level="7.5.4" data-path="applications.html"><a href="applications.html#代币交换合约"><i class="fa fa-check"></i><b>7.5.4</b> 代币交换合约</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="applications.html"><a href="applications.html#erc721"><i class="fa fa-check"></i><b>7.6</b> 6 ERC721</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="applications.html"><a href="applications.html#erc721-标准简介"><i class="fa fa-check"></i><b>7.6.1</b> ERC721 标准简介</a></li>
+<li class="chapter" data-level="7.6.2" data-path="applications.html"><a href="applications.html#主要特点"><i class="fa fa-check"></i><b>7.6.2</b> 主要特点</a></li>
+<li class="chapter" data-level="7.6.3" data-path="applications.html"><a href="applications.html#erc721-接口"><i class="fa fa-check"></i><b>7.6.3</b> ERC721 接口</a></li>
+<li class="chapter" data-level="7.6.4" data-path="applications.html"><a href="applications.html#应用场景"><i class="fa fa-check"></i><b>7.6.4</b> 应用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="applications.html"><a href="applications.html#erc1155"><i class="fa fa-check"></i><b>7.7</b> 7 ERC1155</a>
+<ul>
+<li class="chapter" data-level="7.7.1" data-path="applications.html"><a href="applications.html#主要特点-1"><i class="fa fa-check"></i><b>7.7.1</b> 主要特点</a></li>
+<li class="chapter" data-level="7.7.2" data-path="applications.html"><a href="applications.html#erc1155-接口"><i class="fa fa-check"></i><b>7.7.2</b> ERC1155 接口</a></li>
+<li class="chapter" data-level="7.7.3" data-path="applications.html"><a href="applications.html#应用场景-1"><i class="fa fa-check"></i><b>7.7.3</b> 应用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.8" data-path="applications.html"><a href="applications.html#gasless-token-transfer"><i class="fa fa-check"></i><b>7.8</b> 8 Gasless Token Transfer</a>
+<ul>
+<li class="chapter" data-level="7.8.1" data-path="applications.html"><a href="applications.html#主要特点-2"><i class="fa fa-check"></i><b>7.8.1</b> 主要特点</a></li>
+<li class="chapter" data-level="7.8.2" data-path="applications.html"><a href="applications.html#应用场景-2"><i class="fa fa-check"></i><b>7.8.2</b> 应用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.9" data-path="applications.html"><a href="applications.html#simple-bytecode-contract"><i class="fa fa-check"></i><b>7.9</b> 9 Simple Bytecode Contract</a>
+<ul>
+<li class="chapter" data-level="7.9.1" data-path="applications.html"><a href="applications.html#主要特点-3"><i class="fa fa-check"></i><b>7.9.1</b> 主要特点</a></li>
+<li class="chapter" data-level="7.9.2" data-path="applications.html"><a href="applications.html#应用场景-3"><i class="fa fa-check"></i><b>7.9.2</b> 应用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.10" data-path="applications.html"><a href="applications.html#precompute-contract-address-with-create2"><i class="fa fa-check"></i><b>7.10</b> 10 Precompute Contract Address with Create2</a>
+<ul>
+<li class="chapter" data-level="7.10.1" data-path="applications.html"><a href="applications.html#主要特点-4"><i class="fa fa-check"></i><b>7.10.1</b> 主要特点</a></li>
+<li class="chapter" data-level="7.10.2" data-path="applications.html"><a href="applications.html#应用场景-4"><i class="fa fa-check"></i><b>7.10.2</b> 应用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.11" data-path="applications.html"><a href="applications.html#minimal-proxy-contract"><i class="fa fa-check"></i><b>7.11</b> 10 Minimal Proxy Contract</a>
+<ul>
+<li class="chapter" data-level="7.11.1" data-path="applications.html"><a href="applications.html#主要特点-5"><i class="fa fa-check"></i><b>7.11.1</b> 主要特点</a></li>
+<li class="chapter" data-level="7.11.2" data-path="applications.html"><a href="applications.html#应用场景-5"><i class="fa fa-check"></i><b>7.11.2</b> 应用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.12" data-path="applications.html"><a href="applications.html#upgradeable-proxy"><i class="fa fa-check"></i><b>7.12</b> 11 Upgradeable Proxy</a></li>
+<li class="chapter" data-level="7.13" data-path="applications.html"><a href="applications.html#deploy-any-contract"><i class="fa fa-check"></i><b>7.13</b> 12 Deploy Any Contract</a></li>
+<li class="chapter" data-level="7.14" data-path="applications.html"><a href="applications.html#write-to-any-slot"><i class="fa fa-check"></i><b>7.14</b> 13 Write to Any Slot</a></li>
+<li class="chapter" data-level="7.15" data-path="applications.html"><a href="applications.html#单向支付渠道"><i class="fa fa-check"></i><b>7.15</b> 14 单向支付渠道</a></li>
+<li class="chapter" data-level="7.16" data-path="applications.html"><a href="applications.html#bi-directional-payment-channel"><i class="fa fa-check"></i><b>7.16</b> 15 Bi-Directional Payment Channel</a></li>
+<li class="chapter" data-level="7.17" data-path="applications.html"><a href="applications.html#英式拍卖"><i class="fa fa-check"></i><b>7.17</b> 16 英式拍卖</a></li>
+<li class="chapter" data-level="7.18" data-path="applications.html"><a href="applications.html#荷兰式拍卖"><i class="fa fa-check"></i><b>7.18</b> 17 荷兰式拍卖</a></li>
+<li class="chapter" data-level="7.19" data-path="applications.html"><a href="applications.html#众筹erc20代币"><i class="fa fa-check"></i><b>7.19</b> 18 众筹ERC20代币</a></li>
+<li class="chapter" data-level="7.20" data-path="applications.html"><a href="applications.html#multi-call"><i class="fa fa-check"></i><b>7.20</b> 19 Multi Call</a></li>
+<li class="chapter" data-level="7.21" data-path="applications.html"><a href="applications.html#multi-delegatecall"><i class="fa fa-check"></i><b>7.21</b> 20 Multi Delegatecall</a>
+<ul>
+<li class="chapter" data-level="7.21.1" data-path="applications.html"><a href="applications.html#合约解释"><i class="fa fa-check"></i><b>7.21.1</b> 合约解释</a></li>
+<li class="chapter" data-level="7.21.2" data-path="applications.html"><a href="applications.html#使用场景"><i class="fa fa-check"></i><b>7.21.2</b> 使用场景</a></li>
+<li class="chapter" data-level="7.21.3" data-path="applications.html"><a href="applications.html#注意事项-1"><i class="fa fa-check"></i><b>7.21.3</b> 注意事项</a></li>
+</ul></li>
+<li class="chapter" data-level="7.22" data-path="applications.html"><a href="applications.html#时间锁-time-lock"><i class="fa fa-check"></i><b>7.22</b> 21 时间锁 Time Lock</a>
+<ul>
+<li class="chapter" data-level="7.22.1" data-path="applications.html"><a href="applications.html#合约结构与功能"><i class="fa fa-check"></i><b>7.22.1</b> 合约结构与功能</a></li>
+<li class="chapter" data-level="7.22.2" data-path="applications.html"><a href="applications.html#主要功能"><i class="fa fa-check"></i><b>7.22.2</b> 主要功能</a></li>
+<li class="chapter" data-level="7.22.3" data-path="applications.html"><a href="applications.html#使用场景-1"><i class="fa fa-check"></i><b>7.22.3</b> 使用场景</a></li>
+</ul></li>
+<li class="chapter" data-level="7.23" data-path="applications.html"><a href="applications.html#assembly-binary-exponentiation"><i class="fa fa-check"></i><b>7.23</b> 22 Assembly Binary Exponentiation</a>
+<ul>
+<li class="chapter" data-level="7.23.1" data-path="applications.html"><a href="applications.html#合约结构"><i class="fa fa-check"></i><b>7.23.1</b> 合约结构</a></li>
+<li class="chapter" data-level="7.23.2" data-path="applications.html"><a href="applications.html#汇编代码解析"><i class="fa fa-check"></i><b>7.23.2</b> 汇编代码解析</a></li>
+<li class="chapter" data-level="7.23.3" data-path="applications.html"><a href="applications.html#总结"><i class="fa fa-check"></i><b>7.23.3</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="7.24" data-path="applications.html"><a href="applications.html#merkle-airdrop-空投"><i class="fa fa-check"></i><b>7.24</b> 23 Merkle Airdrop 空投</a>
+<ul>
+<li class="chapter" data-level="7.24.1" data-path="applications.html"><a href="applications.html#merkle-airdrop"><i class="fa fa-check"></i><b>7.24.1</b> Merkle Airdrop</a></li>
+<li class="chapter" data-level="7.24.2" data-path="applications.html"><a href="applications.html#代币合约"><i class="fa fa-check"></i><b>7.24.2</b> 代币合约</a></li>
+<li class="chapter" data-level="7.24.3" data-path="applications.html"><a href="applications.html#merkle-证明库"><i class="fa fa-check"></i><b>7.24.3</b> Merkle 证明库</a></li>
+<li class="chapter" data-level="7.24.4" data-path="applications.html"><a href="applications.html#测试合约"><i class="fa fa-check"></i><b>7.24.4</b> 测试合约</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html"><i class="fa fa-check"></i><b>8</b> Hacks ，EVM ， test and DeFi</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#重入攻击漏洞"><i class="fa fa-check"></i><b>8.1</b> 重入攻击漏洞</a></li>
+<li class="chapter" data-level="8.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#算术溢出和下溢漏洞"><i class="fa fa-check"></i><b>8.2</b> 算术溢出和下溢漏洞</a></li>
+<li class="chapter" data-level="8.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#自销毁-self-destruct"><i class="fa fa-check"></i><b>8.3</b> 自销毁 (Self Destruct)</a></li>
+<li class="chapter" data-level="8.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#访问私有数据"><i class="fa fa-check"></i><b>8.4</b> 访问私有数据</a></li>
+<li class="chapter" data-level="8.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#代理调用-delegatecall"><i class="fa fa-check"></i><b>8.5</b> 代理调用 (Delegatecall)</a></li>
+<li class="chapter" data-level="8.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#随机性来源-source-of-randomness"><i class="fa fa-check"></i><b>8.6</b> 随机性来源 (Source of Randomness)</a></li>
+<li class="chapter" data-level="8.7" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#拒绝服务-denial-of-service"><i class="fa fa-check"></i><b>8.7</b> 拒绝服务 (Denial of Service)</a></li>
+<li class="chapter" data-level="8.8" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#钓鱼攻击与-tx.origin"><i class="fa fa-check"></i><b>8.8</b> 钓鱼攻击与 tx.origin</a>
+<ul>
+<li class="chapter" data-level="8.8.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#网络钓鱼与-tx.origin"><i class="fa fa-check"></i><b>8.8.1</b> 网络钓鱼与 tx.origin</a></li>
+<li class="chapter" data-level="8.8.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#预防技术"><i class="fa fa-check"></i><b>8.8.2</b> 预防技术</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#隐藏恶意代码的外部合约"><i class="fa fa-check"></i><b>8.9</b> 隐藏恶意代码的外部合约</a>
+<ul>
+<li class="chapter" data-level="8.9.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#隐藏恶意代码的外部合约-1"><i class="fa fa-check"></i><b>8.9.1</b> 隐藏恶意代码的外部合约</a></li>
+<li class="chapter" data-level="8.9.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#预防技术-1"><i class="fa fa-check"></i><b>8.9.2</b> 预防技术</a></li>
+</ul></li>
+<li class="chapter" data-level="8.10" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#蜂窝陷阱-honeypot"><i class="fa fa-check"></i><b>8.10</b> 蜂窝陷阱 (Honeypot)</a>
+<ul>
+<li class="chapter" data-level="8.10.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#发生了什么"><i class="fa fa-check"></i><b>8.10.1</b> 发生了什么？</a></li>
+<li class="chapter" data-level="8.10.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#结论-1"><i class="fa fa-check"></i><b>8.10.2</b> 结论</a></li>
+</ul></li>
+<li class="chapter" data-level="8.11" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#前置交易-front-running"><i class="fa fa-check"></i><b>8.11</b> 前置交易 (Front Running)</a>
+<ul>
+<li class="chapter" data-level="8.11.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#发生了什么-1"><i class="fa fa-check"></i><b>8.11.1</b> 发生了什么？</a></li>
+<li class="chapter" data-level="8.11.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#预防措施"><i class="fa fa-check"></i><b>8.11.2</b> 预防措施</a></li>
+<li class="chapter" data-level="8.11.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#承诺-揭示方案示例"><i class="fa fa-check"></i><b>8.11.3</b> 承诺-揭示方案示例</a></li>
+<li class="chapter" data-level="8.11.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#结论-2"><i class="fa fa-check"></i><b>8.11.4</b> 结论</a></li>
+</ul></li>
+<li class="chapter" data-level="8.12" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#区块时间戳操控-block-timestamp-manipulation"><i class="fa fa-check"></i><b>8.12</b> 区块时间戳操控 (Block Timestamp Manipulation)</a>
+<ul>
+<li class="chapter" data-level="8.12.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#示例场景"><i class="fa fa-check"></i><b>8.12.1</b> 示例场景</a></li>
+<li class="chapter" data-level="8.12.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#发生了什么-2"><i class="fa fa-check"></i><b>8.12.2</b> 发生了什么？</a></li>
+<li class="chapter" data-level="8.12.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#预防措施-1"><i class="fa fa-check"></i><b>8.12.3</b> 预防措施</a></li>
+<li class="chapter" data-level="8.12.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-1"><i class="fa fa-check"></i><b>8.12.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.13" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#签名重放漏洞-signature-replay-vulnerability"><i class="fa fa-check"></i><b>8.13</b> 签名重放漏洞 (Signature Replay Vulnerability)</a>
+<ul>
+<li class="chapter" data-level="8.13.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#示例合约"><i class="fa fa-check"></i><b>8.13.1</b> 示例合约</a></li>
+<li class="chapter" data-level="8.13.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#发生了什么-3"><i class="fa fa-check"></i><b>8.13.2</b> 发生了什么？</a></li>
+<li class="chapter" data-level="8.13.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#预防措施-2"><i class="fa fa-check"></i><b>8.13.3</b> 预防措施</a></li>
+<li class="chapter" data-level="8.13.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-2"><i class="fa fa-check"></i><b>8.13.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.14" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#绕过合约大小检查-bypass-contract-size-check"><i class="fa fa-check"></i><b>8.14</b> 绕过合约大小检查 (Bypass Contract Size Check)</a>
+<ul>
+<li class="chapter" data-level="8.14.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#示例合约-1"><i class="fa fa-check"></i><b>8.14.1</b> 示例合约</a></li>
+<li class="chapter" data-level="8.14.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#结论-3"><i class="fa fa-check"></i><b>8.14.2</b> 结论</a></li>
+</ul></li>
+<li class="chapter" data-level="8.15" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#在相同地址部署不同合约-deploy-different-contracts-at-the-same-address"><i class="fa fa-check"></i><b>8.15</b> 在相同地址部署不同合约 (Deploy Different Contracts at the Same Address)</a>
+<ul>
+<li class="chapter" data-level="8.15.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#示例合约-2"><i class="fa fa-check"></i><b>8.15.1</b> 示例合约</a></li>
+<li class="chapter" data-level="8.15.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#攻击流程"><i class="fa fa-check"></i><b>8.15.2</b> 攻击流程</a></li>
+<li class="chapter" data-level="8.15.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#结论-4"><i class="fa fa-check"></i><b>8.15.3</b> 结论</a></li>
+</ul></li>
+<li class="chapter" data-level="8.16" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#vault-inflation-vulnerability"><i class="fa fa-check"></i><b>8.16</b> Vault Inflation Vulnerability</a>
+<ul>
+<li class="chapter" data-level="8.16.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#攻击示例"><i class="fa fa-check"></i><b>8.16.1</b> 攻击示例</a></li>
+<li class="chapter" data-level="8.16.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#保护措施"><i class="fa fa-check"></i><b>8.16.2</b> 保护措施</a></li>
+<li class="chapter" data-level="8.16.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#示例合约代码"><i class="fa fa-check"></i><b>8.16.3</b> 示例合约代码</a></li>
+<li class="chapter" data-level="8.16.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#结论-5"><i class="fa fa-check"></i><b>8.16.4</b> 结论</a></li>
+</ul></li>
+<li class="chapter" data-level="8.17" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#weth-permit-vulnerability"><i class="fa fa-check"></i><b>8.17</b> WETH Permit Vulnerability</a>
+<ul>
+<li class="chapter" data-level="8.17.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#攻击示例-1"><i class="fa fa-check"></i><b>8.17.1</b> 攻击示例</a></li>
+<li class="chapter" data-level="8.17.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约代码"><i class="fa fa-check"></i><b>8.17.2</b> 合约代码</a></li>
+<li class="chapter" data-level="8.17.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#其他合约"><i class="fa fa-check"></i><b>8.17.3</b> 其他合约</a></li>
+<li class="chapter" data-level="8.17.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#结论-6"><i class="fa fa-check"></i><b>8.17.4</b> 结论</a></li>
+</ul></li>
+<li class="chapter" data-level="8.18" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#echidna"><i class="fa fa-check"></i><b>8.18</b> Echidna</a>
+<ul>
+<li class="chapter" data-level="8.18.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#测试时间和发送者"><i class="fa fa-check"></i><b>8.18.1</b> 测试时间和发送者</a></li>
+</ul></li>
+<li class="chapter" data-level="8.19" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#evm-storage"><i class="fa fa-check"></i><b>8.19</b> EVM Storage</a></li>
+<li class="chapter" data-level="8.20" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#evm-memory-layout-in-solidity"><i class="fa fa-check"></i><b>8.20</b> EVM Memory Layout in Solidity</a>
+<ul>
+<li class="chapter" data-level="8.20.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约概述"><i class="fa fa-check"></i><b>8.20.1</b> 合约概述</a></li>
+<li class="chapter" data-level="8.20.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-3"><i class="fa fa-check"></i><b>8.20.2</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.21" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v2-swap"><i class="fa fa-check"></i><b>8.21</b> Uniswap V2 Swap</a>
+<ul>
+<li class="chapter" data-level="8.21.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约和变量定义"><i class="fa fa-check"></i><b>8.21.1</b> 1. 合约和变量定义</a></li>
+<li class="chapter" data-level="8.21.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#代币交换函数"><i class="fa fa-check"></i><b>8.21.2</b> 2. 代币交换函数</a></li>
+<li class="chapter" data-level="8.21.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#测试合约-1"><i class="fa fa-check"></i><b>8.21.3</b> 3. 测试合约</a></li>
+<li class="chapter" data-level="8.21.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-4"><i class="fa fa-check"></i><b>8.21.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.22" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v2-add-remove-liquidity"><i class="fa fa-check"></i><b>8.22</b> Uniswap V2 Add Remove Liquidity</a></li>
+<li class="chapter" data-level="8.23" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v2-optimal-one-sided-supply"><i class="fa fa-check"></i><b>8.23</b> Uniswap V2 Optimal One Sided Supply</a></li>
+<li class="chapter" data-level="8.24" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v2-flash-swap"><i class="fa fa-check"></i><b>8.24</b> Uniswap V2 Flash Swap</a>
+<ul>
+<li class="chapter" data-level="8.24.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#闪电借贷合约-uniswapv2flashswap"><i class="fa fa-check"></i><b>8.24.1</b> 1. <strong>闪电借贷合约 (UniswapV2FlashSwap)</strong></a></li>
+<li class="chapter" data-level="8.24.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义"><i class="fa fa-check"></i><b>8.24.2</b> 2. <strong>接口定义</strong></a></li>
+<li class="chapter" data-level="8.24.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#测试合约-uniswapv2flashswaptest"><i class="fa fa-check"></i><b>8.24.3</b> 3. <strong>测试合约 (UniswapV2FlashSwapTest)</strong></a></li>
+<li class="chapter" data-level="8.24.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-5"><i class="fa fa-check"></i><b>8.24.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.25" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-swap-examples"><i class="fa fa-check"></i><b>8.25</b> Uniswap V3 Swap Examples</a>
+<ul>
+<li class="chapter" data-level="8.25.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-单跳交换-uniswapv3singlehopswap"><i class="fa fa-check"></i><b>8.25.1</b> 1. <strong>Uniswap V3 单跳交换 (UniswapV3SingleHopSwap)</strong></a></li>
+<li class="chapter" data-level="8.25.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-多跳交换-uniswapv3multihopswap"><i class="fa fa-check"></i><b>8.25.2</b> 2. <strong>Uniswap V3 多跳交换 (UniswapV3MultiHopSwap)</strong></a></li>
+<li class="chapter" data-level="8.25.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-1"><i class="fa fa-check"></i><b>8.25.3</b> 3. <strong>接口定义</strong></a></li>
+<li class="chapter" data-level="8.25.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-6"><i class="fa fa-check"></i><b>8.25.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.26" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-liquidity-examples"><i class="fa fa-check"></i><b>8.26</b> Uniswap V3 Liquidity Examples</a>
+<ul>
+<li class="chapter" data-level="8.26.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约和常量定义"><i class="fa fa-check"></i><b>8.26.1</b> 1. <strong>合约和常量定义</strong></a></li>
+<li class="chapter" data-level="8.26.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswapv3liquidity合约"><i class="fa fa-check"></i><b>8.26.2</b> 2. <strong>UniswapV3Liquidity合约</strong></a></li>
+<li class="chapter" data-level="8.26.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#inonfungiblepositionmanager接口"><i class="fa fa-check"></i><b>8.26.3</b> 3. <strong><code>INonfungiblePositionManager</code>接口</strong></a></li>
+<li class="chapter" data-level="8.26.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#ierc20和iweth接口"><i class="fa fa-check"></i><b>8.26.4</b> 4. <strong><code>IERC20</code>和<code>IWETH</code>接口</strong></a></li>
+<li class="chapter" data-level="8.26.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#测试合约-uniswapv3liquiditytest"><i class="fa fa-check"></i><b>8.26.5</b> 5. <strong>测试合约 (UniswapV3LiquidityTest)</strong></a></li>
+<li class="chapter" data-level="8.26.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-7"><i class="fa fa-check"></i><b>8.26.6</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.27" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-flash-loan"><i class="fa fa-check"></i><b>8.27</b> Uniswap V3 Flash Loan</a>
+<ul>
+<li class="chapter" data-level="8.27.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswapv3flash合约"><i class="fa fa-check"></i><b>8.27.1</b> 1. <strong>UniswapV3Flash合约</strong></a></li>
+<li class="chapter" data-level="8.27.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#iuniswapv3pool接口"><i class="fa fa-check"></i><b>8.27.2</b> 2. <strong>IUniswapV3Pool接口</strong></a></li>
+<li class="chapter" data-level="8.27.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#ierc20接口"><i class="fa fa-check"></i><b>8.27.3</b> 3. <strong>IERC20接口</strong></a></li>
+<li class="chapter" data-level="8.27.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#测试合约-uniswapv3flashtest"><i class="fa fa-check"></i><b>8.27.4</b> 4. <strong>测试合约 (UniswapV3FlashTest)</strong></a></li>
+<li class="chapter" data-level="8.27.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-8"><i class="fa fa-check"></i><b>8.27.5</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.28" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-flash-swap-arbitrage"><i class="fa fa-check"></i><b>8.28</b> Uniswap V3 Flash Swap Arbitrage</a></li>
+<li class="chapter" data-level="8.29" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswap-v3-flash-swap-arbitrage-example"><i class="fa fa-check"></i><b>8.29</b> Uniswap V3 Flash Swap Arbitrage Example</a>
+<ul>
+<li class="chapter" data-level="8.29.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#uniswapv3flashswap合约"><i class="fa fa-check"></i><b>8.29.1</b> UniswapV3FlashSwap合约</a></li>
+<li class="chapter" data-level="8.29.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-2"><i class="fa fa-check"></i><b>8.29.2</b> 接口定义</a></li>
+<li class="chapter" data-level="8.29.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#测试合约-uniswapv3flashtest-1"><i class="fa fa-check"></i><b>8.29.3</b> 测试合约 (UniswapV3FlashTest)</a></li>
+<li class="chapter" data-level="8.29.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-9"><i class="fa fa-check"></i><b>8.29.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.30" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#chainlink-price-oracle"><i class="fa fa-check"></i><b>8.30</b> Chainlink Price Oracle</a>
+<ul>
+<li class="chapter" data-level="8.30.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#chainlinkpriceoracle合约"><i class="fa fa-check"></i><b>8.30.1</b> ChainlinkPriceOracle合约</a></li>
+<li class="chapter" data-level="8.30.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#aggregatorv3interface接口"><i class="fa fa-check"></i><b>8.30.2</b> AggregatorV3Interface接口</a></li>
+<li class="chapter" data-level="8.30.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-10"><i class="fa fa-check"></i><b>8.30.3</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.31" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#dai-proxy-examples"><i class="fa fa-check"></i><b>8.31</b> DAI Proxy Examples</a>
+<ul>
+<li class="chapter" data-level="8.31.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约声明和常量"><i class="fa fa-check"></i><b>8.31.1</b> 合约声明和常量</a></li>
+<li class="chapter" data-level="8.31.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#daiproxy合约"><i class="fa fa-check"></i><b>8.31.2</b> DaiProxy合约</a></li>
+<li class="chapter" data-level="8.31.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#函数定义"><i class="fa fa-check"></i><b>8.31.3</b> 函数定义</a></li>
+<li class="chapter" data-level="8.31.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-3"><i class="fa fa-check"></i><b>8.31.4</b> 接口定义</a></li>
+<li class="chapter" data-level="8.31.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-11"><i class="fa fa-check"></i><b>8.31.5</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.32" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#staking-rewards"><i class="fa fa-check"></i><b>8.32</b> Staking Rewards</a>
+<ul>
+<li class="chapter" data-level="8.32.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约声明和状态变量"><i class="fa fa-check"></i><b>8.32.1</b> 合约声明和状态变量</a></li>
+<li class="chapter" data-level="8.32.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#奖励相关的变量"><i class="fa fa-check"></i><b>8.32.2</b> 奖励相关的变量</a></li>
+<li class="chapter" data-level="8.32.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#用户相关的映射"><i class="fa fa-check"></i><b>8.32.3</b> 用户相关的映射</a></li>
+<li class="chapter" data-level="8.32.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总质押量和用户质押记录"><i class="fa fa-check"></i><b>8.32.4</b> 总质押量和用户质押记录</a></li>
+<li class="chapter" data-level="8.32.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#构造函数-5"><i class="fa fa-check"></i><b>8.32.5</b> 构造函数</a></li>
+<li class="chapter" data-level="8.32.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#修饰符"><i class="fa fa-check"></i><b>8.32.6</b> 修饰符</a></li>
+<li class="chapter" data-level="8.32.7" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#奖励计算函数"><i class="fa fa-check"></i><b>8.32.7</b> 奖励计算函数</a></li>
+<li class="chapter" data-level="8.32.8" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#质押和提取函数"><i class="fa fa-check"></i><b>8.32.8</b> 质押和提取函数</a></li>
+<li class="chapter" data-level="8.32.9" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#奖励领取和计算"><i class="fa fa-check"></i><b>8.32.9</b> 奖励领取和计算</a></li>
+<li class="chapter" data-level="8.32.10" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#管理函数"><i class="fa fa-check"></i><b>8.32.10</b> 管理函数</a></li>
+<li class="chapter" data-level="8.32.11" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#辅助函数"><i class="fa fa-check"></i><b>8.32.11</b> 辅助函数</a></li>
+<li class="chapter" data-level="8.32.12" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-4"><i class="fa fa-check"></i><b>8.32.12</b> 接口定义</a></li>
+<li class="chapter" data-level="8.32.13" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-12"><i class="fa fa-check"></i><b>8.32.13</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.33" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#discrete-staking-rewards"><i class="fa fa-check"></i><b>8.33</b> Discrete Staking Rewards</a>
+<ul>
+<li class="chapter" data-level="8.33.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约声明和状态变量-1"><i class="fa fa-check"></i><b>8.33.1</b> 合约声明和状态变量</a></li>
+<li class="chapter" data-level="8.33.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#奖励相关变量"><i class="fa fa-check"></i><b>8.33.2</b> 奖励相关变量</a></li>
+<li class="chapter" data-level="8.33.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#构造函数-6"><i class="fa fa-check"></i><b>8.33.3</b> 构造函数</a></li>
+<li class="chapter" data-level="8.33.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#更新奖励指数"><i class="fa fa-check"></i><b>8.33.4</b> 更新奖励指数</a></li>
+<li class="chapter" data-level="8.33.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#计算奖励"><i class="fa fa-check"></i><b>8.33.5</b> 计算奖励</a></li>
+<li class="chapter" data-level="8.33.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#计算已赚取的奖励"><i class="fa fa-check"></i><b>8.33.6</b> 计算已赚取的奖励</a></li>
+<li class="chapter" data-level="8.33.7" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#更新用户奖励"><i class="fa fa-check"></i><b>8.33.7</b> 更新用户奖励</a></li>
+<li class="chapter" data-level="8.33.8" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#质押和提取函数-1"><i class="fa fa-check"></i><b>8.33.8</b> 质押和提取函数</a></li>
+<li class="chapter" data-level="8.33.9" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#领取奖励函数"><i class="fa fa-check"></i><b>8.33.9</b> 领取奖励函数</a></li>
+<li class="chapter" data-level="8.33.10" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-5"><i class="fa fa-check"></i><b>8.33.10</b> 接口定义</a></li>
+<li class="chapter" data-level="8.33.11" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-13"><i class="fa fa-check"></i><b>8.33.11</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.34" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#vault"><i class="fa fa-check"></i><b>8.34</b> Vault</a>
+<ul>
+<li class="chapter" data-level="8.34.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约声明和状态变量-2"><i class="fa fa-check"></i><b>8.34.1</b> 合约声明和状态变量</a></li>
+<li class="chapter" data-level="8.34.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#铸造和销毁股份"><i class="fa fa-check"></i><b>8.34.2</b> 铸造和销毁股份</a></li>
+<li class="chapter" data-level="8.34.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#存款功能"><i class="fa fa-check"></i><b>8.34.3</b> 存款功能</a></li>
+<li class="chapter" data-level="8.34.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#提取功能"><i class="fa fa-check"></i><b>8.34.4</b> 提取功能</a></li>
+<li class="chapter" data-level="8.34.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-6"><i class="fa fa-check"></i><b>8.34.5</b> 接口定义</a></li>
+<li class="chapter" data-level="8.34.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-14"><i class="fa fa-check"></i><b>8.34.6</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.35" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#constant-sum-amm"><i class="fa fa-check"></i><b>8.35</b> Constant Sum AMM</a>
+<ul>
+<li class="chapter" data-level="8.35.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约声明和状态变量-3"><i class="fa fa-check"></i><b>8.35.1</b> 合约声明和状态变量</a></li>
+<li class="chapter" data-level="8.35.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#铸造和销毁股份-1"><i class="fa fa-check"></i><b>8.35.2</b> 铸造和销毁股份</a></li>
+<li class="chapter" data-level="8.35.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#更新储备量"><i class="fa fa-check"></i><b>8.35.3</b> 更新储备量</a></li>
+<li class="chapter" data-level="8.35.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#交换功能-1"><i class="fa fa-check"></i><b>8.35.4</b> 交换功能</a></li>
+<li class="chapter" data-level="8.35.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#添加流动性"><i class="fa fa-check"></i><b>8.35.5</b> 添加流动性</a></li>
+<li class="chapter" data-level="8.35.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#移除流动性"><i class="fa fa-check"></i><b>8.35.6</b> 移除流动性</a></li>
+<li class="chapter" data-level="8.35.7" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-7"><i class="fa fa-check"></i><b>8.35.7</b> 接口定义</a></li>
+<li class="chapter" data-level="8.35.8" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-15"><i class="fa fa-check"></i><b>8.35.8</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.36" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#constant-product-amm"><i class="fa fa-check"></i><b>8.36</b> Constant Product AMM</a>
+<ul>
+<li class="chapter" data-level="8.36.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约结构-1"><i class="fa fa-check"></i><b>8.36.1</b> 合约结构</a></li>
+<li class="chapter" data-level="8.36.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#内部函数"><i class="fa fa-check"></i><b>8.36.2</b> 内部函数</a></li>
+<li class="chapter" data-level="8.36.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#外部函数"><i class="fa fa-check"></i><b>8.36.3</b> 外部函数</a></li>
+<li class="chapter" data-level="8.36.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#辅助函数-1"><i class="fa fa-check"></i><b>8.36.4</b> 辅助函数</a></li>
+<li class="chapter" data-level="8.36.5" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#接口定义-8"><i class="fa fa-check"></i><b>8.36.5</b> 接口定义</a></li>
+<li class="chapter" data-level="8.36.6" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-16"><i class="fa fa-check"></i><b>8.36.6</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.37" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#stable-swap-amm"><i class="fa fa-check"></i><b>8.37</b> Stable Swap AMM</a>
+<ul>
+<li class="chapter" data-level="8.37.1" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#合约结构与功能概述"><i class="fa fa-check"></i><b>8.37.1</b> 合约结构与功能概述</a></li>
+<li class="chapter" data-level="8.37.2" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#主要功能-5"><i class="fa fa-check"></i><b>8.37.2</b> 主要功能</a></li>
+<li class="chapter" data-level="8.37.3" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#计算方法"><i class="fa fa-check"></i><b>8.37.3</b> 计算方法</a></li>
+<li class="chapter" data-level="8.37.4" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#总结-17"><i class="fa fa-check"></i><b>8.37.4</b> 总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8.38" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#r-markdown"><i class="fa fa-check"></i><b>8.38</b> R Markdown</a></li>
+<li class="chapter" data-level="8.39" data-path="hacks-evm-test-and-defi.html"><a href="hacks-evm-test-and-defi.html#including-plots"><i class="fa fa-check"></i><b>8.39</b> Including Plots</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank"https://github.com/Token-Economy-Book</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Token Economy: How the Web3 reinvents the Internet</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="web3-应用" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Web3 应用<a href="web3-应用.html#web3-应用" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="智能合约" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> 智能合约<a href="web3-应用.html#智能合约" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<blockquote>
+<p>智能合约是一段由分布式账本处理的软件。它是一种权利管理工具，可以在互联网中正式化并执行不受信任参与者之间的协议，并内置合规性和控制功能。智能合约能够降低两方之间简单协议的正式化和执行成本，以及组织章程的制定，或用于创建不同类型的代币。</p>
+</blockquote>
+<p>你会与一个从未见过、因此既不认识也不信任的人签订合同吗？你会成为一家外国小公司的投资者吗？你会同意借钱给一个陌生人，比如在危地马拉的农民、中国的教师或英国的收银员吗？又或者，你会为互联网中的一笔1欧元交易设置具有法律约束力的合同，比如从艺术家那里购买一首歌吗？在以上所有情况下，答案可能都是“不”，因为为了确保交易而设立必要法律合同的成本太高。相反，你可以使用可信的中介来处理这些合同，并支付他们的结算费用。许多Web2科技巨头如亚马逊、eBay、Airbnb和优步的商业模式都是因为缺乏可信赖的原生价值结算层和以用户为中心的身份系统。智能合约与以用户为中心的身份系统结合，可以为这两个问题提供解决方案。它们能够在完全点对点的基础上，正式化人与机构及其所拥有资产之间的关系，而无需依赖可信的中介。</p>
+<p>尽管智能合约的概念并不新颖，但区块链网络似乎是智能合约实施的催化剂。智能合约的一种更原始形式是自动售货机。交易规则被编程到机器中。你通过按下与所需产品相关的数字来选择产品并插入钱币。如果插入足够的钱，机器将被编程为释放产品。如果不够，机器则不会释放产品；如果机器没有货，你会收到退款。自动售货机让某些街头小贩变得多余，但它们也扩大了服务范围，提供24/7的可用性，而不是人工售卖者有限的营业时间。</p>
+<div id="自我执行的协议" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> 自我执行的协议<a href="web3-应用.html#自我执行的协议" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>智能合约是一种自我执行的协议，形式化为软件代码。该代码包含了一套规则，参与该智能合约的各方同意根据这些规则进行互动。当预定义的规则满足时，该协议会通过区块链网络的多数共识自动执行。智能合约为在两个或多个方之间高效管理代币化资产和访问权提供了机制。可以将其视为一个加密箱，当特定的预定义条件满足时，它将解锁价值或访问权限。因此，智能合约提供了一种公共且可验证的方式，将治理规则和业务逻辑嵌入几行代码中，这些代码可以通过点对点网络的多数共识进行审计和执行。</p>
+<p><img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/05_SmartContracts.png" /></p>
+</div>
+<div id="智能合约的调用与外部数据" class="section level3 hasAnchor" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> 智能合约的调用与外部数据<a href="web3-应用.html#智能合约的调用与外部数据" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>智能合约可以从区块链网络内的实体（其他智能合约）和外部（外部数据源）进行调用。外部数据源，即所谓的“预言机”，将与智能合约相关的数据从链外世界注入智能合约。它们能够实时跟踪协议的执行情况，从而节省成本，因为合规性和控制在执行过程中实时进行。智能合约降低了协议的交易成本，具体而言，它们减少了以下几个方面的费用：（i）达成协议的成本，（ii）正式化的成本，以及（iii）执行的成本。如果实施得当，智能合约能够提供比传统合同法更高的交易安全性，从而降低审计和执行此类协议的协调成本。智能合约还绕过了组织中的委托-代理困境[^1]，提供了更高的透明度和问责制，并减少了官僚主义（了解更多：第2部分 - DAO的制度经济学）。</p>
+<p>“智能合约”这个术语本身有些不妥，因为智能合约既不特别智能，也不反映法律合同：（i）智能合约的智能程度仅取决于编码者的能力，需考虑到编码时所有可用的信息；（ii）尽管智能合约在满足某些条件时可能有潜力执行法律合同，但我们首先需要解决许多技术-法律问题，这将需要时间以及法律专家与软件开发者之间的跨学科讨论。</p>
+<p>此外，智能合约的安全性仍然是一个需要在技术层面上解决的问题。需要实施更复杂的合同条款，使智能合约符合法律合同的要求，包括去中心化的争议解决机制。虽然这些发展可能需要更多时间才能成熟，但一些有趣的争议解决方案已经在开发中，例如“Kleros”、“Openlaw”和“Jur”。在接下来的几年中，我们可能会看到法律合同和智能合约的融合。在撰写本书时，最佳实践仍然很少，且需要一个集体学习的过程。该技术仍处于起步阶段，法律标准也需要得到采纳。</p>
+</div>
+<div id="行业应用案例" class="section level3 hasAnchor" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> 行业应用案例<a href="web3-应用.html#行业应用案例" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>智能合约的应用范围从简单到复杂，既可以用于简单的经济交易，如将资金从A转移到B，也可以用于登记任何类型的所有权和产权，例如土地登记和知识产权，或管理共享经济中的智能访问控制。应用案例遍及银行、保险、能源、电子政务、电信、音乐与电影、艺术、出行、教育等多个领域。每项协议、流程、任务或支付都可以集体管理。许多传统中介，如律师、经纪人、银行家、公务员和互联网平台，可能不再是必需的，或至少某些服务可能变得过时。例如，汽车可以使用智能合约在加油站或电动充电桩自动支付费用，发票可以在产品运输到达时自动结算。以代币化证券形式存在的智能股份证书可以编程实现自动分红支付（了解更多：第4部分 - 资产代币与分权所有权）。</p>
+<p>智能合约可以为共享经济提供原生结算层，目前这些交易由互联网平台运营商进行中介和处理。智能合约所支持的点对点支付特性降低了交易成本，这意味着微支付将变得比现在更具经济可行性[^2]。不信任彼此的两方之间的智能访问控制，可以为共享经济提供实用解决方案，摆脱当前拥有不成比例数据和经济价值的中心化平台提供商。这可能导致一种极为繁荣的共享经济：公寓、汽车、洗衣机、自行车、割草机——一旦这些设备都贴上自己的区块链地址（或DID），就可以由智能合约管理，像数字锁一样运作。</p>
+<p>智能合约的一个更复杂的例子是自我管理的森林案例，如“Terra0”，该智能合约在以太坊区块链上管理德国某森林的伐木和出售。无人机和卫星监测森林的生长，并触发智能合约中的事件，例如签订伐木和销售木材的分包协议。</p>
+<p>此外，智能合约还可以用于众多参与者之间的更复杂协议，适用于商品或服务的供应链，或治理共享相同利益和目标的群体，而无需传统中心化机构。去中心化自治组织（DAOs）就是一个这样的例子，可能代表了最常见的复杂智能合约形式。智能合约在此正式化组织的治理规则——如章程、规章制度、程序规则——并用自我执行的代码替代日常运营管理。</p>
+<p>智能合约和DAOs还可能颠覆我们所熟知的社交媒体。基于Web2的社交媒体网络通过从用户那里提取数据获取收益。在Web3中，智能合约可以启用以目的驱动的生态系统，用户可以通过网络活动获得网络代币作为奖励。例如，“Steemit”就是一个去中心化社交网络，以DAO形式组织，通过网络代币激励用户贡献（了解更多：第4部分 - Steemit）。</p>
+<p>智能合约和分布式账本还可能成为“物联网”中机器对机器结算的催化剂。然而，这需要物联网中的所有对象都有区块链身份，从而可以被唯一识别。每台机器或其他物理对象的可寻址性必须具备防篡改特性。这可以通过在物体上贴标或植入被称为“加密加速器”的小型微控制器来实现，这也被称为“数字双胞胎”。加密加速器是一种优化以运行最重要的加密算法的小型微控制器，大小可以是水果上的一个贴纸，因此可以作为供应链透明度等用例的基础。考虑到该技术的当前发展速度以及与物联网、大数据和人工智能等新兴技术的融合，我们可以想象一个世界，在这个世界里，个人、组织和机器可以几乎无摩擦地自由互动，且成本仅为当前的一个小部分。</p>
+<p>此外，智能合约还可以用于创建和管理可以代表任何资产或访问权的加密代币，甚至激励特定行为。代币可能成为智能合约最重要的应用之一，可能会彻底改变我们所知的资产管理。这就是本书最后两部分完全专注于代币主题的原因。</p>
+</div>
+<div id="预言机" class="section level3 hasAnchor" number="2.1.4">
+<h3><span class="header-section-number">2.1.4</span> 预言机<a href="web3-应用.html#预言机" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>区块链网络和智能合约无法直接访问网络外部的数据。为了了解如何处理事务，智能合约通常需要来自外部世界的相关信息，以数据流的形式传入，这些数据流被称为“预言机”。预言机是为智能合约提供外部信息的服务，这些信息可以触发智能合约的预定义操作，从而引发账本状态的变化。这些外部数据可以来自软件（大数据应用）或硬件（物联网）。</p>
+<ul>
+<li><p><strong>软件预言机</strong>：处理来自在线来源的信息数据，例如温度、股票或商品价格、航班或火车到达时间等。</p></li>
+<li><p><strong>硬件预言机</strong>：一些智能合约需要直接来自物理世界的信息。例如，车辆通过障碍时，运动传感器必须检测到车辆并将数据发送给智能合约，或供应链行业中的RFID传感器。</p></li>
+<li><p><strong>入站预言机</strong>：提供来自外部世界的数据。</p></li>
+<li><p><strong>出站预言机</strong>：使智能合约能够将数据发送到外部世界。</p></li>
+<li><p><strong>基于共识的预言机</strong>：从人类共识和预测市场（如“Augur”或“Gnosis”）获取数据。然而，仅依赖单一信息源可能不可靠，因为市场可能受到操控；因此，可能需要对预言机的评级系统。如果例如五个预言机中有三个能够确定事件的结果，结合不同的预言机服务可能会进一步提高数据的可靠性。</p></li>
+</ul>
+<p>预言机面临的主要挑战是人们需要信任这些外部信息源，无论其来源于网站还是传感器。由于预言机是非区块链共识机制的一部分的第三方服务，它们不受该公共基础设施所提供的基本安全机制的保护。这可能导致出现“中间人攻击”[^3]，在合约和预言机之间产生风险。因此，确保这个“第二层”的稳健性至关重要。可以使用不同的可信加密工具和计算技术来解决这些问题。如果未能提供足够的预言机安全性，将会成为智能合约广泛实施的障碍。</p>
+<p>需要注意的是，智能合约并不等待外部来源的数据流入系统。合约必须被调用，这意味着需要消耗网络资源以从外部世界获取数据，这会产生网络交易成本。在以太坊中，这被称为“Gas”费用。</p>
+</div>
+<div id="二手车购买案例" class="section level3 hasAnchor" number="2.1.5">
+<h3><span class="header-section-number">2.1.5</span> 二手车购买案例<a href="web3-应用.html#二手车购买案例" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>假设两个人，爱丽丝和鲍勃，彼此不认识也不信任，通常需要一个可信的第三方作为中介来验证交易并强制执行。在智能合约和区块链网络的帮助下，你不再需要这些可信的中介来清算或结算交易。以买卖汽车为例：如果爱丽丝今天想从鲍勃那里购买一辆车，通常需要一系列可信的第三方来验证和认证交易。这个过程因国家而异，但至少涉及一个，通常是多个可信的第三方，如机动车注册机关、 нотариус和/或保险公司。这可能是一个复杂且漫长的过程，并伴随产生相关费用。如果所有相关的机构和公司都使用分布式账本，智能合约可以用来正式化有效汽车销售的所有规则，包括购买汽车保险等附加服务的结算。如果爱丽丝想使用智能合约从鲍勃那里买车，潜在的流程可能如下：</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>鲍勃将通过互联网寻找可以发布二手车并定义销售条款的服务，例如某个去中心化的eBay。这个步骤与今天没有什么不同，但基于智能合约的服务需要与Web3兼容，以便与区块链网络通信。该智能合约服务还可能提供一个智能车库，也与区块链网络连接。因此，鲍勃需要下载一个Web3兼容的软件，该软件内置钱包，为他提供一个独特的区块链身份——一个带有相关公私钥对的区块链地址（阅读更多：第1部分 - 密码学）。</strong></p></li>
+<li><p><strong>爱丽丝同样会使用互联网，就像她今天所做的那样。她将在网上搜索鲍勃发布汽车的去中心化版本的eBay。爱丽丝也需要下载一个Web3兼容的浏览器。</strong></p></li>
+<li><p><strong>如果爱丽丝找到她喜欢的车，假设是鲍勃的车，她会点击“购买”，智能合约服务将使用区块链网络检查鲍勃是否是汽车的所有者，以及爱丽丝是否有足够的资金。关于这两个状态的信息——鲍勃声称出售的汽车所有权和爱丽丝拥有的代币数量——将被记录在账本上。在点击“购买”按钮时，智能合约服务还可能给她选择保险计划的选项，保险公司也注册在账本上并与提供此保险的智能合约服务相连（在这样的未来场景中，保险计划可能会实时计算，费用将基于汽车的数据和爱丽丝的驾驶记录）。</strong></p></li>
+<li><p><strong>如果网络确认这两个状态都为真——即爱丽丝有足够的资金，鲍勃确实是汽车的所有者——区块链网络会将爱丽丝注册为新车主，并自动更新他们的资金余额：鲍勃的账户增加20,000个代币，而爱丽丝的数字钱包减少20,000个代币。此时，爱丽丝将收到智能锁的访问代码。进一步地，爱丽丝还注册了她选择的汽车保险公司，这在她购买汽车时触发了另一个智能合约。</strong></p></li>
+<li><p><strong>鲍勃现在可以将他的车停在车库里。他的车在区块链上也有独特的身份，将被注册为停在车库里，爱丽丝会收到关于如何使用她的访问代码来提车的通知。</strong></p></li>
+<li><p><strong>爱丽丝现在可以在指定的车库提车，车库由连接到区块链并由鲍勃和爱丽丝共同使用的智能合约管理的智能锁保护。她可以使用她的私钥解锁车库，这表明她是汽车的合法拥有者。车子是她的，注册在她名下，并且有保险。</strong></p></li>
+</ol>
+<p><img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/07_BuyingCarWeb2.png" /></p>
+<p><img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/08_BuyingCarWeb3.png" /></p>
+<p>通过使用智能合约，我们可以在监管环境允许的情况下，避免某些机构（如机动车管理局、保险公司以及在某些国家的公证人）的手动干预。运行区块链协议的每台计算机都能够验证某人是否为汽车的合法拥有者。一旦汽车配备了使用智能合约进行访问控制的数字钥匙，盗窃汽车将变得不那么容易。某些自动化流程还需要智能合约与来自外部软件和硬件的数据源的结合，例如在车库中拍摄的照片以监控汽车状况。作为汽车的拥有者，你还可以使用智能合约授权他人驾驶你的车，并在智能合约中注册他们的区块链身份。</p>
+<p>智能合约的安全性是广泛采用这些用例的重要问题，包括：(i) 预言机安全：确保来自链外来源的数据可信；(ii) 安全编码与形式验证：对代码进行计算机辅助检查和测试，以确保其符合行为规范；(iii) 程序安全与争议解决：额外的链上和链下机制，用于解决智能合约运行过程中出现的投诉或不可预见的情况。探索其他智能合约编程语言可能是一个有趣的方向，既从安全性角度，也从市场采用角度来看。此外，智能合约应设计成仅向参与过程的相关方透露个性化数据，以遵循隐私保护法规（隐私设计）。</p>
+<p>如前所述，许多智能合约的用例将只有在与大数据应用和“物联网”等其他技术相互作用的情况下才能实现。这种技术的相互作用可以为未来数十年创造全新的产品、服务和资产类别。然而，也可能会出现许多社会政治问题。一旦所有物体都被标记为唯一的区块链地址（身份），并因此可以在区块链网络中唯一引用，若它们由相对智能的软件控制，这些设备可能会成为人机经济中的自主经济主体。然而，关于(i) 我们是否以及如何将权力从人类转移到机器，(ii) 这种发展可能带来的社会政治影响，以及 (iii) 我们作为一个社会希望如何塑造这些现象的问题，需要在设计这些系统之前进行公开讨论。</p>
+</div>
+<div id="智能合约的历史" class="section level3 hasAnchor" number="2.1.6">
+<h3><span class="header-section-number">2.1.6</span> 智能合约的历史<a href="web3-应用.html#智能合约的历史" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>虽然“智能合约”这一术语自比特币和以太坊的出现以来已变得更加主流，但它最早是由Nick Szabo在1996年提出的，因此早于区块链网络的发展。在互联网的早期，Szabo指出，数字革命不仅会创造新的机构，还能够形式化经济和社会关系。这是以太坊问世前20年的观点，重新唤醒了这一术语的活力。Szabo用“智能”一词来形容数字合约的功能，这些合约可以自动验证和执行：一种自动执行协议条款的数字交易日志，旨在实现双方商定的合约条件。所有参与方的关系和义务通过计算机代码自动管理。</p>
+<p>与传统合约不同，传统合约依赖现有法律体系的反应性程序来保证合同安全，而Szabo认为智能合约可以通过自动化机制主动防止这种反应性的“事后”安全，从而使潜在的违约变得可能但成本高昂。他指出，现有法律体系的反应性程序可以最小化，但永远无法完全消除。为了实现这种主动安全，智能合约应具备自动化功能，并且应满足以下条件：(a) 可观察，(b) 可验证，(c) 可执行。同时，Szabo警告说，(d) 必须保证数据隐私，仅向有权查看的合同方披露必要数据。</p>
+<p>Szabo详细描述了如何在技术上形式化这些关系，并列举了一系列可以使用的密码学方法，例如公钥密码学、数字签名，尤其是盲签名和零知识证明。一些Szabo描述的密码学方法可以在比特币的实现中找到。然而，Szabo在思维上比中本聪和其他许多早期比特币及替代区块链网络（如以太坊）开发者更加前瞻性。尽管他在1996年提到了更具隐私保护的方法如盲签名和零知识证明，但这些方法在区块链领域的应用仍然相对缓慢。这些隐私保护技术也有潜力更好地满足欧盟《通用数据保护条例》（GDPR）中规定的“隐私设计”要求，远超目前大多数先进区块链网络所使用的密码学方法。</p>
+<p>Szabo表示，为了使智能合约“以自我执行的代码形式嵌入现实世界”，它们必须被设计得可信且具有抗攻击性，既能抵御故意攻击，也能防止无意的破坏。然而，在那时，Szabo并不知道如何完全去中心化信任并使这样的系统抵御Sybil攻击，因此描述了一个可信中介的必要性。他提出了潜在攻击者的经济效用函数，并在概述解决方案时参考了理论计算机科学和信息安全的概念。1998年，他进一步将智能合约的想法发展为P2P价值转移的实际实施。他提出了一种电子现金的构想，旨在实现与黄金同样的抗通胀性，这就是他称之为“比特黄金”的东西。由于Szabo未能找到替代可信中介的Sybil攻击抵御系统，这一想法从未实现。十年后，比特币通过引入“工作量证明”成功解决了这一问题。</p>
+<p>Szabo设想了不同科学领域的交织，以形式化智能合约，如法律、经济学和密码学，但批评这些学科之间几乎没有沟通。然而，他并不是第一个考虑合同自动化的人。两年前，Ian Grigg描述了他对Ricardian Contracts的想法，指定如何使现实世界的合同可被机器读取和执行。他希望创建一个系统，在执行协议之前，能够保持合同意图和结果行为的人类可读性，同时通过加密技术（如哈希函数和数字签名）优化机器认证和处理。他的目标是确保法律文件及相关事务的链接和处理，提供比传统法律程序更高的透明度和安全性。目前，智能合约与Ricardian Contracts的首批混合解决方案已经存在。“OpenBazaar”便是一个已经在使用Ricardian Contracts的P2P电子商务平台。</p>
+<p>自以太坊项目问世以来，“智能合约”这一术语经历了复兴。以太坊将编程智能合约的概念与处理协议的底层区块链网络解耦。与比特币不同，以太坊协议旨在提供一个节省成本的基础设施，使得只需少量代码即可创建任何类型的智能合约。以太坊启发了更多项目开发类似的智能合约区块链网络，如“EOS”、“Cardano”或“Waves”，这些网络在技术成熟度、可扩展性、网络安全性等方面各有不同，并常常使用不同的智能合约语言。</p>
+</div>
+<div id="章节总结-2" class="section level3 hasAnchor" number="2.1.7">
+<h3><span class="header-section-number">2.1.7</span> 章节总结<a href="web3-应用.html#章节总结-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>智能合约是一种由分布式账本处理的软件。它是一个权利管理工具，可以在不信任的参与者之间正式化并执行协议，同时内置合规性和控制机制。</p>
+<p>智能合约能够降低两方之间简单协议的正式化和执行成本，适用于组织的章程或创建不同类型的代币。</p>
+<p>“智能合约”一词最早由Nick Szabo于1996年提出，早于区块链网络的发展。在互联网的早期，Szabo指出，数字革命不仅会创造新的机构，还能够形式化经济和社会关系。</p>
+<p>智能合约的应用案例范围从简单到复杂。其中最复杂的形式是去中心化自治组织（DAO）。智能合约也可用于创建代币。</p>
+<p>智能合约有潜力颠覆许多行业。其应用案例可在银行、保险、能源、电子政务、电信、音乐与影视、艺术、出行、教育等多个领域找到。</p>
+<p>预言机提供智能合约所需的外部数据，并在预定义条件满足时触发智能合约的执行。预言机是查找和验证现实世界事件并将这些信息提交给智能合约的服务，自动触发区块链上的状态变化。预言机的主要任务是以安全可靠的方式将这些数据值提供给智能合约。这些数据流来自软件（大数据应用）或硬件（物联网）。</p>
+</div>
+</div>
+<div id="web3-网络与其他-dao-的制度经济学" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Web3 网络与其他 DAO 的制度经济学<a href="web3-应用.html#web3-网络与其他-dao-的制度经济学" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>制度经济学研究正式或非正式制度——如程序、惯例、安排、传统和习俗——在社会经济背景中的作用。自互联网出现以来，许多分布式互联网部落如社交媒体平台、电子商务平台或知识平台已形成。Web3 网络引入了一种新的基于互联网的制度基础设施，使分布式互联网部落能够以更自主的方式自我组织和协调，借助目标导向的代币和可由机器执行的协议。这些通常被称为去中心化自治组织（DAOs）。</p>
+<p>区块链网络和类似的分布式账本可以颠覆传统的治理结构，并挑战当前社会自我组织的方式。它们可以 (i) 通过提供透明度来减少组织中的委托-代理困境；(ii) 通过原生代币激励网络参与者，从而去中介化并降低管理成本；(iii) 用主动和自动化机制取代现行法律系统的反应性程序安全，使潜在的违约成本高昂，从而不可行。Web3 网络通常提供更去中心化和自发的协调方式，连接彼此可能不熟悉或不信任的人和机构。这些协调结构被称为去中心化自治组织（DAOs）。</p>
+<p>DAO 解决了政治学家和经济学家所称的“委托-代理困境”的古老治理问题。当一个组织的代理人有权代表或影响委托人——组织中的另一个人或实体——时，就会发生这种情况。例如，管理者代表股东行事，或政治家代表公民。在这样的设置中，代理人可能会冒更大的风险，因为其他人要承担这些风险的成本，这种现象称为道德风险。更一般地说，当代理人出于自身利益而非委托人的利益行事时，就会发生这种困境，因为委托人无法完全控制代理人的行为。当存在潜在的信息不对称时，这种困境通常会加剧。</p>
+<p>比特币网络可以被视为第一个真正的去中心化自治组织，由比特币协议协调，任何人都可以自由采用。比特币网络为无需银行和银行经理的货币提供了操作系统，自2009年首个区块被创建以来，一直保持抵抗攻击和容错能力。没有中央实体控制网络，这意味着只要人们继续参与，唯一可能使比特币停摆的情况就是全球停电。治理规则与网络代币相关，旨在通过一种已证明有效的激励机制引导网络节点的行为，以激励他们提供网络服务（了解更多：第一部分 - 区块链与其他分布式账本，第四部分 - 目标驱动的代币）。</p>
+<p>随着以太坊网络的出现，DAO 的概念从区块链协议上升到了智能合约层面。以前需要一个具有抗攻击共识协议的区块链网络才能创建 DAO，而智能合约使得 DAO 的创建变得易于编程，通常只需几行代码，无需建立自己的区块链基础设施。DAO 的使用案例从简单到复杂，复杂程度取决于利益相关者的数量以及该组织内由智能合约管理的过程的数量和复杂性。代币治理规则激励并引导网络参与者，取代了自上而下的组织，采用自我执行的代码。根据 DAO 的目的和治理规则，以及 DAO 利益相关者的自主程度，使用案例可以类似于公司或国家。使用智能合约作为其操作基础设施的组织可以利用法律系统在一定程度上保护其物理财产，但这种使用是次要的，相较于智能合约所能提供的预防性安全机制。</p>
+<p>2016 年的 “TheDAO” 是在以太坊网络上一个非常早期的复杂智能合约示例。TheDAO 的目的是提供一个无需传统基金经理的资金管理自主工具。在为期四周的代币销售期间，TheDAO 发行了 DAO 代币，以 ETH 作为交换，筹集了相当于 1.5 亿美元的资金，成为当时最大的代币销售。设想中，每位 DAO 代币持有者都将成为这个去中心化投资基金的共同拥有者，持有的代币数量与其在投资决策中的投票权成比例。然而，由于软件中的编程错误，这一愿景未能实现，项目在运营前就损失了大约三分之一的资金。这导致了以太坊网络的有争议的硬分叉。主要问题之一是 TheDAO 的治理规则没有考虑到在不可预见事件情况下的决策过程（了解更多内容，请参见下一章：链上治理与链外治理）。</p>
+<p>这个基于智能合约的 DAO 的早期使用案例表明，比特币网络通过复杂的共识协议解决了的问题，经过几十年的应用与理论研究，并不能仅仅通过几行代码复制。TheDAO 的目的与比特币网络不同，因此需要一种新的抗攻击引导机制，但 TheDAO 的治理规则在几个月内开发完成，主要由没有治理专业知识的工程师制定。TheDAO 的代币治理规则基于对代币持有者行为的过于简化的假设：没有充分考虑“搭便车问题”或“有限理性”等心理现象，这些属于行为经济学领域（了解更多：第四部分 - 目标驱动的代币）。相反，他们基于小代币持有者会模仿大代币持有者的行为这一假设，后者被认为会因为在游戏中投入更多“利益”而花时间做出明智决策。实际上，大多数小代币持有者根本没有参与任何投票过程，可能希望其他代币持有者能够代表他们做出正确的决策。此外，投票过程涉及个人干预，钱包可用性差，使许多较小和技术能力较低的代币持有者无法参与投票。整个事件表明，“去中心化”也是一个人类行为的问题，因此也受行为经济学的影响，而不仅仅是数学或技术问题。</p>
+<p>在 Web3 之上，我们看到越来越多的 DAO 应运而生，具有各种目的。较新的 Web3 应用程序专注于提供一套即插即用的端到端框架来构建 DAO。提供的工具集包括宪法框架、争议解决框架等，这样新的 DAO 项目就不必从零开始构建所有必要的组织和制度要素。它们降低了建立去中心化组织的技术成本，使您能够专注于您想要构建的内容（网络的目的）和构建方式（网络的治理规则）。许多项目在以太坊网络之上构建，并提供模块化智能合约框架，配备易于使用的用户界面，允许没有技术知识的人创建自己的去中心化组织。这些组织的去中心化程度可以根据需求而有所不同。此类项目的例子包括 “Aragon”、“Bitnation”、“Colony”、“Commonstack”、“DAOStack” 和 “MolochDAO”，它们在重点、理念或进展与成功的水平上各有不同。</p>
+<p><img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/32_CompleySystems.png" /></p>
+<div id="daos-与传统组织" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> DAOs 与传统组织<a href="web3-应用.html#daos-与传统组织" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>社会的许多部分以自上而下的指挥与控制结构组织。法律体系的作用是保障并执行所有机构之间的合同协议，这些机构调节我们的社会经济互动。此类法律框架的例子包括：(i) 一国的宪法，(ii) 雇员与组织之间的劳动合同，(iii) 组织之间的供应协议、采购协议或销售合同，以及 (iv) 不同国家政府之间的双边或多边协议。我们的经济机构的组织结构随着时间的推移而演变，成为制度经济学、管理科学和控制论的研究对象。治理一个地理区域内成员的政治机构（即公民）也随着时间演变，并受到政治学、经济学（特别是制度经济学）、社会学和控制论的研究。</p>
+</div>
+<div id="公司演变与企业理论" class="section level3 hasAnchor" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> 公司演变与“企业理论”<a href="web3-应用.html#公司演变与企业理论" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>经济学家罗纳德·科斯在其著作《企业理论》中指出，企业的出现是因为它们能比外包更高效地内部生产所需的东西——考虑所有成本，如搜索、信息获取、谈判和商业合作伙伴的监管，或在市场上进行双边交易。他的理论解释了经济生产的集中，尤其是通过生产的垂直整合，及随之而来的跨国公司的崛起，从工业革命到20世纪末。近年来，20世纪这些高度结构化、集中和官僚化的组织逐渐让位于更松散、更扁平的组织形式，如“全息管理”，这是一种由自给自足单元引导的更自主的组织结构。互联网作为信息共享技术，促进了这种组织创新，开启了外包革命，并减少了公司的规模（员工人数）。此外，Web2的出现进一步降低了全球市场的交易成本，使围绕例如“生产者消费者”的新型组织形式成为可能。然而，仍然存在一个强大的中介——像亚马逊、eBay、Zalando、Uber、Airbnb等公司——为互联网上的两个人互动提供受信任的平台。尽管围绕这些平台的产品和服务变得越来越解耦，将生产者与消费者拉得更近，但服务条款始终由这些平台提供者规定，主要是控制所有用户数据的私有公司。智能合约具有去中介化这些平台的潜力，介绍新的活动协调方式，如任务分配、协调和对共享共同经济利益的地理分散群体的监督。</p>
+</div>
+<div id="国家治理与代议制民主" class="section level3 hasAnchor" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> 国家治理与代议制民主<a href="web3-应用.html#国家治理与代议制民主" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>民主是一种治理系统，在这种系统中，共同分享地理区域且受到集体决策影响的人们同意平等地参与决策过程。个人应如何参与这一问题一直是许多争论和冲突的源泉，并且随着时间的推移也经历了巨大的演变。直接民主是一种形式，其中人们直接决定所有政策倡议。然而，团体越大，成员参与每个决策过程的难度就越大，原因多样，如协调的高成本以及每个参与者的心理交易成本。结果，现代代议制民主周围出现了集中的机构和官僚化的组织结构。在这样的代议制框架下，选举产生的代表代表所有合格的国家成员行使治理权。两种系统各有优缺点，具体取决于所治理的群体的规模和类型。近期的政治历史表明，公众对既定政治治理系统的高度失望，政治学家称之为“后民主”。这一现象的特点是，治理精英日益遥远，同时公民要求重新夺回其在决策中的位置。全球化的影响，如自由贸易、更便宜、更快捷的运输和互联网，进一步削弱了国家对公民生活的调控能力。一种建议的解决方案是“流动民主”，这是一种民主治理形式，选民可以以更灵活的方式委托投票权，允许在委托的权力和时间框架上有所差异。这是一种不依赖于选举代表而是依靠部分或临时投票委托的协作决策方式。尽管“流动民主”可能为既定民主系统的一些问题提供解决方案，但在我们当前以国家法律孤岛（这是互联网和全球化之前的遗留物）和纸质投票系统主导的结构下，这仍然是一种不可行的治理方式。</p>
+</div>
+<div id="去中心化自治组织" class="section level3 hasAnchor" number="2.2.4">
+<h3><span class="header-section-number">2.2.4</span> 去中心化自治组织<a href="web3-应用.html#去中心化自治组织" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>去中心化自治组织涉及一组人根据自我执行的开源软件协议相互互动，而没有双边协议。区块链协议和/或智能合约代码正式化了DAO的治理规则，调节所有网络参与者的行为。DAO为在互联网上建立更流动的去中心化组织提供了可能，并围绕特定的经济、政治或社会目的展开。它们为不相识或不信任彼此的个人和机构提供了一种操作系统，这些个人和机构可能居住在不同的地理区域，讲不同的语言，受不同的司法管辖。流动民主的元素可以在协议层（如委托权益证明或工作量证明挖矿池）和智能合约层应用，其操作成本低于我们今天生活的“链外”世界。执行网络任务可以通过网络代币获得奖励，代币也可用于行使投票权。一旦部署，完全去中心化的自治组织就独立于其创建者，不能由单一实体控制，只能由组织参与者的多数共识来控制。确切的多数规则在共识协议或编写的智能合约中定义，并因用例而异。DAO有潜力解决全球协调问题，如国际供应链的不透明性和全球政策制定的缺乏可执行性。这可能是许多联合国组织（如世界粮食计划署、联合国儿童基金会、联合国开发计划署等）已经在探索智能合约应用的原因之一。</p>
+<p>DAO是开源的，因此透明且如果设计得当，则不可腐败。组织的所有交易都由区块链网络记录和维护。网络中的任何人都可以提出代码升级提案，并由相关网络参与者的多数共识进行投票。因此，DAO可以视为分布式有机体或分布式互联网部落，生活在互联网上并自主存在，但也在很大程度上依赖于专业个人或较小组织来执行某些无法用自动化替代的任务。然而，我想指出，没有完全去中心化和自主的组织。根据治理规则的不同，去中心化程度也有所不同。此外，尽管网络可能在地理上去中心化，拥有许多独立但平等的网络参与者，智能合约或区块链协议中编写的治理规则始终是一个中心化和直接自主丧失的点。DAO可以在架构上去中心化（独立参与者运行不同节点），并在地理上去中心化（受不同司法管辖），但它们在逻辑上围绕协议是中心化的。关于如何升级协议、何时升级以及是否需要升级的问题，通常被委托给一组理解代码技术法律复杂性的专家，因此代表了一个中心化点（了解更多内容：第二部分 - 链上治理与链外治理）。</p>
+<p><img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/09_TopDownOrgas_DAOs.png" /></p>
+</div>
+<div id="web3-网络与基于智能合约的-dao" class="section level3 hasAnchor" number="2.2.5">
+<h3><span class="header-section-number">2.2.5</span> Web3 网络与基于智能合约的 DAO<a href="web3-应用.html#web3-网络与基于智能合约的-dao" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Web3 网络和基于智能合约的 DAO 是由三个相互依赖的网络组成的复杂系统：(i) 计算机网络，(ii) 人员网络，(iii) 代币流动网络。它们是适应性的社会经济网络，在时间和空间上都是动态的。动态指的是网络由于人类代理的行为（如发送代币、消费其他网络服务、贡献代码或分叉到另一个网络）而持续发生的状态变化。适应性意味着 DAO 参与者不断适应他们所处的网络，这得益于个体参与者与整个网络之间的反馈循环。个体行为影响系统，进而导致系统整体随时间演变。复杂系统与其他（较不复杂的）系统的不同在于，系统级行为无法仅通过个体网络参与者所引发的局部状态变化轻易得出或预测。</p>
+<p>系统理论是与“控制论”相关的多种工具之一，控制论是一个跨学科的科学领域，研究生物、有机体、机器和组织的自我治理系统。控制论一词源于希腊语，意为“操控、导航或治理船只”。操控是指设定目标，而不是指示系统该做什么。这些目标可以是个体的（个人的愿望和需求）和集体的（关于集体政策的社会共识）。在政治科学中，自我操控和共同操控的系统通常被称为民主。经济学家弗里德里希·哈耶克称控制论为一种学科，它也可以帮助经济学家理解市场作为“自组织或自生成系统复杂现象”，利用控制论的反馈机制进行经济模式预测。他解释了亚当·斯密的“看不见的手”概念，认为这是对控制论中反馈机制运作的预期。</p>
+</div>
+<div id="dao-的制度经济学" class="section level3 hasAnchor" number="2.2.6">
+<h3><span class="header-section-number">2.2.6</span> DAO 的制度经济学<a href="web3-应用.html#dao-的制度经济学" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>制度经济学是经济学的一个子集，它与政治学、社会学或历史交叉，研究正式或非正式制度在社会经济背景中的作用。“制度”代表一套规则或契约，促成社会互动，如程序、惯例、安排、传统或习俗。它们通常嵌入不同相互依存层次的结构中，包括自然、文化和法律规则。制度还反映了引导和激励群体中个体行为的实体。制度经济学家古斯塔夫·冯·施莫勒曾说：“对社会机构和制度的研究，就如同解剖学对于物理身体的重要性。”</p>
+<p>不同的制度经济学派对“制度”的定义各有不同。早期的社会群体是社区，如部落、家族等。随着技术和社会的发展，治理更多的人和更大地理区域成为可能，新的社会机构相继出现，最显著的包括民族国家和公司。</p>
+<p>自互联网出现以来，许多分布式的互联网部落形成，如社交媒体平台和其他平台。在这个历史背景下，区块链网络引入了一种基于机器可执行协议的新型互联网制度基础设施。因此，去中心化自治组织（DAO）可以被视为 Web3 的一种新社会生物体。它们代表着拥有实时数据的社会经济网络，所有网络活动的数据是公开的，而非由单一实体控制的。Web3 使我们能够几乎实时地记录和分析新制度的出现，并以公开可验证的方式进行分析。考虑到数据科学的进步，这为新的数据驱动协调机制提供了可能，并促进了几乎实时反馈循环的新超国家治理形式。未来几年将揭示机器执行经济机制的影响，以及智能合约对法律契约演变和集体社会经济治理机制的影响。</p>
+<p>在其制度结构中，Web3 网络与民族国家的相似性远大于与公司的相似性。区块链协议可比作民族国家的宪法和治理法律。网络中的自治参与者是网络的主权者，因此受到网络宪法、区块链协议或智能合约代码的约束。例如，工作量证明（Proof-of-Work）网络的货币政策在协议中定义，并规范网络代币的铸造条件。财政政策同样在协议中定义，规范交易费用。利益相关者可以随时选择参与或退出，决定成为社区的活跃成员，参与代码的发展，或在代码升级时决定代码变更。</p>
+<p>民族国家更像是权限网络，而非无权限网络。在大多数国家，只有该国的公民有特权成为网络的一部分，换句话说，就是在该国生活和工作。非公民可能会获得暂时的入境或工作许可。虽然可以通过移民或迁出选择参与或退出，但这一选项通常会伴随高昂的个人和经济成本，并且需要时间。民族国家主要通过消极激励来引导公民的行为：一旦违法，便需支付罚款或入狱。税收可以被视为公民为获取政府服务而支付的网络交易成本。在某些情况下，国家政府会设立税收减免和补贴，作为正面激励，促使公民朝特定行为倾斜。税收政策是国家财政政策的一部分，配合中央银行的政策，共同决定货币政策，旨在引导网络参与者向某种经济行为发展。</p>
+<p><img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/26a_InstitutionalEconomicsDAOs.png" />
+<img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/26b_InstitutionalEconomicsOFDAOS.png" /></p>
+</div>
+<div id="dao-的货币与财政政策" class="section level3 hasAnchor" number="2.2.7">
+<h3><span class="header-section-number">2.2.7</span> DAO 的货币与财政政策<a href="web3-应用.html#dao-的货币与财政政策" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>货币政策是指国家货币供应的治理，例如，由中央银行、货币委员会和其他相关监管机构策划并实施的利率，以实现通货膨胀、消费、经济增长和流动性等宏观经济目标。大多数中央银行的主要目标是管理通货膨胀的同时降低失业率。在这些情况下，目标通常是实现经济增长，或者至少保持稳定，这通过国内生产总值（GDP）来衡量，以维持低失业率和稳定的汇率。大多数中央银行使用以下工具的组合来调节国家的货币政策：(i) 公开市场操作，(ii) 准备金要求，(iii) 汇率干预，以及 (iv) 短期利率。</p>
+<p>区块链网络的代币供应政策可以视为该网络的“货币政策”。这种代币供应政策在协议中定义，确定了原生网络代币的供应和可用性。正如各国的货币政策可能因国而异，区块链网络和其他 DAO 的代币供应政策也可能大相径庭，开辟了一个新的应用研究和开发领域。代币供应可以从一开始就是固定的，比如比特币网络，或是不确定的，比如以太坊网络。</p>
+<p>例如，比特币的代币供应在协议中进行调控，并在协议实施前就已定义。每当矿工发现一个新区块，就会创造新的 BTC。第一个 BTC 是在 2009 年的创世区块中创建的。每 210,000 个区块生成的 BTC 数量减少 50%，大约每四年一次。因此，比特币的总量限制在略低于 2100 万 BTC。预计最后一个 BTC 将在 2140 年被挖出，那时区块奖励将降至 1 萨托希（Satoshi），这是 BTC 的最小单位。尽管区块奖励在减少，矿工仍会有激励去维护网络，因为他们可以收取交易的费用。改变比特币网络的货币政策需要网络参与者的多数共识，这虽然可能，但不太可能。代币通胀由每年新铸造的代币数量减去被销毁的代币数量决定。如果一个协议有固定的代币供应，当需求超过新代币供应时，这可能导致原生代币的通缩价格发展，同时考虑已销毁的代币。</p>
+<p>以太坊的代币供应并没有预先定义，而是由网络的利益相关者集体治理，包括 (i) 开发者，(ii) 完整节点，(iii) 矿工及其他网络参与者。以太坊代币销售的初始贡献者在创世区块中获得了 6000 万 ETH。此外，还向早期贡献者和以太坊基金会分配了 1200 万 ETH。由于共识协议的变化，区块奖励随着时间的推移而减少。2016 年“家园分叉”（Homestead fork）事件影响了发行率，减少了区块时间，暂时导致发行率上升。2017 年，激活了一种机制，增加了挖矿区块的难度，从而减缓了区块生成速度，减少了新铸造代币的发行。这被称为“难度炸弹”（Difficulty Bomb）或“以太坊冰河时代”（Ethereum Ice Age）。同年晚些时候发布的“拜占庭分叉”（Byzantium fork）将区块奖励从 5 ETH 减少到 3 ETH。2019 年的最新一次减幅则是从 3 ETH 降至 2 ETH。</p>
+<p>根据治理规则的不同，持有大量代币的持有人可能会影响市场需求或代币价格，从而影响该代币的汇率，类似于“准”中央银行。在一个代币持有者彼此不认识或不信任的网络中，协调行动可能难以实施，因为这需要主要代币持有者之间的合谋，以协调买入或卖出代币，从而操控市场并引导内部代币经济。如果网络代币的大部分股份由单一代币持有人或有限数量相互熟悉的代币持有人掌握，协调行动将更为容易。在许多早期代币销售的背景下，这一直是一个重大问题（详见：第二部分 - 代币销售）。</p>
+<p>财政政策是指利用政府支出和税收政策来影响宏观经济条件。税收是引导经济活动的重要财政政策工具，同时也是资助政府支出的另一个财政政策工具。政府可以在补贴、转移支付（包括福利项目）、公共工程项目和政府工资上花费资金。尽管高税收减少了个体行为者的自主性，政府支出可以激励受益者花费这些资金，并可用于有针对性的经济增长。</p>
+<p>在公共和无权限的区块链网络中，财政政策可能通过进行网络交易所需支付的“交易成本”水平来反映。这可能与国家政府征收的增值税相类似，只是对于公共区块链来说，税收征收者是验证交易的自主节点，并因其网络服务获得奖励。在权益证明（Proof-of-Stake）设置中，“财政政策”机制反映在协议变量中，例如 (i) 抵押，(ii) 解锁期，和 (iii) 根据绑定曲线机制填充或耗尽的储备池。</p>
+</div>
+<div id="章节总结-3" class="section level3 hasAnchor" number="2.2.8">
+<h3><span class="header-section-number">2.2.8</span> 章节总结<a href="web3-应用.html#章节总结-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>自互联网出现以来，形成了各种分布式网络部落，最终发展为今天的社交媒体平台。去中心化自治组织（DAOs）代表了一种由机器可执行协议治理的动态网络。它们承诺在不认识或不信任彼此的用户之间，实现更加去中心化和自发的协调。</p>
+<p>Web3 网络提供了一种公共治理基础设施，能够最大限度地减少组织中现有的委托代理困境及随之而来的道德风险。它们的原生代币提供了一种新形式的激励机制，能够在没有第三方的情况下自动对齐利益。比特币网络可以视为这种类型的首个去中心化自治组织。</p>
+<p>委托代理困境发生在组织的代理人拥有代表或影响委托人（组织中的另一人或实体）作决策的权力时。例如，管理者可能代表股东行事，或政治家可能代表公民行事。道德风险则发生在某人承担的风险超过了他们正常情况下所愿意承担的程度，因为这些风险的成本由其他人承担。</p>
+<p>DAO 可以通过智能合约来正式化。用例从简单到复杂不等，复杂性取决于利益相关者的数量以及组织内流程的数量和复杂性。根据目的和治理规则，DAO 组织可能类似于公司或国家。</p>
+<p>Web3 协议可与国家的宪法和法律相比较。与区块链网络类似，国家也有一个公共且开源的代码，即宪法，但法律无法自我执行。</p>
+<p>在其制度结构上，公共和无权限的区块链网络更像国家，而非公司。网络中的自主参与者是网络的主权者，因此受到网络宪法、区块链协议或智能合约代码的约束。该网络的货币政策在协议中定义，规定了网络代币的铸造条件。财政政策同样在协议中定义，调节交易费用。</p>
+<p>网络代币的货币政策建立了这些代币的供应和可用性。这些货币政策或“代币供应”在不同网络之间可能有很大的差异。</p>
+</div>
+</div>
+<div id="web3-网络与其他-daos-的治理" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Web3 网络与其他 DAOs 的治理<a href="web3-应用.html#web3-网络与其他-daos-的治理" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<blockquote>
+<p>治理是一个广泛使用的术语，用于描述协议演变的社会共识过程。它是一种决策过程，可以在“链下”或“链上”进行。然而，公共区块链网络的治理过程由两个部分组成。除了定义网络政策的“社会治理”过程外，还有“算法治理管理”，它自动执行这些政策。</p>
+</blockquote>
+<p>治理是一个政治学术语，指的是在社区或组织（如政府、市场、家庭、部落或计算机网络）中，人们互动的正式或非正式规则、规范和过程。组织或群体的治理规则调节所有相关利益相关者之间的决策过程。这是通过法律、规范、强制或语言实现的。</p>
+<p>Web3 网络及其去中心化应用的治理由两部分组成：“社会治理”和“算法治理管理”。算法治理管理指的是以机器可读代码编写的协议规则——区块链协议或智能合约代码——这些规则由计算机的点对点网络自动执行。这些协议规则还定义了协议更新的方式。在一个自主设置中，代币激励是形成协议经济协调游戏的核心。虽然 Web3 及其应用使我们能够自动化某些组织的官僚职能，并通过自我执行代码形式化制度规则，但我们所写的代码或如何升级代码，都是网络所有参与者公共讨论和集体行动的结果。</p>
+<p>社会治理涉及人类决策过程，决定何时以及如何进行 Web3 网络或 DAO 的智能合约代码的潜在协议升级。它处理利益相关者在网络中获得必要信息，以便对未来协议升级做出明智决策的制度化决策过程。关于协议升级的讨论发生在社交媒体上，如 YouTube、Twitter、Reddit，以及其他开放或封闭的在线论坛，如 Slack、Telegram 等。信息对于节点操作员决定接受哪项协议升级至关重要。他们需要获得足够的信息来做出明智的决定。然而，在信息的海洋中导航，并评估信息和信号的真实性和可信度是困难的。</p>
+<p>DAOs 由充当节点操作员的人类代理共同管理，他们各自有不同的偏好和目标。他们对整个网络行为（系统结果）具有集体影响，并会对系统结果做出反应。假设网络中的每个利益相关者都有自己的个人利益，这些利益并不总是完全一致。网络中的利益相关者提议或投票进行政策变更，这些变更将作为协议升级正式化，反映他们自身的利益。这些人类代理是系统的一部分，并积极参与其中，可能通过使用 DAO 的服务（用户）、为网络宪法贡献代码（开发者），或参与维护网络服务。在比特币网络的例子中，矿工个体上贡献于 P2P 支付网络的集体维护。在 Steemit 的案例中，策展人和内容创作者为社交网络的集体维护做出贡献。在 MakerDAO 的案例中，贡献者因共同维护稳定代币 DAI 而获得奖励。在 Aragon 网络中，参与者曾因共同维护 DAO 平台而获得奖励。因此，个体参与者与整个网络之间存在反馈循环。由于个体行为会影响系统，而这些行为与外部事件之间相互依赖，整个系统随时间不断演变。</p>
+<div id="web3-网络治理的挑战" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Web3 网络治理的挑战<a href="web3-应用.html#web3-网络治理的挑战" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>尽管国家的治理结构经过了几个世纪的演变与成熟，区块链网络的存在时间仅为十年，围绕如何进行协议变更的许多治理问题仍未解决。从区块链网络的简要历史中可以看出，尽管区块链协议和智能合约是替代大型官僚机构的良好工具，但在当前形式下，它们在面对复杂的多方利益环境中的“未知未知”时显得不足。智能合约的智能程度仅取决于开发和审计这些合约的人的知识、信息、编码实践和工具链。因而，算法治理仅能反映已知的已知和已知的未知，但无法应对因以下原因引起的未知未知：(i) 随时间变化的条件；(ii) 人为错误；或 (iii) 复杂多方利益环境中的信息不对称。</p>
+<p>随着时间推移变化的条件，可以通过比特币网络的“区块大小辩论”事件来理解。这场辩论持续了两年多，最终导致了一次硬分叉，分裂了网络。由于区块链网络仍处于初期阶段，因此需要不断改进和适应协议，以应对新的情况和需求。比特币网络及类似区块链网络的最近协议变更主要涉及可扩展性、隐私和去中心化的问题（例如，通过在协议中构建抗ASIC特性以避免挖矿的集中化）。因此，公共网络需要能够持续适应其协议并进行改进。然而，这些改进需要网络参与者就如何进行协议更新达成共识，而这一动态受到政治学、组织科学和社会学的影响。不同利益相关者对代码变更的反应对许多区块链项目的成功和基于智能合约的 DAO 设计变得越来越关键。</p>
+<p>未预见的事件可能触发协议升级的情况，可以通过分析与 TheDAO 相关的事件及其后续的以太坊硬分叉（2016年）来理解。一个旨在代表少数权利的智能合约函数中的漏洞被利用，导致从 TheDAO 智能合约中转移出 360 万 ETH（当时约 5000 万美元）。这一事件暴露了智能合约层面（TheDAO 的代币治理规则）和以太坊网络本身层面上缺乏争议解决和治理机制，尤其是针对由不可预见事件引发的“边缘案例”。该事件显示了预定义和预监管所有可能的人类互动（包括潜在恶意行为者的攻击途径）的复杂代码的局限性。</p>
+<p>这些复杂的社会经济系统的现实是，它们是技术驱动的社会有机体。它们需要一个迭代的社会治理过程，以达成有关政策升级的共识。该过程可以在“链下”或“链上”进行。随着公共和无许可网络中争议协议更新的数量增加，Web3 网络治理的话题变得越来越重要，例如比特币和以太坊网络的案例、Aragon 网络，以及 Steemit 网络的后续硬分叉进入 Hive 协议（阅读更多：第4部分 - Steemit 与 Hive）。似乎越来越多的人达成共识，认为大型多方利益环境的治理问题往往复杂，条件不可预测且具有突现性，无法完全提前设计。然而，关于理想治理系统的共同理解仍然缺乏。“人类治理过程”是一个混乱的过程，而这恰恰是比特币网络背后的密码无政府主义运动最初想要避免的。然而，治理问题是应用社会问题，往往需要人类干预来解决，而不仅仅是数学。</p>
+</div>
+<div id="网络中的制衡机制" class="section level3 hasAnchor" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> 网络中的制衡机制<a href="web3-应用.html#网络中的制衡机制" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>随着更多多样化和替代的分布式账本系统进入 Web3 领域，概括这些网络中的利益相关者变得困难。然而，简单来说，公共区块链网络的主要利益相关者可以总结为：(i) 矿工，(ii) 开发者，(iii) 运行完整节点的用户，(iv) 不运行完整节点的用户，以及 (v) 可能作为市场制造者的商业生态系统，包括交易所、商家等。</p>
+<p>矿工负责将交易记录到账本上，并保护网络免受攻击。他们的网络贡献通过区块奖励和交易费用获得激励，这意味着他们往往偏好能够保障或增加未来收益的协议升级。由于矿工是一个较小且集中的群体，他们通常更能协调一致。这使得他们相较于其他分散且通常缺乏协调能力的利益相关者拥有不成比例的权力。从理论上讲，富裕的矿工可以支付开发者进行符合他们利益的协议更新，从而在网络中获得更多权力。</p>
+<p>开发者创建协议并通过定期的协议升级维护网络。许多公共协议，如比特币或以太坊，缺乏激励开发者的内在机制，这是早期区块链网络去中心化治理的一大短板。个人的意识形态和声誉常常成为其贡献代码的动力。间接激励可能源自增强网络的弹性，从而可能增加他们现有代币持有的价值。</p>
+<p>运行完整节点的代币持有者：根据网络类型和软件分叉类型，运行完整节点的用户在协议升级时的发言权有多有少。如果完整节点有参与权，他们可能更偏好那些能提升网络功能或增加未来代币价格的升级。</p>
+<p>而运行轻节点的代币持有者通常在网络中没有发言权，因为他们依赖第三方服务而未运行自己的完整节点。在某些情况下，这些代币持有者可能通过其代币进行“投票”。他们还可以选择全部出售其代币，从而影响市场价格并可能导致网络的大规模流失。</p>
+<p>在矿工和运行完整节点的代币持有者之间存在某种形式的制衡机制，他们可以选择是否采纳提议的变更。具体过程如下：开发者提交所谓的“拉取请求”，即代码改进提案。矿工决定是否真正采纳这些法律。网络中的完整节点代币持有者可以通过不运行与矿工相符的版本来否决。任何代币持有者，无论是否为完整节点，都可以通过出售其代币或使用其他网络进行反抗。有观点认为，分叉反映出强烈的退出意图，而出售代币则反映出较弱的退出意图。</p>
+<p>经验表明，协议升级的社区动态与媒体（包括社交媒体）在国家选举前的公共讨论相似。因此，我们需要一个制度化的机制来协调网络中的利益相关者，同时平衡每个人的利益。如果某一利益相关者群体的协调能力优于其他群体，可能导致信息不对称和权力不平衡。</p>
+<p>虽然不同利益相关者在某些激励方面有共同点，但任何共识协议都很难完全对齐所有利益相关者的利益。运行完整节点的代币持有者和开发者可能偏好导致更低交易费用的升级，而矿工则会认为这样的提案不具吸引力，因为交易费用是他们的收入来源。矿工可能偏好那些能带来更大区块奖励的协议升级，这将增加通货膨胀率，因此可能并不符合任何相关利益者的长期利益。由于绝对的激励对齐不可行，如何制度化协议升级的社会治理过程成为了一项微妙的平衡任务。</p>
+</div>
+<div id="链外治理与链上治理" class="section level3 hasAnchor" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> 链外治理与链上治理<a href="web3-应用.html#链外治理与链上治理" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>早期的区块链协议，如比特币和以太坊协议，依赖于“代码即法律”的简单假设，并且有一个相对自发且未完全制度化的社会共识过程发生在“链外”。一些较新的区块链项目，如“Tezos”、“Dfinity”和“Decred”，提出了替代方案，以缓解比特币和以太坊网络治理流程的不足之处。这些项目引入了各种“链上治理”模型，在这些模型中，协议治理至少部分在协议层面上受到监管和实施。</p>
+<p>“链外治理”描述了一种协议升级过程，其中决策首先在社会层面进行，然后由开发者将其编码到协议中。矿工和用户必须接受这一过程。比特币网络和以太坊网络都依赖于链外治理过程。开发者在网上分享他们的改进提案，任何开发者都可以向社区提交所谓的“拉取请求”。这类似于代议制民主：任何人都可以提出改变法律的提案，但各国的制度化程序可能有所不同，区块链协议也是如此。</p>
+<p><strong>比特币治理过程</strong>：在比特币网络中，开发者通过邮件列表和改进提案库（也称为 BIP，比特币改进提案）进行协调，任何人都可以为协议升级贡献提案。开发者通过 Slack 渠道、Skype、IRC 等进行协调和讨论实施提案。用户可以通过“bitcoin-talk”讨论论坛、“r/bitcoin”和“r/CryptoCurrency”子版块，或通过 Twitter 提出意见。然而，重要的是要注意，比特币协议中没有对开发者贡献的原生奖励机制。一些开发者由对比特币网络有自己利益的公司支付，以贡献代码。比特币网络在过去经历了几次软分叉和硬分叉。像之前提到的“比特币区块大小争论”这样更具政治性的协议更新，引发了社区内激烈且漫长的讨论，导致链的几次硬分叉，如“比特币现金”。由于硬分叉要求所有矿工升级其客户端到新协议，这可能导致网络分裂，因此许多协议升级被作为软分叉纳入。</p>
+<p><strong>以太坊治理过程</strong>：与更为去中心化的比特币网络不同，以太坊网络的开发在创立的头几年由以太坊基金会资助和治理，因此其去中心化程度较低。基金会通过公开的代币销售募集资金，向投资者发行了一些预挖的以太币（ETH），并向基金会分配了额外的预挖以太币。与比特币类似，以太坊协议是开源的，任何人都可以贡献代码并提出改进提案，称为 EIP。基金会雇佣的开发者推动新想法，并试图在开发过程中保持透明，例如通过在 YouTube 上直播他们的核心开发者讨论。与比特币类似，未受雇于基金会的开发者对核心开发的贡献动机有限，仅限于漏洞奖励和开发补助。过去的协议升级表明，在棘手问题上的协调速度往往快于比特币网络。这可能是由于网络文化的不同。毕竟，以太坊是对比特币趋向于更保守的“代码即法律”理解的反应。此外，与比特币不同，比特币的创造者中本聪是匿名的，并在几年前停止了关于比特币开发状态的沟通，而以太坊创始人维塔利克·布特林则是可见的、直言不讳的，并且受到社区的信任。在涉及有争议的决策时，他的意见似乎对许多人很重要。然而，随着以太坊转向权益证明（Proof-of-Stake），与比特币的改进提案过程的相似性将会发生变化。目前的矿工将失去对持有足够 ETH 以运行所谓“虚拟矿工”（验证者）的代币持有者的权力。考虑到像“1protocol”这样的解决方案使得即使是最小的 ETH 持有者也能参与，矿工与用户之间的区分可能会进一步民主化当前集中在采矿池寡头垄断中的验证过程。</p>
+<p>开发者缺乏激励是当前协议开发面临的最大挑战之一，这使得这些网络的维护控制在一小群核心开发者手中，他们可能由私人公司（比特币）或基金会（以太坊）支付。在这两种情况下，公共基础设施的开发过程都限于少数人，这使整个网络容易受到贿赂和攻击的影响。</p>
+<p><strong>链上治理</strong>指一些区块链网络的机制，允许开发者在链上广播其改进提案，并在测试网络上投票和部署一段时间，之后再次投票并部署到主网络。这意味着所做的任何决策都将自动执行。在这个过程中，开发者在其改进提案被执行时实时获得代币补偿。任何具备必要技能的人都可以提交提案并获得网络代币的奖励，这为去中心化网络维护提供了强有力的激励。用户也可以在链上进行协调，这可能降低开发者和矿工相较于链外决策过程的权力。链上治理协议的设计也可能允许回滚和编辑账本历史，形成“自我修正账本”，与链外治理相比，后者需要通过硬分叉来删除过去的交易。这种追溯性修正可能需要根据变更类型采用不同的投票门槛。</p>
+<p><strong>Tezos治理过程</strong>：Tezos 是一个类似于以太坊的公共和无许可区块链网络，具有内置治理和更强的智能合约安全机制。尽管该项目面临严重的管理问题，但其治理模型相当有趣：代币持有者可以批准协议升级，一旦获得批准，升级将自动部署到网络上。提议的协议升级附带一个以智能合约形式的发票，在获得批准并包含其升级后，向开发者支付。任何开发者都可以提出改进提案。一旦获得批准，变更将在测试网络上线，进一步批准后将在主网络实施。在主网上最终实施改进提案时，开发者将获得新铸造的网络代币。</p>
+<p><strong>Dfinity治理过程</strong>：Dfinity 是一个代币化的去中心化云计算网络。除了 Tezos 的提案外，他们还允许在代币持有者达成共识的情况下对账本进行追溯性更改。修订账本是高度争议的，因为许多人认为“不可变性”是比特币网络和其他公共分布式账本的核心独特卖点。然而，自我修正账本的支持者欣赏其去除某些人可能认为的“坏演员非法活动”的能力。然而，“非法”的定义受制于管辖权，并且容易受到限制言论自由的审查，因此被视为一把双刃剑。</p>
+<p>当前“链上治理”提案的挑战之一是它们是富人治理的，这意味着协议升级的决定与持有的代币数量成比例。因此，持有更多代币的代币持有者的投票权高于较小的代币持有者。这是一个相当重要的设计问题，因为代币分配通常是不均衡的。在撰写本章时，比特币的 3.06% 的地址持有 95.66% 的总供应量。在 2016 年 5 月，来自 11,000 名投资者的前 100 名持有者持有超过 46% 的所有 TheDAO 代币。考虑到这种富人投票机制，使用“去中心化”一词可能被视为矛盾。</p>
+<p>大多数链上治理解决方案要么是提案，要么尚未运营很长时间。因此，很难预测这些系统的影响。此外，尽管链上解决方案可以提高协调性和公平性，但它们也存在风险，因为一旦建立就更难以更改，并且可能更容易受到利用。相比之下，链外治理相对集中，排除了许多小代币持有者，尤其是那些缺乏技术知识或经济能力以充分评估网络决策的人。然而，尽管存在潜在的集中倾向，区块链网络中的代币持有者仍然可以通过出售或硬分叉轻松退出。</p>
+<p>可以说，一定程度的链上协调使全球协调变得更加容易，但它并没有解决人类因素。关于“链上”与“链外”协调之间的正确平衡仍不清楚。两者的有意义结合最有可能在大规模多利益相关者环境中解决决策过程。</p>
+</div>
+<div id="去中心化神话与无信任网络" class="section level3 hasAnchor" number="2.3.4">
+<h3><span class="header-section-number">2.3.4</span> 去中心化神话与无信任网络<a href="web3-应用.html#去中心化神话与无信任网络" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>智能合约作为默认状态</strong>：无法预见未知的未来事件，如 TheDAO 事件所示，表明智能合约只能作为默认状态，当社区认为必要时，可能需要通过超大多数共识来推翻。缺乏对边缘案例的争议解决和治理机制在智能合约层面（TheDAO）以及区块链层面（以太坊）分裂了社区。此外，代码并不是自我编写的，因此容易出现人为错误。虽然在软件开发中，所谓的“形式验证”可以减少人为错误，但无法消除所有错误或短视的假设。人工智能在未来可能会产生一些影响。然而，目前，尽管代码可以简化交易，但它仍然容易受到人类偏见的影响。因此，代码只能作为一个默认状态，基于此进行社会共识的形成，必要时才会发生。</p>
+<p><strong>惰性</strong>：同样，2016年和2017年的比特币扩容辩论表明，惰性可能源于不适当的治理规则，这些规则未能考虑在多利益相关者环境中进行的大规模决策。在缺乏更灵活治理结构的情况下，社区中的推动者和影响者不自觉地成为了思想领袖和委托人的准代理（代币持有者和其他利益相关者）。这可能导致惰性（比特币的案例）或网络的分裂（以太坊的案例）。</p>
+<p><strong>不可变性与抗审查性</strong>：TheDAO 事件及其后的以太坊硬分叉也引发了关于抗审查性和不可变性的问题。以太坊硬分叉的支持者被指控通过回溯时间来无效化攻击者的交易，从而审查账本。硬分叉的倡导者辩称，在像 TheDAO 或以太坊网络这样的去中心化社区中，没有任何单一实体可以在没有社区大多数同意的情况下做出这样的决定。他们认为，如果对更改账本达成共识，这并不算审查，而是代码或账本状态的社区驱动的自然演变。</p>
+<p><strong>新把关人</strong>：尽管智能合约可以减少官僚主义及由此产生的委托代理问题，但始终需要专家。能够决定协议更新的网络利益相关者社区必须信任这些专家的设计判断。虽然这些专家的分布更广泛，但没有任何人拥有执行权来决定该做什么，他们确实在其专业知识周围集中权力，成为“代码即法律”的去中心化网络中的新“准”代理。</p>
+<p><strong>是的，它是开源的，但有多少人能读懂它？</strong> 目前，只有少数软件开发者和系统架构师理解特定区块链协议的细节，从而做出有根据的协议升级决策。中心化可能会围绕专家、开发者和系统架构师形成。鉴于编程技能仍然不是学校主流课程的一部分，从今天的视角来看，在机器经济中做出受过教育的决策仍然是一个遥不可及的幻影。虽然理论上任何人都可以贡献代码，但所需的工程技能可能被视为进入门槛，从而在理解不仅是简单代码（智能合约），而且是复杂区块链协议时产生新的委托代理问题。</p>
+<p><strong>信息</strong>：专业知识的分散性质、多种沟通渠道以及当前缺乏有效的声誉系统，使利益相关者难以跟随在线讨论过程。尽管沟通和信息传播的问题也是当代（政治）治理系统的关切，但 Web3 社区对此问题更加敏感。可靠信息来自何处？哪些工具，如可视化和决策树，能够促进这些过程？以往协议升级的经验表明，如果信息、审查、透明度、聚合和声誉等问题未得到解决，去中心化可能会变成一个毫无意义的词。</p>
+</div>
+<div id="章节总结-4" class="section level3 hasAnchor" number="2.3.5">
+<h3><span class="header-section-number">2.3.5</span> 章节总结<a href="web3-应用.html#章节总结-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>治理是许多人用来描述协议演变过程中的社会共识的术语。这是一个可以在“链外”或“链上”进行的决策过程。然而，公共区块链网络的治理过程实际上由两部分组成。除了定义网络政策的“社会治理”过程外，“算法治理管理”则自动执行这些政策。</p>
+<p><strong>算法治理管理</strong>是指以机器可读代码编写的协议规则——区块链协议或智能合约代码——这些规则由计算机的 P2P 网络自动执行。这些协议规则还定义了协议更新的实施方式。</p>
+<p>虽然 Web3 及其应用程序允许我们自动化某些组织的官僚职能，并通过自我执行的代码形式化机构规则，但我们在代码中写的内容或如何升级代码，都是所有网络参与者公共辩论和集体行动的结果。</p>
+<p><strong>社会治理</strong>是指在 Web3 网络或 DAO 的智能合约代码中，关于何时及如何进行潜在协议升级的人类决策过程。它涉及网络利益相关者如何获取必要信息以便做出有根据的未来协议升级决策的制度化决策过程。</p>
+<p>DAO 由作为节点运营商的人类代理共同引导，他们各自有不同的偏好和目标。这些代理对一般网络行为（系统结果）有集体影响，并会对系统结果做出反应。</p>
+<p>人类代理是系统的一部分，积极参与其中，可能是通过使用 DAO 的服务（用户）、为网络宪法贡献代码（开发者）或维护网络服务来参与。</p>
+<p>假设网络中的每个利益相关者都有其个人自利，并且这些利益并不总是完全一致。网络中的利益相关者提议或投票支持将被形式化为协议升级的政策变更，反映出他们的自利。</p>
+<p>早期的区块链协议，如比特币和以太坊，依赖于“代码即法律”的简单假设，并且在“链外”存在相对自发且未很好制度化的社会治理层。一些较新的区块链项目引入了各种“链上治理”模型，其中更复杂的升级流程嵌入到协议中。</p>
+<p>根据协议的不同，存在一定的制衡机制，矿工和运行完整节点的代币持有者可以选择采纳或拒绝提议的变更。代币化网络的主要利益相关者可以概括为：(i) 矿工，(ii) 开发者，(iii) 运行完整节点的代币持有者，(iv) 运行轻节点的代币持有者，以及 (v) 可能作为市场制造者的商业生态系统，包括交易所、商家等。</p>
+<p><strong>链外治理</strong>描述了一种协议升级过程，其中决策首先在社会层面进行，然后由开发者将其编码到协议中。该提案必须获得矿工和用户的接受。比特币网络和以太坊网络都依赖于链外治理过程。开发者在线分享其改进提案，任何开发者都可以向社区提交所谓的“拉取请求”以进行改进。</p>
+<p><strong>链上治理</strong>允许开发者在链上广播其改进提案，经过一定时间的测试网络投票后，再次投票决定是否在主网络上部署。这意味着所做的任何决策都会自动执行。</p>
+<p>链上治理协议也可能设计为能够回滚和编辑账本历史，允许形成“自我修订账本”，这与链外治理不同，后者需要硬分叉来删除过去的交易。</p>
+</div>
+</div>
+<div id="代币token" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> 代币（Token）<a href="web3-应用.html#代币token" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>代币是 Web3 的基本单位，由分布式账本共同管理。它们可以通过几行代码在智能合约中发行。代币合约是权利管理工具，可以代表从价值存储到在物理、数字和法律世界中的一组权限的任何事物。它们可能对金融世界的影响类似于互联网对邮政系统的影响。</p>
+<p>虽然代币的存在，尤其是数字代币，并不新鲜，但这些加密代币被迅速部署和发行的速度表明，它们可能是区块链网络的“杀手级应用”。截至 2020 年 5 月，超过 5400 个公开交易的加密代币已在“Coinmarketcap”上列出，并且在以太坊主网络上发现了超过 260,000 个以太坊代币合约。这些代币通常通过几行代码以智能合约的形式发行，并由区块链网络或类似的分布式账本共同管理。因此，它们代表了 Web3 的基本单位，是网络整体状态的“局部”部分。网络中的所有节点都拥有关于谁拥有哪些代币的相同信息，代币的转移（状态变化）也是共同管理的。</p>
+<p>代币合约是一种特殊类型的智能合约，定义了一组分配给代币持有者的条件性权利。它们是权利管理工具，可以代表任何现有的数字或实物资产，或对他人拥有的资产的访问权。代币可以代表从价值存储到物理、数字和法律世界中的一组权限的任何事物。它们促进跨市场和司法管辖区的协作，使市场参与者之间的互动更加透明、高效和公平，成本低廉。代币还可以激励一个自主团体为共同目标做出独立贡献。这些代币是在证明某种行为的基础上创建的（详见：第 4 章 - 目的驱动的代币）。</p>
+<p>在公共基础设施上以低成本相对轻松地部署代币是一个颠覆性的改变，因为这使得以数字方式表示多种类型的资产和访问权在经济上变得可行，而这种做法在之前可能并不可行。例如，艺术品或房地产的部分所有权。这种部分代币化可能提高现有资产市场的流动性和透明度。日益增加的资产和访问权的代币化可能会根本性地影响全球经济动态，远比在 Web3 的早期阶段所见的要深远（详见：第 4 部分 - 资产代币与部分所有权）。</p>
+<p>虽然先进的数字资产由集中实体控制，但现在它们可以通过几行代码发行，并由像区块链网络这样的公共和可验证的基础设施管理。它们可以在公共基础设施上轻松发行，并安全交易，无需中介或托管服务。代币可以提供 (i) 比现有金融系统更透明的市场信息。这可能显著减少商品、服务和金融交易供应链中的欺诈或腐败。代币还具有 (ii) 降低沿分布式账本开发、管理和交易加密资产的交易成本的潜力，相较于沿先进系统管理资产。因此，(iii) 增加流动性、降低价格发现成本和减少市场分裂可能减少市场摩擦，使某些资产（如艺术品或房地产）的市场更加高效。经济的代币化还可能实现 (iv) 完全新的用例、商业模型和资产类型，这在之前并不经济可行，可能启用全新的价值创造模型。</p>
+<p>尽管越来越多的人开始创建和投资于加密代币，但对各种代币类型的理解仍然有限。为了增加混淆，“加密货币”、“加密资产”和“代币”等术语经常被同义使用。媒体通常将这些新资产称为“加密货币”，这往往用来描述多样的“加密资产”或“代币”，这些可以代表从实物商品、数字商品、证券、收藏品、版权、奖励到演唱会门票的任何事物。因此，我认为“加密货币”这一术语并不理想，因为许多这些新资产最初并不是以代表货币为目的发行的。“加密资产”是一个更通用的术语可以使用。由于“代币”这一术语变得越来越普及，它更为通用，涵盖所有类型的代币，而不仅仅是资产支持的代币。</p>
+<p>在新兴领域，缺乏明确一致的术语和定义是很常见的，但语言和术语的准确性是做出明智决策和进行一般性讨论的基础。重要的是要理解，我们仍然在使用一组重叠的术语来指代大致相同的事物，这会产生很多混淆。因此，本章将尝试从技术、法律和商业的角度，对加密代币的历史和不同特性进行简要概述，并在此过程中澄清一些术语。</p>
+<div id="代币的历史" class="section level3 hasAnchor" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> 代币的历史<a href="web3-应用.html#代币的历史" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>代币并不是新事物，早在区块链网络出现之前就已经存在。传统上，代币可以代表任何形式的经济价值或访问权。贝壳和珠子可能是最早使用的代币类型。其他类型的代币包括赌场筹码、代金券、礼品卡、忠诚度计划中的积分、寄存柜代币、股票证书、债券、音乐会或俱乐部入场凭证（通常用印章标记在手上）、晚餐预订、身份证、俱乐部会员资格，或火车和航空票。大多数代币都具有内置的防伪措施，以防止人们欺诈系统，这些措施的安全性可能有所不同。纸币或硬币也是代币。此外，代币在计算机中也被使用，代表执行操作或管理访问权的权限。例如，当我们上网时，网页浏览器会向网站发送代币，而我们的手机在每次使用时也会向电话系统发送代币。更具体的计算机代币形式包括用于追踪包裹的追踪代码或用于进入火车或飞机的二维码。在心理学中，代币被用作一种积极强化方法，以激励患者的期望行为，尤其是在医院环境中。认知心理学使用奖励代币作为交换媒介，可以在住院期间兑换特权。客户忠诚度计划也是一种创新的代币例子，提供使用某航空公司的积分，可以兑换其他商品或服务。</p>
+<p>可回收瓶是代币的一个类比示例。在一些国家，超市销售的瓶子上印有其回收价值（通常是几美分）。这个回收价值是在产品的初始价格之上支付的，成为政府鼓励材料回收和减少公共场所垃圾的一种方式。在退还瓶子时，回收价值将被偿还。因此，丢失瓶子就相当于失去金钱。</p>
+<p>垃圾袋也可以代表一种代币。例如，在瑞士的一些地方，不能随便用随机袋子扔垃圾。必须购买由当地政府发行的特定用途塑料袋，这些袋子包含垃圾箱费用，并且只能使用这些袋子处理垃圾。与大多数其他国家每月按租金支付垃圾费的方式不同，这一系统要求您购买特定用途的塑料袋。</p>
+<p>代币始终需要一个确保其有效性的基础，通常包括一些内置的防伪措施。历史上，代币由集中实体发行和管理，以确保有效性，并在基础中内置安全机制。中央银行发行的硬币和纸币需要确保其代币（即硬币和纸币）难以复制。音乐会组织者发行的门票也同样如此。加密代币的有效性和安全性由创建它们的智能合约以及通过网络节点的多数共识管理的基础分布式账本共同保障。</p>
+</div>
+<div id="加密代币" class="section level3 hasAnchor" number="2.4.2">
+<h3><span class="header-section-number">2.4.2</span> 加密代币<a href="web3-应用.html#加密代币" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>由分布式账本管理的加密代币可以结合上述所有概念。它们可以代表对财产或服务的访问权，这些服务可以是公共的（如比特币网络）或私人的（如由个人出租的公寓）。它们代表一组规则，这些规则以一种特殊类型的智能合约编码，也称为代币合约。在区块链网络的上下文中，代币并不以数字文件的形式存在；相反，它们以账本中的条目形式呈现，并映射到一个代表代币持有者区块链身份的区块链地址。因此，代币只能通过专用的钱包软件访问，该软件与区块链网络通信并管理与区块链地址相关的公私钥对。只有拥有该地址私钥的人才能访问相应的代币。因此，这个人可以被视为该代币的所有者或保管人[^1]。如果代币代表一个资产，所有者可以通过使用私钥签名来发起代币的转移。如果代币代表对他人拥有的某物的访问权，代币的所有者也可以通过签名其私钥来发起访问。对于代表投票权的代币也是如此（详细信息见：第一部分 - 加密技术）。</p>
+<p>最初的区块链代币是公共和无权限区块链网络的原生代币。这些原生代币，也称为协议代币，是区块链基础设施激励机制的一部分。然而，随着以太坊的出现，代币已经在技术栈中上升，现在可以在应用层上发行。这类应用代币可以附加简单或复杂的行为。以太坊特别方便，仅需几行代码即可发行代币。像“ERC-20”标准这样的标准化智能合约定义了以太坊代币的一系列共同规则，包括如何将代币从一个以太坊地址转移到另一个地址，以及如何访问每个代币中的数据。这些代币合约管理逻辑并维护所有已发行代币的列表，可以代表任何具有同质商品特征的资产。大多数早期在以太坊网络上发行的代币都符合ERC-20标准的同质代币。同质性指的是每个代币与同类其他代币具有相同的价值，并且可以轻松交易。</p>
+<p>然而，在过去的一年中，出现了更复杂的代币标准，可以代表具有特殊属性的任何资产或访问权，包括身份和投票权。“ERC-721”引入了一种自由开放的标准，描述如何在以太坊网络上发行所谓的“非同质代币”。这开启了在代币中构建更复杂功能的时代。ERC-721使得创建代表任何类型的收藏品、艺术品、财产、个性化访问权或投票权的代币变得容易。这些非同质代币具有使其独特的特殊属性，或者与某个人的身份相关联，因此代表了较少同质化或非同质化的资产和访问权。ERC-721的出现促使了一系列更丰富的智能合约的产生，超越了早期主导叙事的同质代币的可能性，为多样化的用例奠定了基础。</p>
+<p>不同的账本系统有不同的标准，通常是不兼容的。在撰写本书时，发行在一个网络上的代币在大多数情况下与其他网络不兼容，无法直接跨账本。不同的标准使得钱包开发者目前无法提供多代币钱包，这意味着我们常常需要多个钱包来直接管理不同的代币系统。这是一个可用性瓶颈。然而，代币的互操作性和标准化问题正被“宇宙”（Cosmos）、“波卡”（Polkadot）等互操作性协议以及全球范围内的其他标准化努力所解决。互操作性和标准化将影响代币的潜在大规模采用及其带来的网络效应。</p>
+</div>
+<div id="代币的属性" class="section level3 hasAnchor" number="2.4.3">
+<h3><span class="header-section-number">2.4.3</span> 代币的属性<a href="web3-应用.html#代币的属性" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>尽管从技术上讲，任何现有经济资产都可以表示为加密代币，但我们仍然缺乏适当的分类法和法律框架，以理解这种新基质的全部范围和潜力，通过它我们可以发行任何类型的资产和访问权，包括全新的资产类别。然而，建立一个一致且可靠的代币属性分类法以及分类模型，是开发者、政策制定者和投资者能够更好地设计、应用或监管代币的基础。</p>
+<p>我们仍处于探索不同角色和类型代币的早期阶段。我们今天使用的许多术语将适应新兴用例的现实，应该被视为暂时的。随着每个新网络和每个新代币应用的出现，我们将通过试错共同学习关于加密代币的可能用例及其分类。这里呈现的分类法旨在提供代币不同属性和类型的广泛概述，但远未完整。它描绘了与这种分类法相关的重要经济、技术和监管问题的全貌。对代币属性的分类对于代币建模（开发视角）和代币评估（投资者视角）都是必要的。对代币本身的分类和税onomies则涉及法律、商业、经济和社会科学问题。法律分类法还受到特定管辖区的影响，远超本书的范围。</p>
+<p>识别代币的不同属性可以作为微调未来分类框架的第一步，也可以用于设计代币的属性（详细信息见：第四部分 - 如何设计代币系统）。这一属性识别的过程称为“形态分析”，是一个结构化相关问题的框架，是探索多维、非量化复杂问题的所有可能解决方案的第一种启发式方法。因此，我想介绍可以推导代币属性的最重要的视角：(i) 技术视角；(ii) 权利视角；(iii) 同质性视角；(iv) 可转让性视角；(v) 耐用性视角；(vi) 监管视角；(vii) 激励视角；(viii) 供应视角；(ix) 代币流动视角。</p>
+<p><img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/21_TokenProperties.png" /></p>
+<div id="技术视角" class="section level4 hasAnchor" number="2.4.3.1">
+<h4><span class="header-section-number">2.4.3.1</span> 技术视角<a href="web3-应用.html#技术视角" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>从技术角度来看，代币可以在不同的技术层上实现，主要分为三类：(i) 协议代币，(ii) 第二层代币，如应用代币或在侧链上创建的代币，(iii) 多资产账本代币。协议代币，也称为内在代币、原生代币或内置代币，在公共网络中具有非常明确的角色：通过作为区块验证激励（矿工奖励）和防止交易垃圾邮件，来保护网络免受攻击。此外，原生协议代币可能还需要用于支付网络中的交易费用，可以视为分布式互联网的“货币”。</p>
+<p>另一方面，应用代币可以具有任何功能或属性。它们可以表示任何物理商品、数字商品，或在网络或现实世界中执行某项操作的权利。以太坊网络拥有一个协议代币（ETH）和整个在其上运行的应用代币经济（ERC-20及其他以太坊代币标准允许通过智能合约创建应用代币）。第二层代币通常由侧链发行，在比特币生态系统中更为普遍。例如，允许创建第二层代币的侧链有“Elements”、“Liquid”或“Rootstock”。它们与区块链交互，以管理代币的状态。由于网络效应，应用代币和其他第二层代币的价值可能与基础原生区块链代币的价值相互依赖。例如，在2016至2017年的ICO泡沫中，ETH（以太坊的原生代币）的价值因购买通过ICO发行的应用代币所需的大量ETH而上升（详见：第三部分 - 代币销售）。</p>
+<p>多资产账本，如“Ripple”和“Stellar”，允许在原生层创建多个代币。Stellar允许任何人创建带有各种变量的代币合约。在Ripple（XRP）上，任何人都可以在网络上发行任何类型的代币，但它们作为应收账款（IOUs）发行，本质上是一种债务。因此，XRP被视为信用，这也是为什么有人称其为“信用网络”。要使用这些代币，其他人必须将信任传递给自己的钱包，这意味着转移债务。因此，Ripple和Stellar可以被视为其他资产的结算总线。代币XRP和XLM本质上是协议代币，但在其网络中，它们代表其他资产，这些表示用于在多维价值空间中跟踪信用和债务。可以将其视为新兴的加密执行外汇网络。</p>
+<p><img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/16_TokensTechnicalPerspective.png" /></p>
+</div>
+<div id="权利视角" class="section level4 hasAnchor" number="2.4.3.2">
+<h4><span class="header-section-number">2.4.3.2</span> 权利视角<a href="web3-应用.html#权利视角" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>代币可以代表某种基础经济价值的权利，无论是数字的还是实体的、长期的还是临时的。代币可以表示：(i) 我所拥有的资产的权利，(ii) 对他人拥有或提供的资产或服务的有限访问权，或 (iii) 投票权。经济上，资产被定义为具有经济价值并由个人、法人或国家控制的资源。法律上，资产是指任何附有货币价值的东西。所有权权利是对物品的法律占有权，包括所有使用权，无论是物理的还是知识产权的。在一些国家，所有权只能与物理事物相关联。使用权或访问权是对他人所持有物品使用的合同权利。因此，代币可以代表任何资产或资源，体现个人的所有权或使用权。这些资产可以是公共或私有的，公用事业或任何类型的服务。</p>
+<p>“资产代币”可以代表单位账户（可替代的）或独特商品（不可替代的）。可替代代币代表对任何可替代的物理商品的所有权，如法定货币、白银、石油、黄金、钻石、公司股份或任何有抵押的债务工具。它们可以与商品货币进行比较，因此有时被称为加密商品。资产代币也可以是独特的，因此是不可替代的，有人称其为加密商品。例如，房地产代币、加密收藏品或代表独特艺术品的代币。用代币代表这样的资产使其更容易交易和分割，从而为一些可能在链外不易交易的资产创造了更多流动性。</p>
+<p>“访问权代币”可以用于限定时间或范围内使用他人拥有的资产或提供的服务，例如：音乐会入场券、公共交通票、共享公寓访问、共享汽车访问、医生预约时间段、俱乐部会员访问或网络服务访问。</p>
+<p>“凭证代币”可用于证明个人、组织和机器的身份相关信息。它们是访问权使用案例的先决条件，例如，验证个人的年龄或其他个人信息，以便租车、购买酒精饮料、登机、进入酒店房间、投票、跨越边界、领取退税或获得折扣等。</p>
+<p>“混合代币”：这不是一种二元分类，因为许多使用案例可能更具混合性质，例如，土地上的采矿权既是访问权，也代表生产性资产。代表公司股份的证券代币也可能包括投票权。原生协议代币，如比特币（BTC）和以太坊（ETH），可以视为资产，但同时也代表对网络的访问权，因为它们需要用于支付网络费用。</p>
+<p><img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/19_RightsPerspective.png" /></p>
+</div>
+<div id="可替代性视角" class="section level4 hasAnchor" number="2.4.3.3">
+<h4><span class="header-section-number">2.4.3.3</span> 可替代性视角<a href="web3-应用.html#可替代性视角" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>可替代性指的是资产单位与同类资产其他单位之间的可互换性。示例包括任何耐用商品，如贵金属或货币。可替代资产具有两个关键特性：(i) 只有数量重要，这意味着同类可替代资产的单位不可区分；(ii) 任何数量都可以合并或分割为更大或更小的数量，使其与其他单位无异。如果你借给某人10欧元，例如，他们归还的无论是同样的10欧元钞票、另一张钞票，还是多个面额的钞票和硬币，总值为10欧元，都是可以接受的。同样，一桶原油也是如此。面粉是另一个可替代资产的例子，这也是它过去作为商品货币的原因之一。可替代性是任何货币或商品的重要特性，使其能够作为价值储存、交换媒介和计量单位（了解更多：第三部分 - 货币的未来？）。</p>
+<p>同样，可替代的加密代币可以代表任何彼此相同的物理或数字资产，因此可以轻松替换。它们不是独特的，因此可以与同类型的其他代币进行交换。如果双方拥有相同数量的代币，他们可以交换而不损失或获得任何东西。相对而言，独特代币则是不可替代的。示例包括身份证、代表房屋、汽车、艺术品或健身会员资格的代币。不可替代代币可以是可转让的，也可以是不可转让的，具体取决于使用案例。</p>
+<p>代币的可分割性越高，其可替代性就越强。可分割性是指你可以将代币的一部分发送给其他人。在现实世界中，许多实物资产无法分割，这使得它们在交易时不够灵活。加密代币可以代表以前难以分割的资产，现在可以以低于传统系统的交易成本进行分割。无法分割的实物商品可以先进行代币化，然后再进行分割并出售不同部分。代币化的分数所有权可能会允许一系列新的资产类别，如房地产或艺术品，使这些资产更加流动和可替代。然而，赎回所代表资产的实际限制仍然存在，例如，艺术品（了解更多：第四部分 - 资产代币与分数所有权）。虽然理论上代币的可分割性可以达到100位小数，但这样做在经济上并不可行。在处理数万亿个地址时，额外的计算工作（存储和带宽）成本巨大。而且，当代币数量非常少时，转移的交易费用可能会高于这些代币的价值，因此称之为“尘埃”。在额外的可分割性带来的边际效用被额外的计算努力（存储和带宽）所抵消的情况下，存在一个临界点。此外，尘埃攻击使得微小数量的代币被发送到随机地址，以便于追踪，这种情况将变得更加可行。</p>
+<p><img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/22_FungibilityPerspective.png" />
+#### 隐私视角</p>
+<p>与普遍认知相反，比特币网络并不提供完全的匿名性，而是提供伪匿名性。这意味着可以利用大数据的力量将其他公开可用的数据点与某个比特币交易和地址的元数据关联。如果某个比特币地址背后的人成为关注对象，并且其代币的历史受到污染或被列入黑名单，那么该人可能在交易时会遇到问题。在这种情况下，当局可以将你的比特币地址与受KYC（了解你的客户）监管的传统数据点（如银行和交易所）进行关联。比如，如果你在亚马逊上用比特币支付，而你的代币历史受到了污染，亚马逊可能会决定不接受这种支付。因此，比特币和类似代币的隐私性及其可替代性可能值得讨论。如果代币的历史可以被追踪，并且与非法活动相关联，这将使代币“受污染”，限制其作为交换媒介的角色。新型区块链网络如Zcash和Monero正在使用替代的加密工具，使其代币更具隐私性，从而增强其可替代性（了解更多：隐私代币）。</p>
+</div>
+<div id="转让性视角" class="section level4 hasAnchor" number="2.4.3.4">
+<h4><span class="header-section-number">2.4.3.4</span> 转让性视角<a href="web3-应用.html#转让性视角" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>代币可以是可转让的、不可转让的，或具有受限的转让性。独特的（不可替代）代币的转让性取决于具体的使用案例。例如，飞机票可能是可转让或不可转让，这取决于你购买的票种。艺术品或汽车注册文件等独特物品通常是可转让的，而身份绑定的代币（如证书或许可证）通常是不可转让的。一个允许你接孩子放学的代币是独特的，但可以在某种程度上具有有限或临时的转让性，以便于你安排其他人接孩子，临时授予他们接送权。尽管可替代代币在大多数情况下是可转让的，但也存在例外情况。</p>
+<p><img src="https://github.com/sherminvo/TokenEconomyBook/raw/main/imgs/23_TransferabilityPerspective.png" /></p>
+</div>
+<div id="耐久性视角" class="section level4 hasAnchor" number="2.4.3.5">
+<h4><span class="header-section-number">2.4.3.5</span> 耐久性视角<a href="web3-应用.html#耐久性视角" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>在经济学中，耐久性指的是货币承受重复使用的能力。这意味着货币的基底不应轻易消失、腐烂或退化。金属或耐久食品（如小麦）具有高耐久性，因此常被用作商品货币。比特币代币和类似的协议代币至今证明了其能够抵御时间的考验，抵抗各种类型的审查或网络攻击。一个强韧的网络预期会对代币的长期价值提供“相对”稳定的支持。如果可以将网络的韧性与网络代币的价值相关联，代币就能被认为是耐久的，因为它不会消失。只要网络健壮且被使用，就会铸造新的代币，且对代币的需求将增加。尽管代币的价格可能因价格波动而下降，但只要网络完好，代币本身不会消失。相反，如果网络的共识协议较弱，可能会受到攻击和操控，在这种情况下，代币持有者可能会失去其代币。</p>
+</div>
+<div id="监管视角" class="section level4 hasAnchor" number="2.4.3.6">
+<h4><span class="header-section-number">2.4.3.6</span> 监管视角<a href="web3-应用.html#监管视角" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>监管是一个复杂的话题，涉及全球200多个司法管辖区。为了简化问题，目前可以说，监管机构需要对不同类型代币有一个清晰的分类，以理解他们可能正在监管的内容。全球各地的监管机构正在努力理解Web3及其代币化应用的全部潜力和影响。某些代币可能代表全新的资产类别，例如具有混合功能的本地协议代币，而这些代币并不容易分类；其他代币类型则可能代表已有经济体中的资产，这些资产的性质和监管已被理解。例如，证券代币和其他资产的代币化通常较容易分类和监管。在更复杂的情况下，企业家将面临监管机构可能会追溯性分类代币的不确定性。为了为企业家提供监管确定性，一些司法管辖区已开始提供政府沙盒，以保证创新，同时允许进行监管学习。</p>
+</div>
+<div id="激励视角" class="section level4 hasAnchor" number="2.4.3.7">
+<h4><span class="header-section-number">2.4.3.7</span> 激励视角<a href="web3-应用.html#激励视角" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>与代表现有资产或访问权的代币不同，代币还可以被编程为激励一种新的集体价值创造形式。它们可以用来激励个体行为或为一群人共同目标的贡献提供奖励，尤其是在当一个人证明其为集体目标做出贡献时。比特币和其他协议代币是这种目的驱动型代币的良好例子。奖励计划或忠诚度计划是另一种旨在奖励行为的代币的例子。尽管激励行为的概念并不新颖，但加密代币在目的驱动型代币方面引发了大量创新，例如CO2代币、时间银行代币、社交媒体代币、注意力代币等。</p>
+</div>
+<div id="代币供应视角" class="section level4 hasAnchor" number="2.4.3.8">
+<h4><span class="header-section-number">2.4.3.8</span> 代币供应视角<a href="web3-应用.html#代币供应视角" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>协议代币在其供应策略上有所不同。比特币的代币供应在协议中受限，最多为2100万枚。另一方面，以太坊网络在相同的方式上并没有预定义代币供应。对于代表访问权的代币，其数量通常限于访问提供者的最大容量和频率。唯一的限制是系统的容量，例如公共交通网络中的公交车容量，如果需要，通常可以扩展，但往往需要时间延迟。许多在“Coinmarketcap”上列出的代币，尤其是用于早期代币销售以筹集资金的代币，其供应是有限的。这在代表网络股权的代币中尤为常见。资产代币自然受限于可用于支持它们的资产数量。任何具有有限供应的代币都可能根据其预期耐久性、短期波动性和可替代性，作为事实上的价值储存和交换媒介。</p>
+</div>
+<div id="稳定性视角" class="section level4 hasAnchor" number="2.4.3.9">
+<h4><span class="header-section-number">2.4.3.9</span> 稳定性视角<a href="web3-应用.html#稳定性视角" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>短期价值的稳定性是交换媒介最重要的功能之一，使其能够作为单位计量，并对经济规划至关重要。尽管比特币引入了一种开创性的共识算法，但其货币政策仍然相对简单，仅仅通过限制随着时间推移铸造的代币数量来调节供应。该协议没有提供保障价格稳定的经济算法。根据代币的设计类型，价格稳定性可能是可取的，尤其是对于旨在作为日常交换媒介的支付代币。如果需要价格稳定性，则需要在代币的机制中构建相关机制。</p>
+</div>
+<div id="代币流动性视角" class="section level4 hasAnchor" number="2.4.3.10">
+<h4><span class="header-section-number">2.4.3.10</span> 代币流动性视角<a href="web3-应用.html#代币流动性视角" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>另一个维度是代币的流动性问题。代币可能被创建用于特定目的，并在目的实现后被销毁以完成循环。在这种情况下，它们在源和汇之间以直线流动。例如，赌场筹码可以在赌场内使用，并与法定货币兑换。玩家离开赌场后，可以将筹码兑换回当地货币。交通票证支付系统的访问费并在一次使用后或经过一定时间后过期，也是另一个例子。在消费或在特定过期日期后被销毁。它们的供应是无限的，或仅限于基础设施容量。另一方面，可以无限制地交换的代币，没有人为的到期条件，可以说具有循环流动性。大多数可转让且没有到期日期的资产代币，如任何货币或商品代币或代币化艺术品，具有循环代币流动。只有在丢失私钥或物理基础资产意外被毁时，循环流动的代币才会停止。</p>
+</div>
+<div id="时间视角" class="section level4 hasAnchor" number="2.4.3.11">
+<h4><span class="header-section-number">2.4.3.11</span> 时间视角<a href="web3-应用.html#时间视角" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>设计代币时，另一个问题是代币是否具有到期日。任何可替代代币可以以某种方式编程，在一定日期后到期，以防止代币的囤积。在实际操作中，代币将到期；从技术上讲，代币的状态将改变。忠诚度计划中的积分通常会有到期日期。在过去，一些地区货币，如1930年代的“沃尔格缩减货币”（Wörgl Schwundgeld，奥地利），尝试在其货币中内置贬值机制，以防止囤积和通货膨胀。该货币作为一种只能在沃尔格地区消费的平行货币被引入。每月损失1%的价值，鼓励个人消费而不鼓励储蓄。这一措施旨在应对全国性的通货紧缩政策，并在失业率和基础设施投资方面提供帮助。</p>
+</div>
+</div>
+<div id="非同质化代币-nft" class="section level3 hasAnchor" number="2.4.4">
+<h3><span class="header-section-number">2.4.4</span> 非同质化代币 (NFT)<a href="web3-应用.html#非同质化代币-nft" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>非同质化代币 (NFT) 是独特的，每个代币具有不同的属性，可以相互区分。NFT 可以代表数字、独特且稀缺的资产，如艺术品和其他收藏品，或房地产。NFT 还可以代表身份和证书，如许可证、学位、密钥、通行证、身份、遗嘱、投票权、票据、忠诚度代币、版权、保修、软件许可证、医疗数据以及任何形式的证书，例如供应链或艺术证书。在 Web3 之前，身份和认证系统，以及独特和稀缺资产的管理成本较高，因为它们依赖于中心化的发行实体的验证和安全性。相比之下，分布式账本能够提供去中心化和公开可验证的基础设施，以非常低的运营成本发行和管理这些资产。</p>
+<p>在2013年，“彩色币”是最早尝试将独特属性附加到代币上的项目之一。这个想法是使用比特币代币来代表现实世界中的资产，如股票、债券、商品或房屋的产权。“Counterparty”是另一个建立在这个想法上的项目，但更进一步。它使用户能够在比特币网络上创建自己的虚拟资产。随着以太坊网络的出现，这两个项目都难以获得广泛采用。NFT 开始吸引大量关注是因为 ERC-721 代币标准的推出，特别是在“Crypto Kitties”这一游戏成功之后，该游戏在以太坊网络上允许玩家收集和繁殖数字猫，每只猫的独特数字“基因代码”存储在以太坊的账本上。</p>
+<p>ERC-721 代币标准允许比 ERC-20 代币更详细的属性，使代币变得独特。它允许包含关于资产的元数据和所有权信息。当这些附加信息得到验证时，可以增加其价值，确保艺术品、收藏品或其他商品和服务的来源。ERC-721 的成功可能也促使其他区块链项目，如 NEO 网络，开发自己的非同质化代币标准。</p>
+<div id="加密收藏品与加密游戏" class="section level4 hasAnchor" number="2.4.4.1">
+<h4><span class="header-section-number">2.4.4.1</span> 加密收藏品与加密游戏<a href="web3-应用.html#加密收藏品与加密游戏" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>加密收藏品允许对独特商品进行代币化，无论是虚拟收藏品还是现实世界中的收藏品。NFT 可以用来表示任何游戏内资产，用户可以控制这些资产，而不是游戏开发者。Crypto Kitties 由于堵塞了以太坊网络而引起了大量关注。美国的美国职业棒球大联盟推出了“MLB Crypto”；现在，“MLB Champions”是谷歌 Play 上为数不多的区块链游戏之一，玩家可以在游戏外部的市场（如“Opensea”）上交易独特的数字物品。为了让您了解目前开发的项目，这里有一些游戏、收藏品和交易市场的选择：“Cryptofighters”、“Decentraland”、“Etherbots”、“Ethermon”、“Gods Unchained”、“Plasmabears”、“0x Universe”、“Hyperdragons”、“Loom”、“Spells of Genesis”、“Crafty”、“Superrare”、“FlowerToken”、“Unico”、“OpSkins”或“Rarebits”。</p>
+</div>
+<div id="资产代币" class="section level4 hasAnchor" number="2.4.4.2">
+<h4><span class="header-section-number">2.4.4.2</span> 资产代币<a href="web3-应用.html#资产代币" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>资产代币允许与物理对象（如独特的艺术品、房地产或其他现实世界资产和证券）绑定的独特投资。可以对一栋建筑进行代币化，其中一些代币可以授予对房地产一部分的简单所有权，而其他代币可以授予特别的特权，如访问权。非同质化代币还可以用来表示艺术品。在现实世界中对现有资产进行代币化，可以让投资者扩大他们的投资组合，并为市场提供更多流动性。NFT 可以为持有人授予对其资产的不同控制级别。</p>
+</div>
+<div id="身份代币证书与声誉" class="section level4 hasAnchor" number="2.4.4.3">
+<h4><span class="header-section-number">2.4.4.3</span> 身份代币、证书与声誉<a href="web3-应用.html#身份代币证书与声誉" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>任何独特代表个人的东西都可以作为非同质化代币进行表示：任何类型的身份证或证书，如学校成绩单、大学学位或与特定个人存在的任何软件许可证。文凭可以由分布式账本发行并共同管理，无需翻译、手动公证或验证。钱包软件可以管理所有个人数据，无需中央机构存储我们的数据。该代币将代表与特定个人相关的身份信息容器，而不提供被识别的信息。认证声明可以与代币关联，由发行这些认证的可信实体发布。如果设计得当，声誉代币可以附加到身份上，并解决“假新闻”等挑战。</p>
+</div>
+<div id="访问代币" class="section level4 hasAnchor" number="2.4.4.4">
+<h4><span class="header-section-number">2.4.4.4</span> 访问代币<a href="web3-应用.html#访问代币" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>NFT 可以用于管理与特定人、特定财产或特定事件相关的任何类型的访问权。使用公钥密码学的集体管理分布式账本可以提供比集中管理的数字访问权管理解决方案更安全和去中心化的访问权管理，并可以替代物理钥匙、数字钥匙和密码。</p>
+</div>
+<div id="转移代币" class="section level4 hasAnchor" number="2.4.4.5">
+<h4><span class="header-section-number">2.4.4.5</span> 转移代币<a href="web3-应用.html#转移代币" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>今天，当某人去世时，遗嘱通常需要在多个人之间分配，这可能会产生相当大的官僚开销和协调成本，以分割这些资产的价值。尤其是在无形资产的情况下，液化过程较长，价值才能在受益人之间分配。虽然今天可以进行部分所有权的转移，但由分布式账本管理的转移代币将使遗嘱中的资产转移更加顺畅。</p>
+</div>
+</div>
+<div id="章节总结-5" class="section level3 hasAnchor" number="2.4.5">
+<h3><span class="header-section-number">2.4.5</span> 章节总结<a href="web3-应用.html#章节总结-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>代币可能会像互联网对邮政系统的影响一样，改变金融世界。它们可以代表任何资产或访问权，并由分布式账本共同管理。代币可以通过智能合约的几行代码轻松发行。</p>
+<p>代币可以通过软件访问，这种软件是与区块链网络或类似的分布式账本进行通信的钱包，并管理与区块链地址相关的公私钥对。只有拥有该地址私钥的人才能访问相应的代币。</p>
+<p>代币可以代表从价值存储到物理、数字和法律世界中的权限集的任何事物。它们促进了市场和法域之间的合作，使市场参与者之间的互动更加透明、高效和公平，且成本低廉。代币还可以激励一个自治群体个体为集体目标做出贡献，这些代币是在证明某种行为后创建的。</p>
+<p>代币并不是新事物，在区块链网络出现之前就已经存在。传统上，代币可以代表任何形式的经济价值。此外，代币还用于计算机领域，代表某种操作的权限或管理访问权的能力。一种更具可触感的计算机代币是您通过邮政服务获得的包裹追踪码，或提供您乘坐火车或飞机的二维码。</p>
+<p>加密代币可以代表财产权、访问权或投票权。</p>
+<p>“代币”这个术语仅是一个比喻。与比喻可能暗示的不同，代币并不代表从一个设备发送到另一个设备的数字文件。相反，它指的是由计算机网络共同管理的账本中的一条记录。</p>
+<p>我们可以从以下最重要的视角推导代币的属性：(i) 技术视角；(ii) 权利视角；(iii) 可替代性视角；(iv) 可转让性视角；(v) 耐用性视角；(vi) 监管视角；(vii) 激励视角；(viii) 供应视角；(ix) 代币流动性视角；(x) 隐私视角；(xi) 稳定性视角。</p>
+<p>尽管可替代代币是相同的，但非同质化代币在性质上是独特的，具有可相互区分的不同属性。非同质化代币是一种更为多样化的资产类别，也可以代表身份和证书，如许可证、学位、证书、密钥、通行证、身份、遗嘱、投票权、票据、忠诚度代币、版权、供应链追踪、医疗数据、软件许可证、保修等。</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="代币经济和去中心化金融.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-intro.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
